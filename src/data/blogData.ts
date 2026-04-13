@@ -76,7 +76,7 @@ export const blogPosts = [
     readingTime: 6,
     tags: ['Toxicología', 'Urgencias', 'Medicina Interna', 'Prevención'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1612531386530-97b3f5e11507',
+    image: blogParacetamol,
     content: `
       <p>El paracetamol (acetaminofén) es un analgésico y antipirético común en medicina humana, pero es <strong>extremadamente tóxico y potencialmente letal</strong> para nuestras mascotas, con una peligrosidad especialmente alta en gatos.</p>
       <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-800 dark:text-cyan-300">¿Por qué es tan tóxico?</h3>
