@@ -95,8 +95,8 @@ const ServicioMISPage = () => {
             };
         case 'cardiologia':
             return {
-                src: "https://images.unsplash.com/photo-1526284686417-e343398c8b4e",
-                alt: "Veterinario realizando una ecocardiografía a un perro"
+                src: ecocardioCardioImg,
+                alt: "Ecocardiografía veterinaria con vistas cardíacas y doppler color"
             };
         case 'ecografia':
             return {
