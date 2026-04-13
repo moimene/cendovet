@@ -70,7 +70,7 @@ const HomePage = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+        <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
         <div className="absolute inset-0 z-[-1]">
             <img className="w-full h-full object-cover" alt="Quirófano veterinario moderno y tecnológico de CENDOVET" src={quirofanoHero} />
         </div>
