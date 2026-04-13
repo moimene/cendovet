@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/accordion";
 import RelatedCases from '@/components/RelatedCases';
 import InstagramCases from '@/components/InstagramCases';
+import ecocardioImg from '@/assets/ecocardio.jpg';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -98,8 +99,8 @@ const ServicioMISPage = () => {
             };
         case 'ecografia':
             return {
-                src: "https://images.unsplash.com/photo-1581093450021-4a7360e9a1c8",
-                alt: "Veterinario realizando una ecografía abdominal avanzada"
+                src: ecocardioImg,
+                alt: "Ecocardiografía veterinaria con doppler color"
             };
         case 'medicina-felina':
             return {
