@@ -61,7 +61,7 @@ export const servicesData = {
         ]
       },
       cta: {
-        owner: "Solicitar Cita",
+        owner: "Solicitar Valoración",
         vet: "Veterinarios: Referir Caso"
       }
     },
@@ -183,7 +183,7 @@ export const servicesData = {
         ]
       },
       cta: {
-        owner: "Solicitar Cita",
+        owner: "Solicitar Valoración",
         vet: "Veterinarios: Referir Caso"
       }
     },
@@ -299,7 +299,7 @@ export const servicesData = {
         ]
       },
       cta: {
-        owner: "Solicitar Cita",
+        owner: "Solicitar Valoración",
         vet: "Veterinarios: Referir Caso"
       }
     },
@@ -415,7 +415,7 @@ export const servicesData = {
         ]
       },
       cta: {
-        owner: "Solicitar Cita",
+        owner: "Solicitar Valoración",
         vet: "Veterinarios: Referir Caso"
       }
     },
@@ -531,7 +531,7 @@ export const servicesData = {
         ]
       },
       cta: {
-        owner: "Solicitar Cita",
+        owner: "Solicitar Valoración",
         vet: "Veterinarios: Referir Caso"
       }
     },
@@ -647,7 +647,7 @@ export const servicesData = {
         ]
       },
       cta: {
-        owner: "Solicitar Cita",
+        owner: "Solicitar Valoración",
         vet: "Veterinarios: Referir Caso"
       }
     },
