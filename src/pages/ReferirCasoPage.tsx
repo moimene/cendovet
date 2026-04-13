@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import salaEsperaImg from '@/assets/sala_espera_cendovet.png';
 import { Helmet } from 'react-helmet';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
