@@ -60,9 +60,8 @@ const GoogleReviews = () => {
               transition={{ duration: 0.4, delay: index * 0.08 }}
             >
               <div className="flex items-center justify-between mb-3">
-                <div>
+              <div>
                   <p className="font-bold text-cyan-900 dark:text-white text-sm">{review.name}</p>
-                  <p className="text-xs text-gray-400">{review.date}</p>
                 </div>
                 <StarRating rating={review.rating} />
               </div>
