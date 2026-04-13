@@ -327,7 +327,7 @@ const ReferirCasoPage = () => {
                                     {currentStep === 4 && (
                                         <div className="mt-6 p-4 rounded-lg bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600">
                                             <div className="flex items-start space-x-3">
-                                                <Checkbox id="consent" checked={consent} onCheckedChange={setConsent} />
+                                                <Checkbox id="consent" checked={consent} onCheckedChange={(checked) => setConsent(checked === true)} />
                                                 <Label htmlFor="consent" className="text-sm">He leído y acepto la <Link to="/politica-privacidad" target="_blank" className="text-cyan-600 hover:underline">política de privacidad</Link>. Confirmo que tengo el consentimiento del propietario para compartir estos datos con CENDOVET.</Label>
                                             </div>
                                         </div>

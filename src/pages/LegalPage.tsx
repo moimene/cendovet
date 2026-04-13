@@ -220,11 +220,11 @@ const CookiesPolicyContent = () => (
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="bg-slate-50 dark:bg-slate-700"><td colSpan="4" className="p-2 font-bold">Cookies Propias</td></tr>
+                    <tr className="bg-slate-50 dark:bg-slate-700"><td colSpan={4} className="p-2 font-bold">Cookies Propias</td></tr>
                     <tr><td className="border-b p-2">cookieConsent</td><td className="border-b p-2">Técnica</td><td className="border-b p-2">1 año</td><td className="border-b p-2">Almacena las preferencias de cookies.</td></tr>
                     <tr><td className="border-b p-2">language</td><td className="border-b p-2">Preferencia</td><td className="border-b p-2">1 año</td><td className="border-b p-2">Recuerda el idioma seleccionado.</td></tr>
                     <tr><td className="border-b p-2">sessionID</td><td className="border-b p-2">Técnica</td><td className="border-b p-2">Sesión</td><td className="border-b p-2">Mantiene la sesión del usuario.</td></tr>
-                    <tr className="bg-slate-50 dark:bg-slate-700"><td colSpan="4" className="p-2 font-bold">Cookies de Terceros</td></tr>
+                    <tr className="bg-slate-50 dark:bg-slate-700"><td colSpan={4} className="p-2 font-bold">Cookies de Terceros</td></tr>
                     <tr><td className="border-b p-2">Google Analytics</td><td className="border-b p-2">Analítica</td><td className="border-b p-2">2 años</td><td className="border-b p-2">Análisis estadístico del tráfico.</td></tr>
                     <tr><td className="border-b p-2">Google Maps</td><td className="border-b p-2">Técnica</td><td className="border-b p-2">6 meses</td><td className="border-b p-2">Mostrar mapas interactivos.</td></tr>
                 </tbody>
