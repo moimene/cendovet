@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import GoogleReviews from '@/components/GoogleReviews';
 
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   visible: {
     opacity: 1,
     transition: {
@@ -20,7 +20,7 @@ const containerVariants = {
 };
 
 const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: 0, opacity: 1 },
   visible: {
     y: 0,
     opacity: 1,
@@ -68,7 +68,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <motion.section 
         className="relative text-white py-32 md:py-48 text-center"
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
@@ -108,7 +108,7 @@ const HomePage = () => {
       <section className="py-20 bg-white dark:bg-slate-800">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
@@ -121,7 +121,7 @@ const HomePage = () => {
               <motion.div
                 key={index}
                 className="bg-gray-50 dark:bg-slate-900 p-8 rounded-xl shadow-lg hover:shadow-cyan-500/20 transition-shadow duration-300 text-center"
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 1, y: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -140,7 +140,7 @@ const HomePage = () => {
       <section className="py-20 bg-gray-100 dark:bg-slate-900">
         <div className="container mx-auto px-4">
            <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
@@ -152,7 +152,7 @@ const HomePage = () => {
                <motion.div
                 key={index}
                 className="p-6"
-                initial={{ opacity: 0, scale: 0.9 }}
+                initial={{ opacity: 1, scale: 1 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
@@ -174,7 +174,7 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 1, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
@@ -191,7 +191,7 @@ const HomePage = () => {
             </motion.div>
             <motion.div
               className="rounded-lg overflow-hidden shadow-2xl"
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 1, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
@@ -208,7 +208,7 @@ const HomePage = () => {
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <motion.div 
               className="md:col-span-1 flex justify-center"
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 1, scale: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
@@ -217,7 +217,7 @@ const HomePage = () => {
             </motion.div>
             <motion.div 
               className="md:col-span-2"
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 1, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
