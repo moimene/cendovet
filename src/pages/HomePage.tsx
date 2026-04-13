@@ -198,7 +198,7 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
             >
-              <img alt="Mapa de la zona de cobertura de CENDOVET en el sur de España" src="https://images.unsplash.com/photo-1621273961349-0612be84b10a" />
+              <img alt="Quirófano de CENDOVET equipado con tecnología de última generación" src={quirofanoCendovet} className="w-full h-auto object-cover" />
             </motion.div>
           </div>
         </div>
