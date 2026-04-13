@@ -15,6 +15,7 @@ import RelatedCases from '@/components/RelatedCases';
 import InstagramCases from '@/components/InstagramCases';
 import ecocardioImg from '@/assets/ecocardio.jpg';
 import ecocardioCardioImg from '@/assets/ecocardio_cardiologia.jpg';
+import cardiologyBookImg from '@/assets/cardiology_book.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -117,7 +118,7 @@ const ServicioMISPage = () => {
   }
 
   const serviceImage = getImageForService(serviceKey);
-  const processImage = "https://images.unsplash.com/photo-1691935153114-25b39411e7e3";
+  const processImage = cardiologyBookImg;
 
 
   return (
