@@ -75,7 +75,7 @@ const BlogPostPage = () => {
               <img
                 className="w-full h-auto object-cover"
                 alt={`Imagen principal del artículo ${post.title}`}
-               src={`${post.image}?w=1200&auto=format&fit=crop`} />
+               src={post.image.startsWith('http') ? `${post.image}?w=1200&auto=format&fit=crop` : post.image} />
             </div>
 
             {/* Post Content */}
