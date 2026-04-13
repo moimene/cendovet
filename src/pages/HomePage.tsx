@@ -165,6 +165,9 @@ const HomePage = () => {
         </div>
       </section>
       
+      {/* Reseñas de Google */}
+      <GoogleReviews />
+
       {/* Cobertura Geográfica */}
       <section className="py-20 bg-white dark:bg-slate-800">
         <div className="container mx-auto px-4">
