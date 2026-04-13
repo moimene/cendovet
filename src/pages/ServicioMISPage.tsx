@@ -15,6 +15,7 @@ import RelatedCases from '@/components/RelatedCases';
 import InstagramCases from '@/components/InstagramCases';
 import ecocardioImg from '@/assets/ecocardio.jpg';
 import ecocardioCardioImg from '@/assets/ecocardio_cardiologia.jpg';
+import cardiologyBookImg from '@/assets/cardiology_book.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
