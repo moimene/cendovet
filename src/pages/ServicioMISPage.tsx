@@ -118,7 +118,7 @@ const ServicioMISPage = () => {
   }
 
   const serviceImage = getImageForService(serviceKey);
-  const processImage = "https://images.unsplash.com/photo-1691935153114-25b39411e7e3";
+  const processImage = cardiologyBookImg;
 
 
   return (
