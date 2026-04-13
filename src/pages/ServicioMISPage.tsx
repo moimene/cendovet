@@ -16,6 +16,7 @@ import InstagramCases from '@/components/InstagramCases';
 import ecocardioImg from '@/assets/ecocardio.jpg';
 import ecocardioCardioImg from '@/assets/ecocardio_cardiologia.jpg';
 import cardiologyBookImg from '@/assets/cardiology_book.png';
+import ecografiaDopplerImg from '@/assets/ecografia_doppler.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -101,8 +102,8 @@ const ServicioMISPage = () => {
             };
         case 'ecografia':
             return {
-                src: ecocardioImg,
-                alt: "Ecocardiografía veterinaria con doppler color"
+                src: ecografiaDopplerImg,
+                alt: "Ecografía veterinaria con doppler color"
             };
         case 'medicina-felina':
             return {
