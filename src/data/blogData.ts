@@ -1,4 +1,5 @@
 import blogDirofilaria from '@/assets/blog_dirofilaria.png';
+import blogProcesionaria from '@/assets/blog_procesionaria.png';
 
 export const blogPosts = [
   {
