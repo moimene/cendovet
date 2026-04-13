@@ -12,6 +12,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import RelatedCases from '@/components/RelatedCases';
+import InstagramCases from '@/components/InstagramCases';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -237,6 +238,9 @@ const ServicioMISPage = () => {
                 </Accordion>
             </div>
         </Section>
+
+        {/* Instagram Cases Section */}
+        <InstagramCases serviceKey={serviceKey} />
 
         {/* Related Cases Section */}
         {relatedCasesTag && <RelatedCases serviceTag={relatedCasesTag} />}
