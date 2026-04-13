@@ -11,7 +11,7 @@ export const blogPosts = [
     readingTime: 5,
     tags: ['Cardiología', 'Parasitología', 'Diagnóstico', 'Prevención'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def',
+    image: blogDirofilaria,
     content: `
       <p>La dirofilariosis, comúnmente conocida como la enfermedad del gusano del corazón, es una patología parasitaria grave y potencialmente mortal que afecta principalmente a perros, pero también a gatos y otros mamíferos. Es causada por el nematodo <em>Dirofilaria immitis</em>, un parásito que se transmite a través de la picadura de mosquitos infectados.</p>
       <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-800 dark:text-cyan-300">Síntomas y Detección</h3>
