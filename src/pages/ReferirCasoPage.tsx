@@ -272,39 +272,12 @@ const ReferirCasoPage = () => {
 
         setIsSubmitting(true);
         try {
-            // 1. Upload files
-            const filePaths = [];
-            for (const file of uploadedFiles) {
-                const fileName = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}-${file.name}`;
-                const { data, error } = await supabase.storage.from('medical-files').upload(fileName, file);
-                if (error) throw new Error(`Error subiendo archivo: ${error.message}`);
-                filePaths.push(data.path);
-            }
-
-            // 2. Insert data in DB
             const formData = getValues();
-            const { error: dbError } = await supabase.from('referred_cases').insert([{
-                vet_name: formData.vetName, clinic_name: formData.clinicName, location: formData.location,
-                phone: formData.phone, email: formData.email, owner_name: formData.ownerName,
-                owner_contact: formData.ownerContact, pet_name: formData.petName, species: formData.species,
-                age: formData.age, weight: formData.weight, clinical_summary: formData.clinicalSummary,
-                services_requested: formData.servicesRequested, medical_files: filePaths,
-                keep_informed: formData.keepInformed, contact_owner: formData.contactOwner
-            }]);
-
-            if (dbError) throw new Error(`Error en base de datos: ${dbError.message}`);
-
-            // 3. Invoke Edge Function (fire and forget)
-            supabase.functions.invoke('send-case-referral', {
-              body: JSON.stringify({
-                  ...formData,
-                  medical_files: filePaths
-              }),
-            }).catch(console.error);
-            
+            const mailtoLink = `mailto:info@cvcampogibraltar.es?subject=${encodeURIComponent(`Referencia de caso - ${formData.petName} (${formData.species})`)}&body=${encodeURIComponent(`DATOS DEL VETERINARIO\nNombre: ${formData.vetName}\nClínica: ${formData.clinicName}\nLocalidad: ${formData.location}\nTeléfono: ${formData.phone}\nEmail: ${formData.email}\n\nDATOS DEL PROPIETARIO Y MASCOTA\nPropietario: ${formData.ownerName}\nContacto propietario: ${formData.ownerContact || 'No proporcionado'}\nMascota: ${formData.petName}\nEspecie/Raza: ${formData.species}\nEdad: ${formData.age} años\nPeso: ${formData.weight || 'No proporcionado'} kg\n\nDETALLES CLÍNICOS\n${formData.clinicalSummary}\n\nServicios solicitados: ${formData.servicesRequested || 'No especificado'}`)}`;
+            window.location.href = mailtoLink;
             setSubmitted(true);
 
-        } catch (error) {
+        } catch (error: any) {
             toast({ variant: "destructive", title: "Error al enviar", description: error.message });
         } finally {
             setIsSubmitting(false);
