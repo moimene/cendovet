@@ -112,6 +112,11 @@ const ServicioMISPage = () => {
                 src: "https://images.unsplash.com/photo-1574158622682-e40e6984100d",
                 alt: "Gato de aspecto saludable siendo examinado"
             };
+        case 'cirugia-mis':
+            return {
+                src: cirugiaMisImg,
+                alt: "Cirugía mínimamente invasiva veterinaria en CENDOVET"
+            };
         default:
             return {
                 src: "https://images.unsplash.com/photo-1517478292-6643e6a62cfe",
