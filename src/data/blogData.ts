@@ -1,4 +1,5 @@
 import blogDirofilaria from '@/assets/blog_dirofilaria.png';
+import blogProcesionaria from '@/assets/blog_procesionaria.png';
 
 export const blogPosts = [
   {
@@ -45,7 +46,7 @@ export const blogPosts = [
     readingTime: 4,
     tags: ['Toxicología', 'Urgencias', 'Primavera', 'Prevención'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1530281700549-e82e7bf110d6',
+    image: blogProcesionaria,
     content: `
       <p>La oruga procesionaria del pino (<em>Thaumetopoea pityocampa</em>) representa una seria amenaza para perros y gatos durante los meses de finales de invierno y primavera (generalmente de febrero a abril). Sus pelos urticantes contienen una potente toxina llamada thaumatopoeina que provoca reacciones alérgicas e inflamatorias severas.</p>
       <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-800 dark:text-cyan-300">Síntomas según el Contacto</h3>
