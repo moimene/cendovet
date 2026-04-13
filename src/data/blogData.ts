@@ -9,7 +9,7 @@ export const blogPosts = [
     readingTime: 5,
     tags: ['Cardiología', 'Parasitología', 'Diagnóstico', 'Prevención'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee',
+    image: 'https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def',
     content: `
       <p>La dirofilariosis, comúnmente conocida como la enfermedad del gusano del corazón, es una patología parasitaria grave y potencialmente mortal que afecta principalmente a perros, pero también a gatos y otros mamíferos. Es causada por el nematodo <em>Dirofilaria immitis</em>, un parásito que se transmite a través de la picadura de mosquitos infectados.</p>
       <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-800 dark:text-cyan-300">Síntomas y Detección</h3>
@@ -43,7 +43,7 @@ export const blogPosts = [
     readingTime: 4,
     tags: ['Toxicología', 'Urgencias', 'Primavera', 'Prevención'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1615328825398-1c03234559f3',
+    image: 'https://images.unsplash.com/photo-1530281700549-e82e7bf110d6',
     content: `
       <p>La oruga procesionaria del pino (<em>Thaumetopoea pityocampa</em>) representa una seria amenaza para perros y gatos durante los meses de finales de invierno y primavera (generalmente de febrero a abril). Sus pelos urticantes contienen una potente toxina llamada thaumatopoeina que provoca reacciones alérgicas e inflamatorias severas.</p>
       <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-800 dark:text-cyan-300">Síntomas según el Contacto</h3>
@@ -72,7 +72,7 @@ export const blogPosts = [
     readingTime: 6,
     tags: ['Toxicología', 'Urgencias', 'Medicina Interna', 'Prevención'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae',
+    image: 'https://images.unsplash.com/photo-1612531386530-97b3f5e11507',
     content: `
       <p>El paracetamol (acetaminofén) es un analgésico y antipirético común en medicina humana, pero es <strong>extremadamente tóxico y potencialmente letal</strong> para nuestras mascotas, con una peligrosidad especialmente alta en gatos.</p>
       <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-800 dark:text-cyan-300">¿Por qué es tan tóxico?</h3>
@@ -98,7 +98,7 @@ export const blogPosts = [
     readingTime: 8,
     tags: ['Laparoscopia', 'Cirugía', 'Criptorquidia', 'Caso Clínico'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1555697838-6a23c792d232',
+    image: 'https://images.unsplash.com/photo-1551190822-a9ce113ac100',
     content: `
       <p><strong>Paciente:</strong> Max, un Golden Retriever macho de 2 años.</p>
       <p><strong>Clínica Remitente:</strong> Clínica Veterinaria San Roque, Algeciras.</p>
@@ -126,7 +126,7 @@ export const blogPosts = [
     readingTime: 9,
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1598875184988-5e67b1a8e417',
+    image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97',
     content: `
       <p><strong>Paciente:</strong> Luna, una Labrador Retriever hembra de 3 años.</p>
       <p><strong>Clínica Remitente:</strong> Clínica Veterinaria Los Barrios.</p>
@@ -153,7 +153,7 @@ export const blogPosts = [
     readingTime: 7,
     tags: ['Fluoroscopia', 'Cardiología', 'Dirofilaria', 'Caso Clínico', 'Terapia Endovascular'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb',
+    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2',
     content: `
       <p><strong>Paciente:</strong> Laika, una perrita mestiza de 7 kg, adoptada recientemente.</p>
       <p><strong>Historia:</strong> Laika acudió referenciada a CENDOVET para una ecografía cardíaca porque tenía diagnosticada la enfermedad del gusano del corazón (<em>Dirofilaria immitis</em>). En la ecocardiografía observamos una gran cantidad de parásitos en la arteria pulmonar, lo que suponía un alto riesgo de tromboembolismo si se realizaba el tratamiento adulticida convencional.</p>
@@ -185,7 +185,7 @@ export const blogPosts = [
     readingTime: 5,
     tags: ['Endoscopia', 'Oncología', 'Tecnología', 'Cromoendoscopia', 'Diagnóstico'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118',
+    image: 'https://images.unsplash.com/photo-1581594693702-fbdc51b2763b',
     content: `
       <p>En CENDOVET damos un nuevo paso hacia la excelencia en endoscopia y cirugía de mínima invasión con la incorporación del <strong>procesador endoscópico Fujifilm EP-8000</strong>, una plataforma de cromoendoscopia digital avanzada utilizada en hospitales humanos de referencia para la detección precoz del cáncer gastrointestinal.</p>
 
@@ -214,7 +214,7 @@ export const blogPosts = [
     readingTime: 6,
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico', 'Esófago'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b',
+    image: 'https://images.unsplash.com/photo-1587764379873-97837921fd44',
     content: `
       <p><strong>Paciente:</strong> Rox, un perro mestizo de 3,7 kg.</p>
       <p><strong>Clínica Remitente:</strong> CV Mediterranea, Sabinillas (Málaga).</p>
@@ -244,7 +244,7 @@ export const blogPosts = [
     readingTime: 5,
     tags: ['Litotricia', 'Endoscopia', 'Caso Clínico', 'Urología', 'Mínima Invasión'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1587764379873-97837921fd44',
+    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba',
     content: `
       <p><strong>Paciente:</strong> Bonnie, una perra de 12 años.</p>
       <p><strong>Historia:</strong> Bonnie acudió referenciada a CENDOVET para eliminar varios cálculos (piedras) en su vejiga que le estaban ocasionando problemas urinarios.</p>
@@ -274,7 +274,7 @@ export const blogPosts = [
     readingTime: 4,
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico', 'Esófago'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1544568100-847a948585b9',
+    image: 'https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13',
     content: `
       <p><strong>Paciente:</strong> Peluso, un perro referido desde CV Taraguilla (San Roque).</p>
       <p><strong>Historia:</strong> Peluso se tragó un anzuelo mientras paseaba por la playa. El anzuelo quedó clavado en una zona muy compleja: justo al inicio del esófago, donde coincide con la laringe. Es una zona crítica por las estructuras tan delicadas que hay y el escaso espacio para trabajar.</p>
