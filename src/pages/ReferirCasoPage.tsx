@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import salaEsperaImg from '@/assets/sala_espera_cendovet.png';
 import { Helmet } from 'react-helmet';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
@@ -345,7 +346,11 @@ const ReferirCasoPage = () => {
                         </motion.div>
                     )}
                     </AnimatePresence>
+                {/* Imagen sala de espera */}
+                <div className="mt-16 rounded-2xl overflow-hidden shadow-lg">
+                    <img src={salaEsperaImg} alt="Sala de espera de CENDOVET" className="w-full h-64 sm:h-80 object-cover" />
                 </div>
+            </div>
             </div>
         </>
     );
