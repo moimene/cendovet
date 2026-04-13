@@ -18,6 +18,7 @@ import ecocardioCardioImg from '@/assets/ecocardio_cardiologia.jpg';
 import cardiologyBookImg from '@/assets/cardiology_book.png';
 import ecografiaDopplerImg from '@/assets/ecografia_doppler.png';
 import endoscopiaImg from '@/assets/endoscopia_cendovet.png';
+import cirugiaMisImg from '@/assets/cirugia_mis_cendovet.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -110,6 +111,11 @@ const ServicioMISPage = () => {
             return {
                 src: "https://images.unsplash.com/photo-1574158622682-e40e6984100d",
                 alt: "Gato de aspecto saludable siendo examinado"
+            };
+        case 'cirugia-mis':
+            return {
+                src: cirugiaMisImg,
+                alt: "Cirugía mínimamente invasiva veterinaria en CENDOVET"
             };
         default:
             return {
