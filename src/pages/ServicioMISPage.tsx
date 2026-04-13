@@ -16,7 +16,7 @@ import RelatedCases from '@/components/RelatedCases';
 const Section = ({ children, className = '' }) => (
   <motion.section 
     className={`py-16 sm:py-20 ${className}`}
-    initial={{ opacity: 0, y: 20 }}
+    initial={{ opacity: 1, y: 0 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.3 }}
     transition={{ duration: 0.6 }}
@@ -131,7 +131,7 @@ const ServicioMISPage = () => {
            <div className="mx-auto container px-4 py-24 sm:py-32 lg:py-40">
             <motion.div 
               className="max-w-2xl mx-auto lg:mx-0"
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 1, x: 0 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
@@ -184,7 +184,7 @@ const ServicioMISPage = () => {
                      <motion.div 
                         key={i} 
                         className="flex flex-col items-center text-center p-6 bg-white dark:bg-slate-900 rounded-xl shadow-lg"
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 1, scale: 1 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.5, delay: i * 0.1 }}
