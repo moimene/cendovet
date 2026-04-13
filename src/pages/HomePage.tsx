@@ -72,7 +72,7 @@ const HomePage = () => {
       >
         <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
         <div className="absolute inset-0 z-[-1]">
-            <img className="w-full h-full object-cover" alt="Quirófano veterinario moderno y tecnológico" src="https://images.unsplash.com/photo-1529868453096-86e24e240d35" />
+            <img className="w-full h-full object-cover" alt="Quirófano veterinario moderno y tecnológico de CENDOVET" src={quirofanoHero} />
         </div>
         <div className="relative z-10 container mx-auto px-4">
           <motion.div
