@@ -71,7 +71,7 @@ const ParaClinicasPage = () => {
              <div className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white/5 dark:bg-cyan-950/30 shadow-xl shadow-cyan-600/10 ring-1 ring-cyan-50" />
             <div className="container mx-auto px-4 py-20 md:py-32 text-center">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 1, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
@@ -126,7 +126,7 @@ const ParaClinicasPage = () => {
                     {advantages.map(adv => (
                          <motion.div
                             key={adv.title}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 1, y: 0 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.5 }}
                             transition={{ duration: 0.5 }}
