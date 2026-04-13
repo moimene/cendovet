@@ -713,4 +713,164 @@ export const servicesData = {
     es: { title: "Medicina Felina Especializada" },
     en: { title: "Specialized Feline Medicine" }
   },
+  litotricia: {
+    es: {
+      badge: "Cirugía MIS",
+      title: "Litotricia Láser: eliminación de cálculos sin cirugía abierta",
+      subtitle: "Fragmentamos cálculos urinarios con láser a través de endoscopia, evitando incisiones y acelerando la recuperación de tu mascota.",
+      description: {
+        title: "¿Qué es la litotricia láser y para qué sirve?",
+        paragraphs: [
+          "La litotricia láser es una técnica mínimamente invasiva que permite fragmentar y extraer cálculos (piedras) del tracto urinario —vejiga, uretra y uréteres— sin necesidad de cirugía abierta. Utilizamos un láser de holmio guiado por endoscopia para pulverizar los cálculos en fragmentos diminutos que se eliminan de forma natural o se extraen durante el mismo procedimiento.",
+          "En CENDOVET somos referentes en litotricia láser veterinaria en el Campo de Gibraltar. Esta técnica es especialmente útil en pacientes con cálculos recurrentes, razas predispuestas o cuando la cirugía convencional supone un riesgo elevado."
+        ]
+      },
+      benefits: {
+        title: "Beneficios de la litotricia láser",
+        items: [
+          { icon: "Minimize2", text: "Sin incisiones abdominales: acceso endoscópico a través de vías naturales." },
+          { icon: "HeartPulse", text: "Menos dolor postoperatorio y recuperación más rápida que la cistotomía tradicional." },
+          { icon: "Clock", text: "Procedimiento ambulatorio en muchos casos: tu mascota puede volver a casa el mismo día." },
+          { icon: "Shield", text: "Menor riesgo de complicaciones e infecciones al no abrir la vejiga." },
+          { icon: "Stethoscope", text: "Visualización directa del cálculo con endoscopio para una fragmentación precisa." },
+          { icon: "Scissors", text: "Ideal para cálculos recurrentes: menos invasivo que repetidas cirugías abiertas." }
+        ]
+      },
+      process: {
+        title: "Cómo lo hacemos en CENDOVET",
+        paragraphs: [
+          "Realizamos un estudio previo con ecografía y radiografía para localizar y dimensionar los cálculos. Bajo anestesia general con monitorización avanzada, introducimos un cistoscopio por la uretra hasta alcanzar el cálculo. A través del endoscopio, aplicamos energía láser de holmio que fragmenta la piedra en partículas diminutas.",
+          "Los fragmentos se extraen con cestas endoscópicas o se dejan para eliminación natural. El paciente se recupera con mínimas molestias y sin herida quirúrgica. Analizamos siempre la composición del cálculo para recomendar una dieta preventiva personalizada."
+        ]
+      },
+      faqs: [
+        { q: "¿Todos los cálculos se pueden tratar con láser?", a: "La mayoría sí. El láser de holmio fragmenta todo tipo de cálculos independientemente de su composición. Solo en casos de cálculos muy grandes o con complicaciones anatómicas puede recomendarse otro abordaje." },
+        { q: "¿Es seguro para razas pequeñas?", a: "Sí. Contamos con endoscopios de diferentes tamaños adaptados a pacientes pequeños. La técnica es especialmente beneficiosa en razas pequeñas donde la cistotomía convencional es más delicada." },
+        { q: "¿Cuánto dura la recuperación?", a: "La recuperación es significativamente más rápida que con cirugía abierta. La mayoría de pacientes retoman su actividad normal en 24-48 horas con mínimas molestias." }
+      ],
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir un Caso"
+      }
+    },
+    en: {
+      badge: "MIS Surgery",
+      title: "Laser Lithotripsy: stone removal without open surgery",
+      subtitle: "We fragment urinary stones using laser through endoscopy, avoiding incisions and speeding up your pet's recovery.",
+      description: {
+        title: "What is laser lithotripsy and what is it for?",
+        paragraphs: [
+          "Laser lithotripsy is a minimally invasive technique that fragments and extracts stones from the urinary tract —bladder, urethra, and ureters— without open surgery. We use a holmium laser guided by endoscopy to pulverize stones into tiny fragments that are naturally eliminated or extracted during the procedure.",
+          "At CENDOVET we are a reference center for veterinary laser lithotripsy in the Campo de Gibraltar region. This technique is especially useful in patients with recurrent stones, predisposed breeds, or when conventional surgery poses a high risk."
+        ]
+      },
+      benefits: {
+        title: "Benefits of laser lithotripsy",
+        items: [
+          { icon: "Minimize2", text: "No abdominal incisions: endoscopic access through natural pathways." },
+          { icon: "HeartPulse", text: "Less postoperative pain and faster recovery than traditional cystotomy." },
+          { icon: "Clock", text: "Outpatient procedure in many cases: your pet can go home the same day." },
+          { icon: "Shield", text: "Lower risk of complications and infections by not opening the bladder." },
+          { icon: "Stethoscope", text: "Direct visualization of the stone with endoscope for precise fragmentation." },
+          { icon: "Scissors", text: "Ideal for recurrent stones: less invasive than repeated open surgeries." }
+        ]
+      },
+      process: {
+        title: "How we do it at CENDOVET",
+        paragraphs: [
+          "We perform a preliminary study with ultrasound and radiography to locate and measure the stones. Under general anesthesia with advanced monitoring, we introduce a cystoscope through the urethra to reach the stone. Through the endoscope, we apply holmium laser energy that fragments the stone into tiny particles.",
+          "Fragments are extracted with endoscopic baskets or left for natural elimination. The patient recovers with minimal discomfort and no surgical wound. We always analyze the stone composition to recommend a personalized preventive diet."
+        ]
+      },
+      faqs: [
+        { q: "Can all stones be treated with laser?", a: "Most can. The holmium laser fragments all types of stones regardless of composition. Only in cases of very large stones or anatomical complications may another approach be recommended." },
+        { q: "Is it safe for small breeds?", a: "Yes. We have endoscopes of different sizes adapted to small patients. The technique is especially beneficial in small breeds where conventional cystotomy is more delicate." },
+        { q: "How long is the recovery?", a: "Recovery is significantly faster than with open surgery. Most patients return to normal activity within 24-48 hours with minimal discomfort." }
+      ],
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Veterinarians: Refer a Case"
+      }
+    }
+  },
+  'cirugia-3d': {
+    es: {
+      badge: "Tecnología Avanzada",
+      title: "Cirugía 3D con sistema RUBINA de Karl Storz",
+      subtitle: "Visualización tridimensional e imagen por fluorescencia ICG para cirugías más precisas y seguras.",
+      description: {
+        title: "¿Qué es la cirugía 3D y qué ventajas ofrece?",
+        paragraphs: [
+          "El sistema RUBINA de Karl Storz representa la última generación en visualización quirúrgica. Combina imagen 3D de alta definición con tecnología de fluorescencia ICG (verde de indocianina), permitiendo al cirujano ver estructuras anatómicas con una profundidad y detalle imposibles con sistemas convencionales 2D.",
+          "En CENDOVET hemos incorporado esta tecnología de vanguardia para ofrecer la máxima precisión en cirugías laparoscópicas y endoscópicas. La visión tridimensional mejora la percepción de profundidad, reduce errores y acorta los tiempos quirúrgicos, lo que se traduce en mayor seguridad para tu mascota."
+        ]
+      },
+      benefits: {
+        title: "Beneficios de la cirugía 3D con RUBINA",
+        items: [
+          { icon: "Stethoscope", text: "Visión 3D real: percepción de profundidad natural para maniobras quirúrgicas más precisas." },
+          { icon: "Shield", text: "Fluorescencia ICG: visualización de vasos sanguíneos y perfusión tisular en tiempo real." },
+          { icon: "Clock", text: "Tiempos quirúrgicos reducidos gracias a una mejor orientación espacial del cirujano." },
+          { icon: "HeartPulse", text: "Mayor seguridad: identificación precisa de estructuras anatómicas críticas." },
+          { icon: "Minimize2", text: "Compatible con cirugía mínimamente invasiva: laparoscopia y toracoscopia 3D." },
+          { icon: "Scissors", text: "Detección de tejido tumoral mediante fluorescencia para márgenes quirúrgicos más precisos." }
+        ]
+      },
+      process: {
+        title: "Cómo lo hacemos en CENDOVET",
+        paragraphs: [
+          "Utilizamos el sistema completo RUBINA de Karl Storz con ópticas 3D de 5 mm y 10 mm, adaptables al tamaño del paciente. El cirujano trabaja con gafas 3D polarizadas que ofrecen una visión estereoscópica natural, eliminando la curva de aprendizaje de los sistemas 2D convencionales.",
+          "En procedimientos oncológicos, la fluorescencia ICG nos permite identificar ganglios linfáticos centinela, evaluar la perfusión de tejidos y definir márgenes tumorales con una precisión sin precedentes. Esta tecnología complementa nuestras técnicas de cromoendoscopia para un diagnóstico y tratamiento integral."
+        ]
+      },
+      faqs: [
+        { q: "¿En qué cirugías se usa el sistema 3D?", a: "En todas nuestras cirugías laparoscópicas y toracoscópicas: esterilizaciones, gastropexias, biopsias, adrenalectomías, resecciones tumorales y más. También en procedimientos endoscópicos complejos." },
+        { q: "¿Qué es la fluorescencia ICG?", a: "Es una tecnología que utiliza un contraste (verde de indocianina) inyectado por vía intravenosa que se ilumina bajo luz infrarroja cercana. Permite ver en tiempo real el flujo sanguíneo, la perfusión de órganos y la localización de tumores." },
+        { q: "¿Es más seguro que la cirugía convencional?", a: "Sí. La visión 3D reduce errores de percepción espacial y la fluorescencia ICG aporta información que no es visible a simple vista, como la vascularización de un tejido antes de cortarlo." }
+      ],
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir un Caso"
+      }
+    },
+    en: {
+      badge: "Advanced Technology",
+      title: "3D Surgery with Karl Storz RUBINA system",
+      subtitle: "Three-dimensional visualization and ICG fluorescence imaging for more precise and safer surgeries.",
+      description: {
+        title: "What is 3D surgery and what advantages does it offer?",
+        paragraphs: [
+          "The Karl Storz RUBINA system represents the latest generation in surgical visualization. It combines high-definition 3D imaging with ICG (indocyanine green) fluorescence technology, allowing the surgeon to see anatomical structures with depth and detail impossible with conventional 2D systems.",
+          "At CENDOVET we have incorporated this cutting-edge technology to offer maximum precision in laparoscopic and endoscopic surgeries. Three-dimensional vision improves depth perception, reduces errors, and shortens surgical times, resulting in greater safety for your pet."
+        ]
+      },
+      benefits: {
+        title: "Benefits of 3D surgery with RUBINA",
+        items: [
+          { icon: "Stethoscope", text: "Real 3D vision: natural depth perception for more precise surgical maneuvers." },
+          { icon: "Shield", text: "ICG fluorescence: real-time visualization of blood vessels and tissue perfusion." },
+          { icon: "Clock", text: "Reduced surgical times thanks to better spatial orientation for the surgeon." },
+          { icon: "HeartPulse", text: "Greater safety: precise identification of critical anatomical structures." },
+          { icon: "Minimize2", text: "Compatible with minimally invasive surgery: 3D laparoscopy and thoracoscopy." },
+          { icon: "Scissors", text: "Tumor tissue detection through fluorescence for more precise surgical margins." }
+        ]
+      },
+      process: {
+        title: "How we do it at CENDOVET",
+        paragraphs: [
+          "We use the complete Karl Storz RUBINA system with 5mm and 10mm 3D optics, adaptable to the patient's size. The surgeon works with polarized 3D glasses that offer natural stereoscopic vision, eliminating the learning curve of conventional 2D systems.",
+          "In oncological procedures, ICG fluorescence allows us to identify sentinel lymph nodes, evaluate tissue perfusion, and define tumor margins with unprecedented precision. This technology complements our chromoendoscopy techniques for comprehensive diagnosis and treatment."
+        ]
+      },
+      faqs: [
+        { q: "In which surgeries is the 3D system used?", a: "In all our laparoscopic and thoracoscopic surgeries: spays, gastropexies, biopsies, adrenalectomies, tumor resections, and more. Also in complex endoscopic procedures." },
+        { q: "What is ICG fluorescence?", a: "It is a technology that uses a contrast agent (indocyanine green) injected intravenously that glows under near-infrared light. It allows real-time visualization of blood flow, organ perfusion, and tumor localization." },
+        { q: "Is it safer than conventional surgery?", a: "Yes. 3D vision reduces spatial perception errors and ICG fluorescence provides information not visible to the naked eye, such as tissue vascularization before cutting." }
+      ],
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Veterinarians: Refer a Case"
+      }
+    }
+  },
 };
