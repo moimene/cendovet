@@ -31,7 +31,7 @@ const Footer = () => {
                         <p className="text-cyan-200">Centro pionero en cirugía veterinaria mínimamente invasiva.</p>
                         <div className="flex space-x-4">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-cyan-300 hover:text-white transition-colors"><Facebook /></a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-cyan-300 hover:text-white transition-colors"><Instagram /></a>
+                            <a href="https://www.instagram.com/cvcampogibraltar/" target="_blank" rel="noopener noreferrer" className="text-cyan-300 hover:text-white transition-colors"><Instagram /></a>
                         </div>
                     </div>
                     
