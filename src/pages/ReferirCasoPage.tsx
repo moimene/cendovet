@@ -346,7 +346,11 @@ const ReferirCasoPage = () => {
                         </motion.div>
                     )}
                     </AnimatePresence>
+                {/* Imagen sala de espera */}
+                <div className="mt-16 rounded-2xl overflow-hidden shadow-lg">
+                    <img src={salaEsperaImg} alt="Sala de espera de CENDOVET" className="w-full h-64 sm:h-80 object-cover" />
                 </div>
+            </div>
             </div>
         </>
     );
