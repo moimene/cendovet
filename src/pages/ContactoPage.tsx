@@ -37,7 +37,7 @@ const ContactoPage = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = "34622134567"; // Número de CENDOVET
+    const phoneNumber = "34956 097 060"; // Número de CENDOVET
     const message = "Hola, me gustaría hacer una consulta.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -122,7 +122,7 @@ const ContactoPage = () => {
                   </li>
                   <li className="flex items-center">
                     <Phone className="h-5 w-5 mr-3 text-cyan-500" />
-                    <a href="tel:+34622134567" className="hover:text-cyan-500">622 13 45 67</a>
+                    <a href="tel:+34956 097 060" className="hover:text-cyan-500">956 097 060</a>
                   </li>
                   <li className="flex items-center">
                     <Mail className="h-5 w-5 mr-3 text-cyan-500" />
