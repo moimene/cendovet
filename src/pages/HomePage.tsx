@@ -9,6 +9,7 @@ import { useToast } from "@/components/ui/use-toast";
 import { Stethoscope, Heart, Microscope, Atom, MapPin, Award, Bone, Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import GoogleReviews from '@/components/GoogleReviews';
+import HomepageCases from '@/components/HomepageCases';
 
 const containerVariants = {
   hidden: { opacity: 1 },
@@ -169,6 +170,9 @@ const HomePage = () => {
         </div>
       </section>
       
+      {/* Casos Clínicos Destacados */}
+      <HomepageCases />
+
       {/* Reseñas de Google */}
       <GoogleReviews />
 
