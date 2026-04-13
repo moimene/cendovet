@@ -102,8 +102,8 @@ const ServicioMISPage = () => {
             };
         case 'ecografia':
             return {
-                src: ecocardioImg,
-                alt: "Ecocardiografía veterinaria con doppler color"
+                src: ecografiaDopplerImg,
+                alt: "Ecografía veterinaria con doppler color"
             };
         case 'medicina-felina':
             return {
