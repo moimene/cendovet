@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import * as Icons from 'lucide-react';
-import { servicesData } from '@/data/servicesData.js';
+import { servicesData } from '@/data/servicesData';
 import { Button } from '@/components/ui/button';
 import {
   Accordion,

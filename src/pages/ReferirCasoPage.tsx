@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { supabase } from '@/lib/customSupabaseClient';
+ ;
 import { User, PawPrint, Stethoscope, ShieldCheck, ArrowLeft, ArrowRight, Upload, File as FileIcon, X, CheckCircle2, Phone, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
