@@ -19,6 +19,7 @@ import cardiologyBookImg from '@/assets/cardiology_book.png';
 import ecografiaDopplerImg from '@/assets/ecografia_doppler.png';
 import endoscopiaImg from '@/assets/endoscopia_cendovet.png';
 import cirugiaMisImg from '@/assets/cirugia_mis_cendovet.png';
+import cirugiaMisVsImg from '@/assets/cirugia_mis_vs.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -126,7 +127,7 @@ const ServicioMISPage = () => {
   }
 
   const serviceImage = getImageForService(serviceKey);
-  const processImage = cardiologyBookImg;
+  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : cardiologyBookImg;
 
 
   return (
