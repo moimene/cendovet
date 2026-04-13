@@ -95,7 +95,7 @@ const HomePage = () => {
               <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105" onClick={handleActionClick}>
                 Solicitar Cita
               </Button>
-              <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-cyan-900 font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105" onClick={handleActionClick}>
+              <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-cyan-900 font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105" onClick={handleActionClick}>
                 Referir un Caso
               </Button>
             </motion.div>
@@ -224,7 +224,7 @@ const HomePage = () => {
               <h3 className="text-3xl font-bold mb-2 text-cyan-300">Dra. Eva G. Gato</h3>
               <p className="font-semibold text-lg mb-4 text-cyan-400">Pionera en Cirugía MIS Veterinaria</p>
               <p className="mb-6 text-cyan-100">Con más de 15 años de experiencia y cofundadora de MINIMAL, la Dra. Gato es una de las voces más respetadas en endoscopia y cirugía de mínima invasión en España, dedicada a mejorar la calidad de vida de las mascotas.</p>
-              <Button asChild variant="outline" className="text-white border-white hover:bg-white hover:text-cyan-800">
+              <Button asChild variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-cyan-800">
                 <Link to="/sobre-cendovet">Conocer más</Link>
               </Button>
             </motion.div>
