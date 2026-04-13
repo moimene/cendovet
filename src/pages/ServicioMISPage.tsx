@@ -127,7 +127,7 @@ const ServicioMISPage = () => {
   }
 
   const serviceImage = getImageForService(serviceKey);
-  const processImage = cardiologyBookImg;
+  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : cardiologyBookImg;
 
 
   return (
