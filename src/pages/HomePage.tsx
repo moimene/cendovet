@@ -89,15 +89,16 @@ const HomePage = () => {
               Centro pionero en cirugía veterinaria <br className="hidden md:block" />mínimamente invasiva
             </motion.h1>
             <motion.p variants={itemVariants} className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-200" style={{textShadow: '1px 1px 4px rgba(0,0,0,0.7)'}}>
-              Tecnología de vanguardia y un equipo experto dedicados a la salud y bienestar de tu mascota.
+              Menos dolor, recuperación más rápida y máxima precisión quirúrgica para tu mascota, con tecnología de última generación.
             </motion.p>
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105" onClick={handleActionClick}>
-                Solicitar Cita
+                Solicitar Valoración
               </Button>
               <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-cyan-900 font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105" onClick={handleActionClick}>
                 Referir un Caso
               </Button>
+              <p className="text-sm text-cyan-200/70 mt-3">Te contactamos en menos de 24 horas. Sin compromiso.</p>
             </motion.div>
           </motion.div>
         </div>
