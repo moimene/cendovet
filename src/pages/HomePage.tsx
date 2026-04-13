@@ -43,10 +43,10 @@ const HomePage = () => {
   };
 
   const misServices = [
-    { icon: <Stethoscope size={40} className="text-cyan-500" />, title: "Laparoscopia", description: "Cirugía abdominal con incisiones mínimas para una recuperación más rápida." },
-    { icon: <Heart size={40} className="text-rose-500" />, title: "Endoscopia", description: "Diagnóstico y tratamiento de problemas internos sin cirugía abierta." },
-    { icon: <Atom size={40} className="text-amber-500" />, title: "Litotricia Láser", description: "Eliminación de cálculos urinarios sin cirugía, único en Andalucía." },
-    { icon: <Bone size={40} className="text-lime-500" />, title: "Fluoroscopia", description: "Radiografía en tiempo real para procedimientos guiados con máxima precisión." },
+    { icon: <Stethoscope size={40} className="text-cyan-500" />, title: "Laparoscopia", description: "Cirugía abdominal con incisiones mínimas para una recuperación más rápida.", link: "/servicios/laparoscopia" },
+    { icon: <Heart size={40} className="text-rose-500" />, title: "Endoscopia", description: "Diagnóstico y tratamiento de problemas internos sin cirugía abierta.", link: "/servicios/endoscopia" },
+    { icon: <Atom size={40} className="text-amber-500" />, title: "Litotricia Láser", description: "Eliminación de cálculos urinarios sin cirugía, único en Andalucía.", link: "/servicios/litotricia-laser" },
+    { icon: <Bone size={40} className="text-lime-500" />, title: "Fluoroscopia", description: "Radiografía en tiempo real para procedimientos guiados con máxima precisión.", link: "/servicios/fluoroscopia" },
   ];
 
   const whyChooseUs = [
@@ -92,11 +92,11 @@ const HomePage = () => {
               Menos dolor, recuperación más rápida y máxima precisión quirúrgica para tu mascota, con tecnología de última generación.
             </motion.p>
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105" onClick={handleActionClick}>
-                Solicitar Valoración
+              <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105">
+                <Link to="/contacto">Solicitar Valoración</Link>
               </Button>
-              <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-cyan-900 font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105" onClick={handleActionClick}>
-                Referir un Caso
+              <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-cyan-900 font-bold text-lg px-8 py-6 w-full sm:w-auto transition-transform transform hover:scale-105">
+                <Link to="/para-clinicas/referir-caso">Referir un Caso</Link>
               </Button>
               <p className="text-sm text-cyan-200/70 mt-3">Te contactamos en menos de 24 horas. Sin compromiso.</p>
             </motion.div>
@@ -129,7 +129,9 @@ const HomePage = () => {
                 <div className="flex justify-center mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold mb-2 text-cyan-900 dark:text-white">{service.title}</h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">{service.description}</p>
-                <Button variant="link" className="text-cyan-600 dark:text-cyan-400 font-bold" onClick={handleActionClick}>Saber más</Button>
+                <Button asChild variant="link" className="text-cyan-600 dark:text-cyan-400 font-bold">
+                  <Link to={service.link}>Saber más →</Link>
+                </Button>
               </motion.div>
             ))}
           </div>
