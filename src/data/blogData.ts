@@ -1,3 +1,5 @@
+import blogDirofilaria from '@/assets/blog_dirofilaria.png';
+
 export const blogPosts = [
   {
     slug: 'dirofilariosis-gusano-del-corazon',
