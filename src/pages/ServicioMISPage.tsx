@@ -83,8 +83,8 @@ const ServicioMISPage = () => {
             };
         case 'endoscopia':
             return {
-                src: "https://images.unsplash.com/photo-1454017158274-a1239577f5c3",
-                alt: "Veterinaria realizando una endoscopia a un perro"
+                src: endoscopiaImg,
+                alt: "Equipo veterinario de CENDOVET realizando una endoscopia"
             };
         case 'litotricia-laser':
             return {
