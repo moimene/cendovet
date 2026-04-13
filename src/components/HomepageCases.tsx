@@ -15,8 +15,6 @@ interface FeaturedCase {
   instagramUrl: string;
 }
 
-const IG_BASE = "https://www.instagram.com/cvcampogibraltar/";
-
 const featuredCases: FeaturedCase[] = [
   {
     title: "Extracción de anzuelo del esófago sin cirugía",
@@ -26,7 +24,7 @@ const featuredCases: FeaturedCase[] = [
     specialty: "Endoscopia",
     specialtyColor: "from-rose-500 to-pink-600",
     serviceLink: "/servicios/endoscopia",
-    instagramUrl: IG_BASE,
+    instagramUrl: "https://www.instagram.com/p/DSMgZi3CKN6/",
   },
   {
     title: "Litotricia láser: piedras pulverizadas sin bisturí",
@@ -36,7 +34,7 @@ const featuredCases: FeaturedCase[] = [
     specialty: "Litotricia Láser",
     specialtyColor: "from-amber-500 to-orange-600",
     serviceLink: "/servicios/litotricia-laser",
-    instagramUrl: IG_BASE,
+    instagramUrl: "https://www.instagram.com/p/DWqV038iHQx/",
   },
   {
     title: "Stent traqueal: recuperar el aliento",
@@ -45,7 +43,7 @@ const featuredCases: FeaturedCase[] = [
     specialty: "Fluoroscopia",
     specialtyColor: "from-lime-500 to-green-600",
     serviceLink: "/servicios/fluoroscopia",
-    instagramUrl: IG_BASE,
+    instagramUrl: "https://www.instagram.com/p/DWor0MHCF7p/",
   },
   {
     title: "Extracción de filarias del corazón",
@@ -54,7 +52,7 @@ const featuredCases: FeaturedCase[] = [
     specialty: "Cardiología",
     specialtyColor: "from-red-500 to-rose-600",
     serviceLink: "/servicios/cardiologia",
-    instagramUrl: IG_BASE,
+    instagramUrl: "https://www.instagram.com/p/DVWQ-d8CIy7/",
   },
   {
     title: "Castración laparoscópica: 2 incisiones de 5mm",
@@ -64,7 +62,7 @@ const featuredCases: FeaturedCase[] = [
     specialty: "Laparoscopia",
     specialtyColor: "from-cyan-500 to-blue-600",
     serviceLink: "/servicios/laparoscopia",
-    instagramUrl: IG_BASE,
+    instagramUrl: "https://www.instagram.com/p/DWor0MHCF7p/",
   },
   {
     title: "Tecnología 3D y 4K: cirugía de otra dimensión",
@@ -74,7 +72,7 @@ const featuredCases: FeaturedCase[] = [
     specialty: "Innovación",
     specialtyColor: "from-violet-500 to-purple-600",
     serviceLink: "/servicios/laparoscopia",
-    instagramUrl: IG_BASE,
+    instagramUrl: "https://www.instagram.com/p/DUr-f_4CJNl/",
   },
 ];
 
