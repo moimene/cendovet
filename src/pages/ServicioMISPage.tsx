@@ -18,6 +18,7 @@ import ecocardioCardioImg from '@/assets/ecocardio_cardiologia.jpg';
 import cardiologyBookImg from '@/assets/cardiology_book.png';
 import ecografiaDopplerImg from '@/assets/ecografia_doppler.png';
 import endoscopiaImg from '@/assets/endoscopia_cendovet.png';
+import cirugiaMisImg from '@/assets/cirugia_mis_cendovet.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
