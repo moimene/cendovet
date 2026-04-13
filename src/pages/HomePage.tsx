@@ -208,7 +208,7 @@ const HomePage = () => {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
             >
-              <img alt="Dra. Eva G. Gato, directora médica de CENDOVET" className="rounded-full w-64 h-64 object-cover border-4 border-cyan-500 shadow-lg" src={draEvaPhoto} />
+              <img alt="Dra. Eva G. Gato, directora médica de CENDOVET" className="rounded-full w-72 h-72 object-cover object-top border-4 border-cyan-500 shadow-lg bg-cyan-700" src={draEvaPhoto} />
             </motion.div>
             <motion.div 
               className="md:col-span-2"
