@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Award, Users, HeartHandshake, Microscope, Target, CheckCircle, Star, BrainCircuit, Microscope as Telescope, Group } from 'lucide-react';
+import draEvaSobre from '@/assets/dra_eva_sobre.png';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -71,7 +72,7 @@ const SobreCendovetPage = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              <img alt="Dra. Eva García Gato, directora médica de CENDOVET" className="w-full max-w-md mx-auto h-auto rounded-full shadow-2xl aspect-square object-cover" src="https://images.unsplash.com/photo-1685022036259-04cf91a89af1" />
+              <img alt="Dra. Eva García Gato, directora médica de CENDOVET" className="w-full max-w-md mx-auto h-auto rounded-full shadow-2xl aspect-square object-cover" src={draEvaSobre} />
             </motion.div>
           </div>
         </Section>
