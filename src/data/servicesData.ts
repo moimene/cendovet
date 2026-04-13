@@ -710,7 +710,515 @@ export const servicesData = {
     }
   },
   'medicina-felina': {
-    es: { title: "Medicina Felina Especializada" },
-    en: { title: "Specialized Feline Medicine" }
+    es: {
+      badge: "Especialidad Felina",
+      title: "Medicina felina especializada: cuidado integral para tu gato",
+      subtitle: "Entorno Cat Friendly con protocolos adaptados al bienestar y las necesidades únicas del paciente felino.",
+      description: {
+        title: "¿Por qué un servicio específico para gatos?",
+        paragraphs: [
+          "Los gatos no son perros pequeños. Tienen una fisiología, metabolismo farmacológico y patrones de estrés completamente distintos. Un enfoque médico generalista puede pasar por alto signos clínicos sutiles o someter al paciente a un estrés innecesario que empeora el pronóstico.",
+          "En CENDOVET contamos con un área Cat Friendly diseñada para minimizar el estrés del paciente felino: sala de espera separada, hospitalización independiente con feromonoterapia y protocolos de manejo específicos. Nuestro equipo tiene formación avanzada en medicina felina para ofrecer un diagnóstico y tratamiento de máxima calidad."
+        ]
+      },
+      benefits: {
+        title: "Ventajas de la medicina felina especializada",
+        items: [
+          { icon: "Shield", text: "Entorno Cat Friendly con sala y hospitalización separada para gatos." },
+          { icon: "HeartPulse", text: "Protocolos anestésicos y farmacológicos adaptados al metabolismo felino." },
+          { icon: "Stethoscope", text: "Diagnóstico avanzado con ecografía, endoscopia y analíticas felinas." },
+          { icon: "Clock", text: "Manejo bajo estrés mínimo (Fear Free) en todas las fases del proceso." },
+          { icon: "Microscope", text: "Detección precoz de enfermedades crónicas felinas: ERC, hipertiroidismo, diabetes." },
+          { icon: "Award", text: "Equipo con formación específica en medicina interna felina." }
+        ]
+      },
+      process: {
+        title: "Cómo cuidamos a tu gato en CENDOVET",
+        paragraphs: [
+          "Desde la llegada a la clínica, tu gato es recibido en un entorno diseñado para él: sala de espera tranquila, difusores de Feliway y manejo suave por personal formado en técnicas Fear Free.",
+          "Disponemos de equipamiento adaptado para pacientes felinos de todos los tamaños, desde ecógrafos con sondas de alta frecuencia hasta endoscopios flexibles de pequeño calibre para diagnósticos mínimamente invasivos.",
+          "Mantenemos comunicación constante con tu veterinario habitual, compartiendo informes y coordinando el seguimiento para que tu gato reciba una atención continua y coherente."
+        ],
+        equipment: [
+          "Hospitalización felina independiente con control de temperatura y feromonoterapia",
+          "Ecografía con sondas de alta frecuencia para pacientes pequeños",
+          "Endoscopia flexible de pequeño calibre",
+          "Analizador hematológico y bioquímico con perfiles felinos específicos",
+          "Monitorización anestésica multiparamétrica adaptada"
+        ]
+      },
+      faqs: {
+        title: "Preguntas Frecuentes (FAQs)",
+        items: [
+          {
+            question: "¿Mi gato va a estar separado de los perros?",
+            answer: "Sí. Disponemos de sala de espera, consulta y hospitalización separadas para gatos, con difusores de feromonas y un ambiente tranquilo para minimizar el estrés."
+          },
+          {
+            question: "¿Qué enfermedades felinas tratáis con más frecuencia?",
+            answer: "Enfermedad renal crónica, hipertiroidismo, diabetes mellitus, enfermedad inflamatoria intestinal (IBD), asma felina, cistitis idiopática y patologías hepáticas (lipidosis, colangitis)."
+          },
+          {
+            question: "¿Realizáis cirugías mínimamente invasivas en gatos?",
+            answer: "Sí. Adaptamos nuestras técnicas laparoscópicas y endoscópicas al tamaño del paciente felino, con instrumental específico de pequeño calibre."
+          },
+          {
+            question: "¿Puedo pedir cita directamente o necesito referencia de mi veterinario?",
+            answer: "Trabajamos principalmente como centro de referencia, pero también atendemos consultas directas. Te recomendamos contactarnos para valorar tu caso y coordinar con tu veterinario habitual."
+          }
+        ]
+      },
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir Caso"
+      }
+    },
+    en: {
+      badge: "Feline Specialty",
+      title: "Specialized Feline Medicine: Comprehensive Care for Your Cat",
+      subtitle: "Cat Friendly environment with protocols adapted to the welfare and unique needs of feline patients.",
+      description: {
+        title: "Why a specific service for cats?",
+        paragraphs: [
+          "Cats are not small dogs. They have completely different physiology, drug metabolism, and stress patterns. A generalist medical approach may miss subtle clinical signs or subject the patient to unnecessary stress that worsens prognosis.",
+          "At CENDOVET we have a Cat Friendly area designed to minimize feline patient stress: separate waiting room, independent hospitalization with pheromone therapy, and specific handling protocols."
+        ]
+      },
+      benefits: {
+        title: "Advantages of Specialized Feline Medicine",
+        items: [
+          { icon: "Shield", text: "Cat Friendly environment with separate room and hospitalization for cats." },
+          { icon: "HeartPulse", text: "Anesthetic and pharmacological protocols adapted to feline metabolism." },
+          { icon: "Stethoscope", text: "Advanced diagnostics with ultrasound, endoscopy, and feline analytics." },
+          { icon: "Clock", text: "Minimum stress handling (Fear Free) in all process phases." },
+          { icon: "Microscope", text: "Early detection of chronic feline diseases: CKD, hyperthyroidism, diabetes." },
+          { icon: "Award", text: "Team with specific training in feline internal medicine." }
+        ]
+      },
+      process: {
+        title: "How We Care for Your Cat at CENDOVET",
+        paragraphs: [
+          "From arrival at the clinic, your cat is received in an environment designed for them: quiet waiting room, Feliway diffusers, and gentle handling by Fear Free trained staff.",
+          "We have equipment adapted for feline patients of all sizes, from ultrasound with high-frequency probes to small-caliber flexible endoscopes for minimally invasive diagnostics.",
+          "We maintain constant communication with your regular veterinarian, sharing reports and coordinating follow-up."
+        ],
+        equipment: [
+          "Independent feline hospitalization with temperature control and pheromone therapy",
+          "Ultrasound with high-frequency probes for small patients",
+          "Small-caliber flexible endoscopy",
+          "Hematological and biochemical analyzer with specific feline profiles",
+          "Adapted multiparametric anesthetic monitoring"
+        ]
+      },
+      faqs: {
+        title: "Frequently Asked Questions (FAQs)",
+        items: [
+          {
+            question: "Will my cat be separated from dogs?",
+            answer: "Yes. We have separate waiting rooms, consultation rooms, and hospitalization for cats, with pheromone diffusers and a calm environment."
+          },
+          {
+            question: "What feline diseases do you treat most frequently?",
+            answer: "Chronic kidney disease, hyperthyroidism, diabetes mellitus, inflammatory bowel disease (IBD), feline asthma, idiopathic cystitis, and hepatic pathologies."
+          },
+          {
+            question: "Do you perform minimally invasive surgeries on cats?",
+            answer: "Yes. We adapt our laparoscopic and endoscopic techniques to feline patient size, with specific small-caliber instruments."
+          },
+          {
+            question: "Can I make an appointment directly or do I need a referral?",
+            answer: "We primarily work as a referral center, but we also accept direct consultations. We recommend contacting us to assess your case and coordinate with your regular veterinarian."
+          }
+        ]
+      },
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Vets: Refer a Case"
+      }
+    }
+  },
+  'cirugia-mis': {
+    es: {
+      badge: "Cirugía MIS",
+      title: "Cirugía mínimamente invasiva: máxima precisión, mínimo trauma",
+      subtitle: "Técnicas quirúrgicas avanzadas que reducen el dolor, aceleran la recuperación y mejoran los resultados.",
+      description: {
+        title: "¿Qué es la cirugía mínimamente invasiva (MIS)?",
+        paragraphs: [
+          "La cirugía mínimamente invasiva (MIS) agrupa todas las técnicas quirúrgicas que permiten operar a través de incisiones de pocos milímetros, guiados por cámaras de alta definición y monitores. Frente a la cirugía abierta convencional, la MIS reduce drásticamente el trauma tisular, el dolor postoperatorio y el tiempo de recuperación.",
+          "En CENDOVET somos centro de referencia en cirugía MIS veterinaria, combinando laparoscopia, toracoscopia, endoscopia intervencionista y técnicas asistidas por fluoroscopia para ofrecer el abordaje más seguro y eficaz en cada caso."
+        ]
+      },
+      benefits: {
+        title: "Ventajas de la cirugía mínimamente invasiva",
+        items: [
+          { icon: "Minimize2", text: "Incisiones de 3-10 mm que minimizan el trauma quirúrgico." },
+          { icon: "HeartPulse", text: "Reducción del dolor postoperatorio hasta un 65% respecto a cirugía abierta." },
+          { icon: "Clock", text: "Alta hospitalaria en el mismo día en la mayoría de procedimientos." },
+          { icon: "Shield", text: "Menor tasa de infecciones y complicaciones postquirúrgicas." },
+          { icon: "Stethoscope", text: "Visualización amplificada HD para una precisión diagnóstica y quirúrgica superior." },
+          { icon: "Award", text: "Equipo especializado con formación continua en técnicas MIS." }
+        ]
+      },
+      process: {
+        title: "Nuestro enfoque en CENDOVET",
+        paragraphs: [
+          "Cada caso se evalúa individualmente para determinar el abordaje MIS más adecuado. Nuestro equipo multidisciplinar valora la mejor técnica —laparoscopia, endoscopia, fluoroscopia o combinación— según la patología, el tamaño del paciente y sus circunstancias clínicas.",
+          "Contamos con un quirófano totalmente equipado para cirugía MIS, con torre de laparoscopia Karl Storz, endoscopios flexibles y rígidos, fluoroscopio digital y equipo láser, todo ello respaldado por un protocolo anestésico avanzado con monitorización multiparamétrica.",
+          "Trabajamos en estrecha colaboración con los veterinarios remitentes, proporcionando informes detallados y seguimiento coordinado para garantizar la mejor evolución del paciente."
+        ],
+        equipment: [
+          "Torre de laparoscopia Karl Storz con óptica HD",
+          "Endoscopios flexibles y rígidos de distintos calibres",
+          "Fluoroscopio digital de arco en C",
+          "Láser de diodo 980nm para hemostasia y corte",
+          "Anestesia inhalatoria con monitorización multiparamétrica completa"
+        ]
+      },
+      faqs: {
+        title: "Preguntas Frecuentes (FAQs)",
+        items: [
+          {
+            question: "¿Todos los procedimientos se pueden hacer de forma mínimamente invasiva?",
+            answer: "No todos, pero una gran mayoría sí. En CENDOVET evaluamos cada caso para determinar si el abordaje MIS es el más seguro y eficaz. Si no lo es, recomendamos la mejor alternativa y lo explicamos con transparencia."
+          },
+          {
+            question: "¿La cirugía MIS es segura para animales pequeños?",
+            answer: "Sí. Disponemos de instrumental adaptado a pacientes de todos los tamaños, incluidos gatos y razas toy. Los protocolos anestésicos se individualizan para garantizar la máxima seguridad."
+          },
+          {
+            question: "¿Cuánto cuesta una cirugía mínimamente invasiva?",
+            answer: "El coste varía según el procedimiento y la complejidad del caso. Proporcionamos presupuesto detallado tras la evaluación inicial. La inversión se compensa con una recuperación más corta y menos complicaciones."
+          },
+          {
+            question: "¿Necesito referencia de mi veterinario?",
+            answer: "Trabajamos como centro de referencia, pero también aceptamos consultas directas. Siempre coordinamos con tu veterinario habitual para garantizar continuidad asistencial."
+          }
+        ]
+      },
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir Caso"
+      }
+    },
+    en: {
+      badge: "MIS Surgery",
+      title: "Minimally Invasive Surgery: Maximum Precision, Minimum Trauma",
+      subtitle: "Advanced surgical techniques that reduce pain, speed recovery, and improve outcomes.",
+      description: {
+        title: "What is minimally invasive surgery (MIS)?",
+        paragraphs: [
+          "Minimally invasive surgery (MIS) encompasses all surgical techniques that allow operating through millimeter-sized incisions, guided by high-definition cameras. Compared to conventional open surgery, MIS drastically reduces tissue trauma, postoperative pain, and recovery time.",
+          "At CENDOVET we are a reference center for veterinary MIS surgery, combining laparoscopy, thoracoscopy, interventional endoscopy, and fluoroscopy-assisted techniques."
+        ]
+      },
+      benefits: {
+        title: "Advantages of Minimally Invasive Surgery",
+        items: [
+          { icon: "Minimize2", text: "3-10 mm incisions that minimize surgical trauma." },
+          { icon: "HeartPulse", text: "Up to 65% reduction in postoperative pain compared to open surgery." },
+          { icon: "Clock", text: "Same-day hospital discharge for most procedures." },
+          { icon: "Shield", text: "Lower rate of infections and post-surgical complications." },
+          { icon: "Stethoscope", text: "Amplified HD visualization for superior diagnostic and surgical precision." },
+          { icon: "Award", text: "Specialized team with ongoing MIS training." }
+        ]
+      },
+      process: {
+        title: "Our Approach at CENDOVET",
+        paragraphs: [
+          "Each case is individually assessed to determine the most appropriate MIS approach. Our multidisciplinary team evaluates the best technique based on the pathology, patient size, and clinical circumstances.",
+          "We have a fully equipped MIS operating room with Karl Storz laparoscopy tower, flexible and rigid endoscopes, digital fluoroscope, and laser equipment, all backed by advanced anesthetic monitoring.",
+          "We work closely with referring veterinarians, providing detailed reports and coordinated follow-up."
+        ],
+        equipment: [
+          "Karl Storz laparoscopy tower with HD optics",
+          "Flexible and rigid endoscopes of various calibers",
+          "Digital C-arm fluoroscope",
+          "980nm diode laser for hemostasis and cutting",
+          "Inhalant anesthesia with complete multiparametric monitoring"
+        ]
+      },
+      faqs: {
+        title: "Frequently Asked Questions (FAQs)",
+        items: [
+          {
+            question: "Can all procedures be done minimally invasively?",
+            answer: "Not all, but a large majority can. At CENDOVET we evaluate each case to determine if MIS is the safest and most effective approach."
+          },
+          {
+            question: "Is MIS surgery safe for small animals?",
+            answer: "Yes. We have instruments adapted for patients of all sizes, including cats and toy breeds."
+          },
+          {
+            question: "How much does minimally invasive surgery cost?",
+            answer: "Cost varies by procedure and case complexity. We provide a detailed estimate after the initial evaluation."
+          },
+          {
+            question: "Do I need a referral from my vet?",
+            answer: "We work as a referral center but also accept direct consultations. We always coordinate with your regular vet."
+          }
+        ]
+      },
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Vets: Refer a Case"
+      }
+    }
+  },
+  'traumatologia': {
+    es: {
+      badge: "Traumatología MIS",
+      title: "Traumatología veterinaria mínimamente invasiva",
+      subtitle: "Artroscopia y técnicas asistidas por fluoroscopia para fracturas y patología articular con mínima invasión.",
+      description: {
+        title: "Traumatología de precisión para tu mascota",
+        paragraphs: [
+          "La traumatología veterinaria ha evolucionado enormemente con la incorporación de técnicas mínimamente invasivas. En CENDOVET utilizamos artroscopia, osteosíntesis asistida por fluoroscopia y abordajes percutáneos para tratar fracturas y patologías articulares con el menor trauma posible.",
+          "Estas técnicas permiten una visualización directa de las articulaciones en alta definición, un posicionamiento preciso de implantes guiado por fluoroscopia en tiempo real y una recuperación funcional más rápida que con los abordajes quirúrgicos tradicionales."
+        ]
+      },
+      benefits: {
+        title: "Ventajas de la traumatología MIS",
+        items: [
+          { icon: "Bone", text: "Reducción de fracturas con mínima exposición quirúrgica y fluoroscopia." },
+          { icon: "Stethoscope", text: "Artroscopia diagnóstica y terapéutica para patología articular." },
+          { icon: "HeartPulse", text: "Menor dolor postoperatorio y recuperación funcional acelerada." },
+          { icon: "Shield", text: "Preservación de tejidos blandos y vascularización periosteal." },
+          { icon: "Clock", text: "Rehabilitación más temprana y retorno a la actividad en menos tiempo." },
+          { icon: "Award", text: "Planificación 3D de cada caso para máxima precisión quirúrgica." }
+        ]
+      },
+      process: {
+        title: "Nuestro abordaje traumatológico",
+        paragraphs: [
+          "Cada caso traumatológico comienza con un estudio de imagen completo (radiografía digital, TC cuando es necesario) para planificar el abordaje quirúrgico óptimo. Utilizamos software de planificación 3D para fracturas complejas.",
+          "En quirófano, el fluoroscopio digital de arco en C nos permite verificar en tiempo real la reducción de fracturas y el posicionamiento de implantes, minimizando la necesidad de abordajes abiertos extensos.",
+          "Coordinamos un plan de rehabilitación postoperatoria con el veterinario remitente para optimizar la recuperación funcional del paciente."
+        ],
+        equipment: [
+          "Fluoroscopio digital de arco en C para guía intraoperatoria",
+          "Artroscopio Karl Storz veterinario",
+          "Sistemas de fijación interna y externa de última generación",
+          "Radiografía digital de alta resolución",
+          "Software de planificación quirúrgica 3D"
+        ]
+      },
+      faqs: {
+        title: "Preguntas Frecuentes (FAQs)",
+        items: [
+          {
+            question: "¿Qué fracturas se pueden tratar de forma mínimamente invasiva?",
+            answer: "Muchas fracturas de huesos largos, articulares y de pelvis pueden beneficiarse de técnicas percutáneas o asistidas por fluoroscopia. Evaluamos cada caso para determinar el abordaje óptimo."
+          },
+          {
+            question: "¿Realizáis artroscopia en perros y gatos?",
+            answer: "Sí. La artroscopia nos permite diagnosticar y tratar patologías articulares como fragmentación del proceso coronoides, OCD, y rotura del ligamento cruzado con mínima invasión."
+          },
+          {
+            question: "¿Cuánto tarda la recuperación tras una fractura tratada con MIS?",
+            answer: "La recuperación es generalmente más rápida que con cirugía abierta, gracias a la menor agresión a los tejidos blandos. El tiempo exacto depende del tipo de fractura y del paciente."
+          },
+          {
+            question: "¿Hacéis rehabilitación postoperatoria?",
+            answer: "Diseñamos un plan de rehabilitación individualizado y lo coordinamos con tu veterinario habitual o con centros de rehabilitación de referencia."
+          }
+        ]
+      },
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir Caso"
+      }
+    },
+    en: {
+      badge: "MIS Orthopedics",
+      title: "Minimally Invasive Veterinary Orthopedics",
+      subtitle: "Arthroscopy and fluoroscopy-assisted techniques for fractures and joint pathology with minimal invasion.",
+      description: {
+        title: "Precision orthopedics for your pet",
+        paragraphs: [
+          "Veterinary orthopedics has evolved enormously with minimally invasive techniques. At CENDOVET we use arthroscopy, fluoroscopy-assisted osteosynthesis, and percutaneous approaches to treat fractures and joint pathologies with the least possible trauma.",
+          "These techniques allow direct HD joint visualization, precise implant positioning guided by real-time fluoroscopy, and faster functional recovery than traditional surgical approaches."
+        ]
+      },
+      benefits: {
+        title: "Advantages of MIS Orthopedics",
+        items: [
+          { icon: "Bone", text: "Fracture reduction with minimal surgical exposure and fluoroscopy guidance." },
+          { icon: "Stethoscope", text: "Diagnostic and therapeutic arthroscopy for joint pathology." },
+          { icon: "HeartPulse", text: "Less postoperative pain and accelerated functional recovery." },
+          { icon: "Shield", text: "Preservation of soft tissues and periosteal vascularization." },
+          { icon: "Clock", text: "Earlier rehabilitation and faster return to activity." },
+          { icon: "Award", text: "3D planning of each case for maximum surgical precision." }
+        ]
+      },
+      process: {
+        title: "Our Orthopedic Approach",
+        paragraphs: [
+          "Each orthopedic case begins with a complete imaging study to plan the optimal surgical approach. We use 3D planning software for complex fractures.",
+          "In the operating room, the digital C-arm fluoroscope allows us to verify fracture reduction and implant positioning in real-time.",
+          "We coordinate a postoperative rehabilitation plan with the referring veterinarian."
+        ],
+        equipment: [
+          "Digital C-arm fluoroscope for intraoperative guidance",
+          "Karl Storz veterinary arthroscope",
+          "State-of-the-art internal and external fixation systems",
+          "High-resolution digital radiography",
+          "3D surgical planning software"
+        ]
+      },
+      faqs: {
+        title: "Frequently Asked Questions (FAQs)",
+        items: [
+          {
+            question: "What fractures can be treated minimally invasively?",
+            answer: "Many long bone, articular, and pelvic fractures can benefit from percutaneous or fluoroscopy-assisted techniques."
+          },
+          {
+            question: "Do you perform arthroscopy on dogs and cats?",
+            answer: "Yes. Arthroscopy allows us to diagnose and treat joint pathologies like coronoid fragmentation, OCD, and cruciate ligament rupture."
+          },
+          {
+            question: "How long is the recovery after an MIS-treated fracture?",
+            answer: "Recovery is generally faster than with open surgery. Exact timing depends on fracture type and patient."
+          },
+          {
+            question: "Do you do postoperative rehabilitation?",
+            answer: "We design an individualized rehabilitation plan and coordinate with your regular vet or reference rehabilitation centers."
+          }
+        ]
+      },
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Vets: Refer a Case"
+      }
+    }
+  },
+  'neurologia': {
+    es: {
+      badge: "Neurología MIS",
+      title: "Neurología veterinaria con técnicas mínimamente invasivas",
+      subtitle: "Diagnóstico avanzado y abordaje neuroquirúrgico de precisión para patologías del sistema nervioso.",
+      description: {
+        title: "Neurología veterinaria de alta precisión",
+        paragraphs: [
+          "Las patologías neurológicas en perros y gatos requieren un diagnóstico preciso y un abordaje terapéutico especializado. En CENDOVET combinamos neurología clínica avanzada con técnicas de imagen y abordajes quirúrgicos mínimamente invasivos para ofrecer la mejor opción en cada caso.",
+          "Desde hernias discales hasta patologías intracraneales, nuestro equipo evalúa cada paciente de forma integral, utilizando herramientas diagnósticas de última generación y técnicas quirúrgicas que minimizan el trauma tisular y optimizan la recuperación neurológica."
+        ]
+      },
+      benefits: {
+        title: "Ventajas de nuestro servicio de neurología",
+        items: [
+          { icon: "Stethoscope", text: "Exploración neurológica completa y localización precisa de la lesión." },
+          { icon: "Microscope", text: "Diagnóstico avanzado con TC, mielografía y análisis de LCR." },
+          { icon: "Minimize2", text: "Abordajes quirúrgicos miniinvasivos guiados por fluoroscopia." },
+          { icon: "HeartPulse", text: "Protocolos de neuroprotección perioperatoria." },
+          { icon: "Clock", text: "Rehabilitación neurológica precoz y plan de seguimiento individualizado." },
+          { icon: "Award", text: "Equipo con formación específica en neurocirugía veterinaria." }
+        ]
+      },
+      process: {
+        title: "Cómo abordamos los casos neurológicos",
+        paragraphs: [
+          "El proceso comienza con una exploración neurológica detallada para localizar la lesión dentro del sistema nervioso. A partir de ahí, seleccionamos las pruebas de imagen más adecuadas (radiografía, mielografía con fluoroscopia, TC) para confirmar el diagnóstico.",
+          "Cuando la cirugía es necesaria, utilizamos abordajes miniinvasivos siempre que sea posible: hemilaminectomía mínima, fenestración percutánea o descompresión guiada por fluoroscopia, según el caso.",
+          "Diseñamos un plan de rehabilitación neurológica individualizado y coordinamos el seguimiento con el veterinario remitente para optimizar la recuperación funcional."
+        ],
+        equipment: [
+          "Fluoroscopio digital de arco en C para neurocirugía guiada",
+          "Motor quirúrgico de alta velocidad para cirugía espinal",
+          "Instrumental de microcirugía específico para neurocirugía",
+          "Equipo para análisis de líquido cefalorraquídeo (LCR)",
+          "Monitorización anestésica avanzada con capnografía y presión arterial invasiva"
+        ]
+      },
+      faqs: {
+        title: "Preguntas Frecuentes (FAQs)",
+        items: [
+          {
+            question: "¿Qué patologías neurológicas tratáis?",
+            answer: "Hernias discales (cervicales y toracolumbares), síndrome de wobbler, fracturas vertebrales, tumores espinales e intracraneales, hidrocefalia, epilepsia y patologías neuromusculares."
+          },
+          {
+            question: "¿Cuándo es urgente acudir al neurólogo veterinario?",
+            answer: "Pérdida aguda de movilidad en las patas, dolor cervical o lumbar intenso, convulsiones de nueva aparición, cabeza ladeada o pérdida de equilibrio, y cualquier deterioro neurológico rápido son motivos de consulta urgente."
+          },
+          {
+            question: "¿La recuperación tras neurocirugía es larga?",
+            answer: "Depende de la patología y el grado de afectación previo. Muchos pacientes muestran mejoría en las primeras 48-72 horas tras la descompresión medular. La rehabilitación precoz es clave para optimizar resultados."
+          },
+          {
+            question: "¿Necesito referencia de mi veterinario?",
+            answer: "Es recomendable pero no imprescindible. Siempre coordinamos con tu veterinario habitual para garantizar una atención integral y continuada."
+          }
+        ]
+      },
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir Caso"
+      }
+    },
+    en: {
+      badge: "MIS Neurology",
+      title: "Veterinary Neurology with Minimally Invasive Techniques",
+      subtitle: "Advanced diagnostics and precision neurosurgical approach for nervous system pathologies.",
+      description: {
+        title: "High-precision veterinary neurology",
+        paragraphs: [
+          "Neurological pathologies in dogs and cats require precise diagnosis and a specialized therapeutic approach. At CENDOVET we combine advanced clinical neurology with imaging techniques and minimally invasive surgical approaches.",
+          "From disc herniations to intracranial pathologies, our team evaluates each patient comprehensively, using state-of-the-art diagnostic tools and surgical techniques that minimize tissue trauma."
+        ]
+      },
+      benefits: {
+        title: "Advantages of Our Neurology Service",
+        items: [
+          { icon: "Stethoscope", text: "Complete neurological examination and precise lesion localization." },
+          { icon: "Microscope", text: "Advanced diagnostics with CT, myelography, and CSF analysis." },
+          { icon: "Minimize2", text: "Minimally invasive surgical approaches guided by fluoroscopy." },
+          { icon: "HeartPulse", text: "Perioperative neuroprotection protocols." },
+          { icon: "Clock", text: "Early neurological rehabilitation and individualized follow-up plan." },
+          { icon: "Award", text: "Team with specific training in veterinary neurosurgery." }
+        ]
+      },
+      process: {
+        title: "How We Approach Neurological Cases",
+        paragraphs: [
+          "The process begins with a detailed neurological examination to locate the lesion within the nervous system. From there, we select the most appropriate imaging tests to confirm the diagnosis.",
+          "When surgery is needed, we use minimally invasive approaches whenever possible: minimal hemilaminectomy, percutaneous fenestration, or fluoroscopy-guided decompression.",
+          "We design an individualized neurological rehabilitation plan and coordinate follow-up with the referring veterinarian."
+        ],
+        equipment: [
+          "Digital C-arm fluoroscope for guided neurosurgery",
+          "High-speed surgical motor for spinal surgery",
+          "Specific microsurgery instruments for neurosurgery",
+          "Equipment for cerebrospinal fluid (CSF) analysis",
+          "Advanced anesthetic monitoring with capnography and invasive blood pressure"
+        ]
+      },
+      faqs: {
+        title: "Frequently Asked Questions (FAQs)",
+        items: [
+          {
+            question: "What neurological pathologies do you treat?",
+            answer: "Disc herniations, wobbler syndrome, vertebral fractures, spinal and intracranial tumors, hydrocephalus, epilepsy, and neuromuscular pathologies."
+          },
+          {
+            question: "When is it urgent to see a veterinary neurologist?",
+            answer: "Acute loss of limb mobility, intense cervical or lumbar pain, new-onset seizures, head tilt or balance loss, and any rapid neurological deterioration."
+          },
+          {
+            question: "Is recovery after neurosurgery long?",
+            answer: "It depends on the pathology and degree of prior involvement. Many patients show improvement within 48-72 hours after spinal decompression. Early rehabilitation is key."
+          },
+          {
+            question: "Do I need a referral from my vet?",
+            answer: "Recommended but not required. We always coordinate with your regular vet for comprehensive, continuous care."
+          }
+        ]
+      },
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Vets: Refer a Case"
+      }
+    }
   },
 };

@@ -26,7 +26,7 @@ const BlogPostPage = () => {
         <div className="container mx-auto px-4 py-8 md:py-16">
           <motion.div 
             className="max-w-4xl mx-auto"
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
@@ -75,7 +75,7 @@ const BlogPostPage = () => {
               <img
                 className="w-full h-auto object-cover"
                 alt={`Imagen principal del artículo ${post.title}`}
-               src="https://images.unsplash.com/photo-1601941707251-5a887e9db2e1" />
+               src={`${post.image}?w=1200&auto=format&fit=crop`} />
             </div>
 
             {/* Post Content */}

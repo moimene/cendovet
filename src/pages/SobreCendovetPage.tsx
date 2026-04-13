@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Section = ({ children, className = '' }) => (
   <motion.section
     className={`py-16 sm:py-20 ${className}`}
-    initial={{ opacity: 0, y: 50 }}
+    initial={{ opacity: 1, y: 0 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
     transition={{ duration: 0.8 }}
@@ -21,7 +21,7 @@ const Section = ({ children, className = '' }) => (
 const StatCard = ({ icon: Icon, value, label, delay }) => (
     <motion.div 
         className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg text-center"
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 1, y: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay }}
@@ -68,7 +68,7 @@ const SobreCendovetPage = () => {
             </div>
             <motion.div 
               className="relative"
-              initial={{ scale: 0.95, opacity: 0 }}
+              initial={{ scale: 1, opacity: 1 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1 }}
             >

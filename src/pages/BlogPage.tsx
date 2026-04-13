@@ -21,7 +21,7 @@ const BlogPage = () => {
   });
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
@@ -31,7 +31,7 @@ const BlogPage = () => {
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 1, y: 0 },
     visible: { opacity: 1, y: 0, transition: { type: 'spring' as const, stiffness: 100 } },
     hover: { scale: 1.03, transition: { duration: 0.3 } }
   };
@@ -48,7 +48,7 @@ const BlogPage = () => {
         <div className="container mx-auto px-4 py-16 text-center">
           <motion.h1 
             className="text-4xl md:text-5xl font-bold text-cyan-900 dark:text-cyan-400 mb-4"
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
@@ -56,7 +56,7 @@ const BlogPage = () => {
           </motion.h1>
           <motion.p 
             className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
@@ -120,7 +120,7 @@ const BlogPage = () => {
                   <img
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                     alt={`Imagen para el artículo ${post.title}`}
-                   src="https://images.unsplash.com/photo-1601941707251-5a887e9db2e1" />
+                   src={`${post.image}?w=800&auto=format&fit=crop`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                      <div className="flex flex-wrap gap-2">

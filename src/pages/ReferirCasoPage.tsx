@@ -46,7 +46,7 @@ const fullSchema = step1Schema.merge(step2Schema).merge(step3Schema);
 
 // Step Components
 const Step1Form = ({ register, errors }) => (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+    <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <h2 className="text-2xl font-bold text-cyan-900 dark:text-white mb-6">Datos del Veterinario/Clínica</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="space-y-1"><Label htmlFor="vetName">Nombre del veterinario remitente *</Label><Input id="vetName" placeholder="Dr./Dra. Nombre Apellidos" {...register("vetName")} /><p className="text-red-500 text-xs">{errors.vetName?.message}</p></div>
@@ -59,7 +59,7 @@ const Step1Form = ({ register, errors }) => (
 );
 
 const Step2Form = ({ register, errors }) => (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+    <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <h2 className="text-2xl font-bold text-cyan-900 dark:text-white mb-6">Datos del Propietario y Mascota</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="sm:col-span-2 space-y-1"><Label htmlFor="ownerName">Nombre del propietario *</Label><Input id="ownerName" placeholder="Nombre completo del propietario" {...register("ownerName")} /><p className="text-red-500 text-xs">{errors.ownerName?.message}</p></div>
@@ -109,7 +109,7 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
     };
 
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+        <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <h2 className="text-2xl font-bold text-cyan-900 dark:text-white mb-6">Detalles Clínicos del Caso</h2>
             <div className="space-y-6">
                 <div className="space-y-1">
@@ -176,7 +176,7 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
 const Step4Review = ({ getValues, uploadedFiles }) => {
     const formData = getValues();
     return (
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+        <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <h2 className="text-2xl font-bold text-cyan-900 dark:text-white mb-2">Revise su información antes de enviar</h2>
             <p className="text-slate-600 dark:text-slate-300 mb-6">Puede volver atrás para modificar cualquier información.</p>
             <div className="space-y-4">
@@ -209,7 +209,7 @@ const Step4Review = ({ getValues, uploadedFiles }) => {
 };
 
 const SuccessScreen = ({ onReset }) => (
-    <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-10">
+    <motion.div initial={{ opacity: 1, scale: 1 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-10">
         <CheckCircle2 className="mx-auto h-20 w-20 text-green-500" />
         <h2 className="mt-4 text-3xl font-bold text-cyan-900 dark:text-white">¡Gracias! Hemos recibido la información del caso</h2>
         <p className="mt-2 text-slate-600 dark:text-slate-300">Nos pondremos en contacto en menos de 24h para confirmar los detalles.</p>
