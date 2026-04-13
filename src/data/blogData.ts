@@ -1,5 +1,6 @@
 import blogDirofilaria from '@/assets/blog_dirofilaria.png';
 import blogProcesionaria from '@/assets/blog_procesionaria.png';
+import blogParacetamol from '@/assets/blog_paracetamol.png';
 
 export const blogPosts = [
   {
