@@ -80,12 +80,12 @@ const ContactoPage = () => {
                   <div>
                     <Label htmlFor="name">Nombre</Label>
                     <Input id="name" {...register('name')} className={errors.name ? 'border-red-500' : ''} />
-                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+                    {errors.name && <p className="text-red-500 text-sm mt-1">{errors?.name?.message as string}</p>}
                   </div>
                   <div>
                     <Label htmlFor="email">Email</Label>
                     <Input id="email" type="email" {...register('email')} className={errors.email ? 'border-red-500' : ''} />
-                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors?.email?.message as string}</p>}
                   </div>
                 </div>
                 <div>
@@ -95,12 +95,12 @@ const ContactoPage = () => {
                 <div>
                   <Label htmlFor="subject">Asunto</Label>
                   <Input id="subject" {...register('subject')} className={errors.subject ? 'border-red-500' : ''} />
-                  {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
+                  {errors.subject && <p className="text-red-500 text-sm mt-1">{errors?.subject?.message as string}</p>}
                 </div>
                 <div>
                   <Label htmlFor="message">Mensaje</Label>
-                  <Textarea id="message" rows="5" {...register('message')} className={errors.message ? 'border-red-500' : ''} />
-                  {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
+                  <Textarea id="message" rows={5} {...register('message')} className={errors.message ? 'border-red-500' : ''} />
+                  {errors.message && <p className="text-red-500 text-sm mt-1">{errors?.message?.message as string}</p>}
                 </div>
                 <div>
                   <Button type="submit" size="lg" className="w-full">
@@ -156,7 +156,7 @@ const ContactoPage = () => {
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Mapa de ubicación de CENDOVET"
