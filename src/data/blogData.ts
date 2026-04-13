@@ -1,6 +1,7 @@
 import blogDirofilaria from '@/assets/blog_dirofilaria.png';
 import blogProcesionaria from '@/assets/blog_procesionaria.png';
 import blogParacetamol from '@/assets/blog_paracetamol.png';
+import blogCriptorquidia from '@/assets/blog_criptorquidia.png';
 
 export const blogPosts = [
   {
@@ -102,7 +103,7 @@ export const blogPosts = [
     readingTime: 8,
     tags: ['Laparoscopia', 'Cirugía', 'Criptorquidia', 'Caso Clínico'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1551190822-a9ce113ac100',
+    image: blogCriptorquidia,
     content: `
       <p><strong>Paciente:</strong> Max, un Golden Retriever macho de 2 años.</p>
       <p><strong>Clínica Remitente:</strong> Clínica Veterinaria San Roque, Algeciras.</p>
