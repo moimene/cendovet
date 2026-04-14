@@ -21,6 +21,7 @@ import endoscopiaImg from '@/assets/endoscopia_cendovet.png';
 import cirugiaMisImg from '@/assets/cirugia_mis_cendovet.png';
 import cirugiaMisVsImg from '@/assets/cirugia_mis_vs.png';
 import fluoroscopiaImg from '@/assets/fluoroscopia_cendovet.jpg';
+import fluoroscopiaRxImg from '@/assets/fluoroscopia_rx.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -128,7 +129,7 @@ const ServicioMISPage = () => {
   }
 
   const serviceImage = getImageForService(serviceKey);
-  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : cardiologyBookImg;
+  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : serviceKey === 'fluoroscopia' ? fluoroscopiaRxImg : cardiologyBookImg;
 
 
   return (
