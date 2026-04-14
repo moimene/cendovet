@@ -20,6 +20,7 @@ import ecografiaDopplerImg from '@/assets/ecografia_doppler.png';
 import endoscopiaImg from '@/assets/endoscopia_cendovet.png';
 import cirugiaMisImg from '@/assets/cirugia_mis_cendovet.png';
 import cirugiaMisVsImg from '@/assets/cirugia_mis_vs.png';
+import fluoroscopiaImg from '@/assets/fluoroscopia_cendovet.jpg';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
