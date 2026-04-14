@@ -96,7 +96,7 @@ const ServicioMISPage = () => {
             };
         case 'fluoroscopia':
              return {
-                src: "https://images.unsplash.com/photo-1579154341191-c8a452778015",
+                src: fluoroscopiaImg,
                 alt: "Equipo de fluoroscopia digital en un quirofano veterinario"
             };
         case 'cardiologia':
