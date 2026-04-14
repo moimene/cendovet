@@ -22,6 +22,7 @@ import cirugiaMisImg from '@/assets/cirugia_mis_cendovet.png';
 import cirugiaMisVsImg from '@/assets/cirugia_mis_vs.png';
 import fluoroscopiaImg from '@/assets/fluoroscopia_cendovet.jpg';
 import fluoroscopiaRxImg from '@/assets/fluoroscopia_rx.png';
+import ecografiaIndicacionesImg from '@/assets/ecografia_indicaciones.png';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
