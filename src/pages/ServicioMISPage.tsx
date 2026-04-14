@@ -20,6 +20,7 @@ import ecografiaDopplerImg from '@/assets/ecografia_doppler.png';
 import endoscopiaImg from '@/assets/endoscopia_cendovet.png';
 import cirugiaMisImg from '@/assets/cirugia_mis_cendovet.png';
 import cirugiaMisVsImg from '@/assets/cirugia_mis_vs.png';
+import fluoroscopiaImg from '@/assets/fluoroscopia_cendovet.jpg';
 
 const Section = ({ children, className = '' }) => (
   <motion.section 
@@ -95,7 +96,7 @@ const ServicioMISPage = () => {
             };
         case 'fluoroscopia':
              return {
-                src: "https://images.unsplash.com/photo-1579154341191-c8a452778015",
+                src: fluoroscopiaImg,
                 alt: "Equipo de fluoroscopia digital en un quirofano veterinario"
             };
         case 'cardiologia':
