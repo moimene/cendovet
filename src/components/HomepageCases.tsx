@@ -87,33 +87,33 @@ const cardVariants = {
 
 const HomepageCases: React.FC = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800 overflow-hidden">
+    <section className="py-20 bg-white border-t border-slate-100 overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div
-          className="max-w-3xl mx-auto text-center mb-14"
+          className="mb-14"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-teal-50 dark:bg-teal-900/30 px-5 py-2 text-sm font-bold text-teal-600 dark:text-teal-400 ring-1 ring-inset ring-teal-500/20 mb-5">
+          <div className="inline-flex items-center gap-2 rounded-full bg-teal-50 px-5 py-2 text-sm font-bold text-teal-600 ring-1 ring-inset ring-teal-500/20 mb-5">
             <PlayCircle className="h-4 w-4" />
             Casos Documentados
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-800 dark:text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-800">
             Procedimientos que{' '}
-            <span className="text-teal-600 dark:text-teal-400">
+            <span className="text-teal-600">
               marcan la diferencia
             </span>
           </h2>
-          <p className="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-slate-600 max-w-2xl">
             Cada caso es una historia real de recuperación. Cirugía mínimamente invasiva con resultados que hablan por sí solos.
           </p>
         </motion.div>
 
         {/* Cases Grid — 2 cols on md, 3 on lg */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl">
           {featuredCases.map((caseItem, index) => (
             <motion.div
               key={index}
@@ -122,10 +122,10 @@ const HomepageCases: React.FC = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              className="group relative flex flex-col rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+              className="group relative flex flex-col rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
             >
               {/* Specialty color bar */}
-              <div className={`h-1 w-full ${caseItem.specialtyColor}`} />
+              <div className={`h-0.5 w-full ${caseItem.specialtyColor}`} />
 
               <div className="p-6 flex flex-col flex-1">
                 {/* Top row: specialty badge + emoji */}
@@ -138,29 +138,29 @@ const HomepageCases: React.FC = () => {
 
                 {/* Pet name */}
                 {caseItem.petName && (
-                  <span className="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-1.5">
+                  <span className="text-xs font-bold uppercase tracking-wider text-teal-600 mb-1.5">
                     🐾 {caseItem.petName}
                   </span>
                 )}
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-slate-800 dark:text-white leading-snug mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                <h3 className="text-lg font-bold text-slate-800 leading-snug mb-3 group-hover:text-teal-600 transition-colors">
                   {caseItem.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed flex-1">
+                <p className="text-sm text-slate-600 leading-relaxed flex-1">
                   {caseItem.description}
                 </p>
 
                 {/* Actions */}
-                <div className="mt-5 flex items-center justify-between gap-2 pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                <div className="mt-5 flex items-center justify-between gap-2 pt-4 border-t border-slate-100">
                   <a
                     href={caseItem.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Ver vídeo en Instagram (nueva ventana)"
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-pink-600 dark:text-pink-400 hover:text-pink-500 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-pink-600 hover:text-pink-500 transition-colors"
                   >
                     <Instagram className="h-4 w-4" />
                     Ver vídeo
@@ -168,7 +168,7 @@ const HomepageCases: React.FC = () => {
                   </a>
                   <Link
                     to={caseItem.serviceLink}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-teal-600 dark:text-teal-400 hover:text-teal-500 transition-colors"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-teal-600 hover:text-teal-500 transition-colors"
                   >
                     Saber más
                     <ArrowRight className="h-3.5 w-3.5" />
@@ -191,12 +191,12 @@ const HomepageCases: React.FC = () => {
             href="https://www.instagram.com/cvcampogibraltar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-rose-600 px-7 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl hover:bg-rose-700 transition-all duration-300"
+            className="inline-flex items-center gap-2 rounded-full bg-slate-800 px-7 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl hover:bg-slate-700 transition-all duration-300"
           >
             <Instagram className="h-5 w-5" />
             Más casos en @cvcampogibraltar
           </a>
-          <Button asChild variant="outline" className="rounded-full border-teal-300 text-teal-700 hover:bg-teal-50 dark:border-teal-600 dark:text-teal-400 dark:hover:bg-teal-900/30 px-7 py-3.5">
+          <Button asChild variant="outline" className="rounded-full border-teal-600 text-teal-600 hover:bg-teal-50 px-7 py-3.5">
             <Link to="/contacto">
               Consulta tu caso
               <ArrowRight className="h-4 w-4 ml-2" />

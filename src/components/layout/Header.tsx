@@ -22,8 +22,8 @@ const NavItem = ({ to, children }) => (
     to={to}
     className={({ isActive }) =>
       cn(
-        "text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 transition-colors",
-        isActive && "text-teal-600 dark:text-teal-400"
+        "text-sm font-semibold leading-6 text-slate-700 hover:text-teal-600 transition-colors",
+        isActive && "text-teal-600 font-semibold"
       )
     }
   >
@@ -35,7 +35,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700">
+    <header className="sticky top-0 z-50 bg-white border-b border-slate-200">
       <nav className="container mx-auto flex items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700 dark:text-slate-300"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700"
             onClick={() => setMobileMenuOpen(true)}
             aria-controls="mobile-menu"
           >
@@ -59,7 +59,7 @@ const Header = () => {
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 transition-colors focus:outline-none">
+              <button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-700 hover:text-teal-600 transition-colors focus:outline-none">
                 Servicios <ChevronDown className="h-4 w-4" />
               </button>
             </DropdownMenuTrigger>
@@ -80,7 +80,7 @@ const Header = () => {
           <NavItem to="/sobre-cendovet">Sobre CENDOVET</NavItem>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-4">
-          <Button asChild variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900 dark:hover:text-teal-300">
+          <Button asChild variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700">
             <Link to="/contacto">Contacto</Link>
           </Button>
           <Button asChild>
@@ -107,7 +107,7 @@ const Header = () => {
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.25, ease: "easeOut" }}
               id="mobile-menu"
-              className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/10"
+              className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
             >
               <div className="flex items-center justify-between">
                 <Link to="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
@@ -120,7 +120,7 @@ const Header = () => {
                 </Link>
                 <button
                   type="button"
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700 dark:text-gray-300"
+                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="sr-only">Cerrar menú</span>
@@ -128,19 +128,19 @@ const Header = () => {
                 </button>
               </div>
               <div className="mt-6 flow-root">
-                <div className="-my-6 divide-y divide-gray-500/10 dark:divide-gray-200/10">
+                <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
-                    <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800" onClick={() => setMobileMenuOpen(false)}>Inicio</Link>
-                    <p className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white">Servicios</p>
+                    <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Inicio</Link>
+                    <p className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900">Servicios</p>
                     {services.map((service) => (
-                      <Link key={service.name} to={service.href} className="flex items-center gap-2 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 ml-4" onClick={() => setMobileMenuOpen(false)}>
+                      <Link key={service.name} to={service.href} className="flex items-center gap-2 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-600 hover:bg-gray-50 ml-4" onClick={() => setMobileMenuOpen(false)}>
                         <service.icon className="h-4 w-4" />
                         <span>{service.name}</span>
                       </Link>
                     ))}
-                    <Link to="/para-clinicas" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800" onClick={() => setMobileMenuOpen(false)}>Para Clínicas</Link>
-                    <Link to="/blog" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-                    <Link to="/sobre-cendovet" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800" onClick={() => setMobileMenuOpen(false)}>Sobre CENDOVET</Link>
+                    <Link to="/para-clinicas" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Para Clínicas</Link>
+                    <Link to="/blog" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+                    <Link to="/sobre-cendovet" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Sobre CENDOVET</Link>
                   </div>
                   <div className="py-6 space-y-4">
                      <Button asChild size="lg" className="w-full" onClick={() => setMobileMenuOpen(false)}>
