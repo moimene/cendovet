@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { breadcrumbSchema } from '@/data/schemaData';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { blogPosts } from '@/data/blogData';
@@ -26,10 +28,15 @@ const BlogPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Blog y Casos Clínicos - CENDOVET</title>
-        <meta name="description" content="Explora nuestros casos clínicos y artículos sobre cirugía mínimamente invasiva, cardiología, y otras especialidades veterinarias." />
-      </Helmet>
+      <SEOHead
+        {...seoData.blog}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: 'Inicio', url: 'https://cendovet.lovable.app/' },
+            { name: 'Blog', url: 'https://cendovet.lovable.app/blog' }
+          ])
+        ]}
+      />
 
       {/* Hero Section */}
       <div className="bg-slate-50">

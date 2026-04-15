@@ -1,5 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { breadcrumbSchema } from '@/data/schemaData';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -60,10 +62,15 @@ const ParaClinicasPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Para Clínicas Veterinarias - CENDOVET</title>
-        <meta name="description" content="Colabora con CENDOVET, tu centro de referencia nacional en cirugía de mínima invasión. Ofrece a tus pacientes las técnicas más avanzadas." />
-      </Helmet>
+      <SEOHead
+        {...seoData.para_clinicas}
+        jsonLd={[
+          breadcrumbSchema([
+            { name: 'Inicio', url: 'https://cendovet.lovable.app/' },
+            { name: 'Para Clínicas', url: 'https://cendovet.lovable.app/para-clinicas' }
+          ])
+        ]}
+      />
       
       <div className="bg-slate-50">
         {/* Hero Section */}

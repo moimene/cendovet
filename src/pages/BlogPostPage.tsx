@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { articleSchema, breadcrumbSchema } from '@/data/schemaData';
 import { blogPosts } from '@/data/blogData';
 import NotFoundPage from './NotFoundPage';
 import { Button } from '@/components/ui/button';
@@ -17,10 +19,27 @@ const BlogPostPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{post.title} - CENDOVET Blog</title>
-        <meta name="description" content={post.summary} />
-      </Helmet>
+      <SEOHead
+        title={`${post.title} - CENDOVET Blog`}
+        description={post.summary}
+        canonicalUrl={`https://cendovet.lovable.app/blog/${post.slug}`}
+        ogImage={post.image}
+        jsonLd={[
+          articleSchema({
+            title: post.title,
+            description: post.summary,
+            datePublished: post.date,
+            dateModified: post.date,
+            slug: post.slug,
+            image: post.image
+          }),
+          breadcrumbSchema([
+            { name: 'Inicio', url: 'https://cendovet.lovable.app/' },
+            { name: 'Blog', url: 'https://cendovet.lovable.app/blog' },
+            { name: post.title, url: `https://cendovet.lovable.app/blog/${post.slug}` }
+          ])
+        ]}
+      />
 
       <div className="bg-white">
         <div className="container mx-auto px-4 py-8 md:py-16">

@@ -2,7 +2,9 @@ import React from 'react';
 import quirofanoHero from '@/assets/quirofano-hero.jpeg';
 import quirofanoCendovet from '@/assets/quirofano_cendovet.jpg';
 import draEvaPhoto from '@/assets/dra-eva.png';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { organizationSchema, websiteSchema, breadcrumbSchema } from '@/data/schemaData';
 import { Button } from '@/components/ui/button';
 import { Stethoscope, Heart, Microscope, Atom, MapPin, Award, Bone } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -25,13 +27,16 @@ const HomePage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>CENDOVET - Cirugía Veterinaria Mínimamente Invasiva</title>
-        <meta name="description" content="Centro pionero en cirugía veterinaria mínimamente invasiva en España. Ofrecemos laparoscopia, endoscopia, litotricia láser y fluoroscopia." />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-      </Helmet>
+      <SEOHead
+        {...seoData.home}
+        jsonLd={[
+          organizationSchema,
+          websiteSchema,
+          breadcrumbSchema([
+            { name: 'Inicio', url: 'https://cendovet.lovable.app/' }
+          ])
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="relative text-white py-32 md:py-48 text-center">

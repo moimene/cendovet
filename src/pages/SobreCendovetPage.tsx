@@ -1,5 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { organizationSchema, breadcrumbSchema } from '@/data/schemaData';
 import { motion } from 'framer-motion';
 import { Award, Users, HeartHandshake, Microscope, Target, CheckCircle, Star, BrainCircuit, Microscope as Telescope, Group } from 'lucide-react';
 import draEvaSobre from '@/assets/dra_eva_sobre.png';
@@ -49,10 +51,16 @@ const PhilosophyCard = ({ icon: Icon, title, text }) => (
 const SobreCendovetPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Sobre CENDOVET - Dra. Eva G. Gato y Equipo</title>
-        <meta name="description" content="Conoce a la Dra. Eva García Gato, pionera en cirugía MIS, y la filosofía de excelencia y empatía que define a CENDOVET." />
-      </Helmet>
+      <SEOHead
+        {...seoData.sobre}
+        jsonLd={[
+          organizationSchema,
+          breadcrumbSchema([
+            { name: 'Inicio', url: 'https://cendovet.lovable.app/' },
+            { name: 'Sobre CENDOVET', url: 'https://cendovet.lovable.app/sobre-cendovet' }
+          ])
+        ]}
+      />
 
       <div className="bg-white">
         {/* Hero Section */}

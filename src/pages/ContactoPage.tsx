@@ -1,5 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { organizationSchema, breadcrumbSchema } from '@/data/schemaData';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Send, MessageSquare } from 'lucide-react';
 import { useForm } from 'react-hook-form';
@@ -45,10 +47,16 @@ const ContactoPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Contacto - CENDOVET</title>
-        <meta name="description" content="Contacta con CENDOVET para solicitar una cita, resolver dudas o visitarnos. Encuentra nuestro teléfono, email y dirección." />
-      </Helmet>
+      <SEOHead
+        {...seoData.contacto}
+        jsonLd={[
+          organizationSchema,
+          breadcrumbSchema([
+            { name: 'Inicio', url: 'https://cendovet.lovable.app/' },
+            { name: 'Contacto', url: 'https://cendovet.lovable.app/contacto' }
+          ])
+        ]}
+      />
       <div className="bg-white">
         {/* Hero */}
         <div className="relative isolate overflow-hidden bg-teal-800 pt-14 pb-24 sm:pb-32">

@@ -1,5 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { serviceSchemas, breadcrumbSchema, faqSchema } from '@/data/schemaData';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import * as Icons from 'lucide-react';
@@ -43,14 +45,16 @@ const ServicioMISPage = () => {
   const lang = 'es'; // For now, hardcoded. Later this will come from a language context.
   const content = service?.[lang];
 
-  if (!content || !content.badge) { 
+  if (!content || !content.badge) {
     const placeholderTitle = service?.es?.title || service?.en?.title || "Servicio no encontrado";
      return (
         <div className="flex flex-col items-center justify-center text-center py-20 md:py-32 px-4 bg-gray-50">
-            <Helmet>
-              <title>{placeholderTitle} - Próximamente - CENDOVET</title>
-              <meta name="description" content={`Información sobre ${placeholderTitle} estará disponible pronto.`} />
-            </Helmet>
+            <SEOHead
+              title={`${placeholderTitle} - Próximamente - CENDOVET`}
+              description={`Información sobre ${placeholderTitle} estará disponible pronto.`}
+              canonicalUrl="https://cendovet.lovable.app"
+              noindex
+            />
             <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">{placeholderTitle}</h1>
             <p className="text-lg text-gray-600 max-w-2xl mb-8">
                 ¡Estamos trabajando en el contenido de esta sección! Muy pronto encontrarás aquí toda la información detallada.
@@ -67,6 +71,21 @@ const ServicioMISPage = () => {
     );
   }
   
+  const seoKeyMap: Record<string, string> = {
+    'laparoscopia': 'laparoscopia',
+    'endoscopia': 'endoscopia',
+    'litotricia-laser': 'litotricia',
+    'fluoroscopia': 'fluoroscopia',
+    'cardiologia': 'cardiologia',
+    'ecografia': 'ecografia',
+    'cirugia-mis': 'cirugia_mis',
+    'medicina-felina': 'medicina_felina',
+    'traumatologia': 'traumatologia',
+    'neurologia': 'neurologia',
+  };
+  const seoKey = seoKeyMap[serviceKey || ''] || 'home';
+  const pageSeo = seoData[seoKey];
+
   const serviceTagMapping = {
       'laparoscopia': 'Laparoscopia',
       'endoscopia': 'Endoscopia',
@@ -135,10 +154,18 @@ const ServicioMISPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{content.title} - CENDOVET</title>
-        <meta name="description" content={content.subtitle} />
-      </Helmet>
+      <SEOHead
+        {...pageSeo}
+        jsonLd={[
+          serviceSchemas[seoKey as keyof typeof serviceSchemas] || {},
+          breadcrumbSchema([
+            { name: 'Inicio', url: 'https://cendovet.lovable.app/' },
+            { name: 'Servicios', url: 'https://cendovet.lovable.app/servicios/laparoscopia' },
+            { name: content.title, url: pageSeo?.canonicalUrl || '' }
+          ]),
+          ...(content.faqs?.items ? [faqSchema(content.faqs.items)] : [])
+        ]}
+      />
 
       <div className="bg-white">
         {/* Hero */}

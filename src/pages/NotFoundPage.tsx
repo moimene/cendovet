@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { AlertTriangle } from 'lucide-react';
@@ -7,10 +7,12 @@ import { AlertTriangle } from 'lucide-react';
 const NotFoundPage = () => {
   return (
     <>
-      <Helmet>
-        <title>404 - Página no encontrada - CENDOVET</title>
-        <meta name="description" content="La página que buscas no existe o ha sido movida." />
-      </Helmet>
+      <SEOHead
+        title="404 - Página no encontrada - CENDOVET"
+        description="La página que buscas no existe o ha sido movida."
+        canonicalUrl="https://cendovet.lovable.app/404"
+        noindex={true}
+      />
       <div className="flex flex-col items-center justify-center text-center py-20 md:py-32 px-4 bg-gray-50">
         <AlertTriangle className="text-amber-500 w-16 h-16 mb-4" />
         <h1 className="text-6xl md:text-8xl font-bold text-slate-800 mb-2">404</h1>

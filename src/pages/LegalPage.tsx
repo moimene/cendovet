@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
 import { CheckCircle, AlertTriangle } from 'lucide-react';
 
 const PrivacyPolicyContent = () => (
@@ -274,10 +274,12 @@ const LegalPage = ({ pageTitle }) => {
 
     return (
         <>
-            <Helmet>
-                <title>{pageTitle} - CENDOVET</title>
-                <meta name="description" content={`Documento legal de CENDOVET: ${pageTitle}.`} />
-            </Helmet>
+            <SEOHead
+              title={`${pageTitle} - CENDOVET`}
+              description={`Documento legal de CENDOVET: ${pageTitle}.`}
+              canonicalUrl={`https://cendovet.lovable.app/${pageTitle === 'Política de Privacidad' ? 'politica-privacidad' : pageTitle === 'Aviso Legal' ? 'aviso-legal' : 'politica-cookies'}`}
+              noindex={true}
+            />
             <div className="bg-slate-50 py-16 sm:py-24">
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">

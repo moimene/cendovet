@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import salaEsperaImg from '@/assets/sala_espera_cendovet.png';
-import { Helmet } from 'react-helmet';
+import SEOHead from '@/components/SEOHead';
+import { seoData } from '@/data/seoData';
+import { breadcrumbSchema } from '@/data/schemaData';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -295,7 +297,16 @@ const ReferirCasoPage = () => {
     
     return (
         <>
-            <Helmet><title>Referir un Caso - CENDOVET</title><meta name="description" content="Formulario para que clínicas veterinarias refieran un caso a CENDOVET." /></Helmet>
+            <SEOHead
+              {...seoData.referir_caso}
+              jsonLd={[
+                breadcrumbSchema([
+                  { name: 'Inicio', url: 'https://cendovet.lovable.app/' },
+                  { name: 'Para Clínicas', url: 'https://cendovet.lovable.app/para-clinicas' },
+                  { name: 'Referir Caso', url: 'https://cendovet.lovable.app/para-clinicas/referir-caso' }
+                ])
+              ]}
+            />
             <div className="bg-slate-50 py-16 sm:py-24">
                 <div className="container mx-auto px-4">
                     <AnimatePresence mode="wait">
