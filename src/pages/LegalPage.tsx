@@ -104,7 +104,7 @@ const PrivacyPolicyContent = () => (
         </ul>
         <p className="mb-4">Debe adjuntar copia de su DNI o documento identificativo equivalente.</p>
         <h3 className="text-xl font-semibold mt-4 mb-2">Derecho a reclamar ante la Autoridad de Control</h3>
-        <p>Si considera que el tratamiento no se ajusta a la normativa, puede presentar reclamación ante la <a href="https://www.aepd.es/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline">Agencia Española de Protección de Datos (AEPD)</a>.</p>
+        <p>Si considera que el tratamiento no se ajusta a la normativa, puede presentar reclamación ante la <a href="https://www.aepd.es/" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Agencia Española de Protección de Datos (AEPD)</a>.</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">9. Medidas de Seguridad</h2>
         <p className="mb-4">CENDOVET ha implementado medidas técnicas y organizativas apropiadas para garantizar la seguridad de sus datos:</p>
@@ -158,12 +158,12 @@ const LegalNoticeContent = () => (
         <h2 className="text-2xl font-bold mt-6 mb-3">4. Obligaciones del Usuario</h2>
         <p className="mb-4">El usuario se compromete a:</p>
         <ul className="space-y-2 mb-4">
-            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-cyan-600 mr-2" /> Hacer un uso adecuado y lícito del Sitio Web</li>
-            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-cyan-600 mr-2" /> No utilizar el Sitio Web para actividades ilícitas o contrarias a la buena fe</li>
-            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-cyan-600 mr-2" /> No introducir virus informáticos, archivos defectuosos o cualquier otro programa que pueda causar daños</li>
-            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-cyan-600 mr-2" /> No acceder a cuentas de correo electrónico ajenas</li>
-            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-cyan-600 mr-2" /> No reproducir, copiar, distribuir o modificar los contenidos sin autorización expresa</li>
-            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-cyan-600 mr-2" /> No realizar ingeniería inversa, descompilación o cualquier otro proceso para obtener el código fuente</li>
+            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-teal-600 mr-2" /> Hacer un uso adecuado y lícito del Sitio Web</li>
+            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-teal-600 mr-2" /> No utilizar el Sitio Web para actividades ilícitas o contrarias a la buena fe</li>
+            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-teal-600 mr-2" /> No introducir virus informáticos, archivos defectuosos o cualquier otro programa que pueda causar daños</li>
+            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-teal-600 mr-2" /> No acceder a cuentas de correo electrónico ajenas</li>
+            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-teal-600 mr-2" /> No reproducir, copiar, distribuir o modificar los contenidos sin autorización expresa</li>
+            <li className="flex items-center"><CheckCircle className="h-5 w-5 text-teal-600 mr-2" /> No realizar ingeniería inversa, descompilación o cualquier otro proceso para obtener el código fuente</li>
         </ul>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">5. Propiedad Intelectual e Industrial</h2>
@@ -171,7 +171,7 @@ const LegalNoticeContent = () => (
 
         <h2 className="text-2xl font-bold mt-6 mb-3">6. Exclusión de Garantías y Responsabilidad</h2>
         <h3 className="text-xl font-semibold mt-4 mb-2">6.3. De la Información Médico-Veterinaria</h3>
-        <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 my-4" role="alert">
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 p-4 my-4 rounded-lg" role="alert">
             <p className="font-bold flex items-center"><AlertTriangle className="mr-2"/> Advertencia Importante</p>
             <p>La información médico-veterinaria proporcionada en este Sitio Web tiene carácter informativo y educativo. No sustituye en ningún caso el diagnóstico, consejo o tratamiento médico profesional. Ante cualquier duda sobre la salud de su mascota, consulte siempre con su veterinario. En caso de urgencia, acuda inmediatamente a un centro veterinario.</p>
         </div>
@@ -184,10 +184,10 @@ const LegalNoticeContent = () => (
         <p className="mb-4">El establecimiento de un enlace desde otro sitio web al de CENDOVET deberá cumplir ciertas condiciones, como no realizar manifestaciones falsas y no utilizar frames. El sitio enlazante no podrá contener contenidos ilícitos.</p>
         
         <h2 className="text-2xl font-bold mt-6 mb-3">9. Protección de Datos</h2>
-        <p className="mb-4">El tratamiento de datos personales se rige por lo dispuesto en la <a href="/politica-privacidad" className="text-cyan-600 hover:underline">Política de Privacidad</a>.</p>
+        <p className="mb-4">El tratamiento de datos personales se rige por lo dispuesto en la <a href="/politica-privacidad" className="text-teal-600 hover:underline">Política de Privacidad</a>.</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">10. Cookies</h2>
-        <p className="mb-4">Para más información, consulte nuestra <a href="/politica-cookies" className="text-cyan-600 hover:underline">Política de Cookies</a>.</p>
+        <p className="mb-4">Para más información, consulte nuestra <a href="/politica-cookies" className="text-teal-600 hover:underline">Política de Cookies</a>.</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">11. Legislación Aplicable y Jurisdicción</h2>
         <p className="mb-4">Las presentes Condiciones Generales se rigen por la legislación española. Para cualquier controversia, las partes se someten a los Juzgados y Tribunales del domicilio del usuario, o a los de Cádiz (España) si el domicilio está fuera de España.</p>
@@ -230,7 +230,7 @@ const CookiesPolicyContent = () => (
                 </tbody>
             </table>
         </div>
-        <p className="text-sm mt-2">Para más información, consulte las políticas de privacidad de cada proveedor, como la de <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline">Google</a>.</p>
+        <p className="text-sm mt-2">Para más información, consulte las políticas de privacidad de cada proveedor, como la de <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Google</a>.</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">4. Base Legal para el Uso de Cookies</h2>
         <p className="mb-4">El uso de cookies técnicas se basa en nuestro interés legítimo, mientras que las analíticas y de marketing se basan en su consentimiento explícito.</p>
@@ -238,18 +238,18 @@ const CookiesPolicyContent = () => (
         <h2 className="text-2xl font-bold mt-6 mb-3">5. Cómo Gestionar las Cookies</h2>
         <p className="mb-4">Puede aceptar, rechazar o configurar sus preferencias de cookies a través del banner que aparece en su primera visita. También puede gestionar las cookies desde la configuración de su navegador:</p>
         <ul className="list-disc list-inside space-y-1 mb-4">
-            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline">Google Chrome</a></li>
-            <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline">Mozilla Firefox</a></li>
-            <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline">Safari</a></li>
-            <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline">Microsoft Edge</a></li>
+            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Google Chrome</a></li>
+            <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Mozilla Firefox</a></li>
+            <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Safari</a></li>
+            <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Microsoft Edge</a></li>
         </ul>
-        <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 my-4" role="alert">
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 p-4 my-4 rounded-lg" role="alert">
             <p className="font-bold flex items-center"><AlertTriangle className="mr-2"/> Advertencia</p>
             <p>Bloquear o eliminar cookies puede afectar negativamente la experiencia de usuario.</p>
         </div>
         
         <h2 className="text-2xl font-bold mt-6 mb-3">6. Cookies de Terceros - Google Analytics</h2>
-        <p className="mb-4">Utilizamos Google Analytics para obtener estadísticas anónimas sobre el uso de nuestro sitio. Puede desactivarlo con el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:underline">complemento de inhabilitación para navegadores</a>.</p>
+        <p className="mb-4">Utilizamos Google Analytics para obtener estadísticas anónimas sobre el uso de nuestro sitio. Puede desactivarlo con el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">complemento de inhabilitación para navegadores</a>.</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">7. Actualización de la Política de Cookies</h2>
         <p className="mb-4">CENDOVET puede modificar esta Política de Cookies. Cualquier cambio significativo será comunicado en el sitio web.</p>
@@ -281,7 +281,7 @@ const LegalPage = ({ pageTitle }) => {
             <div className="bg-slate-50 dark:bg-slate-900 py-16 sm:py-24">
                 <div className="container mx-auto px-4">
                     <div className="max-w-3xl mx-auto bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg">
-                        <h1 className="text-4xl font-extrabold text-cyan-900 dark:text-white mb-6">{pageTitle}</h1>
+                        <h1 className="text-4xl font-extrabold text-slate-800 dark:text-white mb-6">{pageTitle}</h1>
                         <div className="prose prose-slate dark:prose-invert max-w-none">
                            {getContent()}
                         </div>

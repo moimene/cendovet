@@ -26,11 +26,11 @@ const InstagramCases: React.FC<InstagramCasesProps> = ({ serviceKey }) => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500/10 to-purple-500/10 px-4 py-1.5 text-sm font-semibold text-pink-600 dark:text-pink-400 ring-1 ring-inset ring-pink-500/20 mb-4">
+          <div className="inline-flex items-center gap-2 rounded-full bg-rose-50 dark:bg-rose-900/20 px-4 py-1.5 text-sm font-semibold text-pink-600 dark:text-pink-400 ring-1 ring-inset ring-pink-500/20 mb-4">
             <Instagram className="h-4 w-4" />
             Casos Clínicos Reales
           </div>
-          <h2 className="text-3xl font-bold tracking-tight text-cyan-900 dark:text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-800 dark:text-white sm:text-4xl">
             Casos de Éxito en Vídeo
           </h2>
           <p className="mt-3 text-lg leading-8 text-slate-600 dark:text-slate-300">
@@ -51,7 +51,7 @@ const InstagramCases: React.FC<InstagramCasesProps> = ({ serviceKey }) => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 p-6 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:border-cyan-300 dark:hover:border-cyan-600 hover:-translate-y-1"
+              className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 p-6 transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/10 hover:border-teal-300 dark:hover:border-teal-600"
             >
               {/* Emoji badge */}
               <div className="absolute -top-3 -right-3 text-2xl bg-white dark:bg-slate-900 rounded-full w-10 h-10 flex items-center justify-center shadow-md border border-slate-200 dark:border-slate-700">
@@ -61,13 +61,13 @@ const InstagramCases: React.FC<InstagramCasesProps> = ({ serviceKey }) => {
               <div>
                 {/* Pet name tag */}
                 {caseItem.petName && (
-                  <span className="inline-block text-xs font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 mb-2">
+                  <span className="inline-block text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">
                     🐾 {caseItem.petName}
                   </span>
                 )}
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-cyan-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors leading-snug">
+                <h3 className="text-lg font-bold text-slate-800 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
                   {caseItem.title}
                 </h3>
 

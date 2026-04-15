@@ -22,8 +22,8 @@ const NavItem = ({ to, children }) => (
     to={to}
     className={({ isActive }) =>
       cn(
-        "text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors",
-        isActive && "text-cyan-600 dark:text-cyan-400"
+        "text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 transition-colors",
+        isActive && "text-teal-600 dark:text-teal-400"
       )
     }
   >
@@ -35,7 +35,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200/80 dark:border-slate-800/80">
+    <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700">
       <nav className="container mx-auto flex items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
@@ -48,6 +48,7 @@ const Header = () => {
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700 dark:text-slate-300"
             onClick={() => setMobileMenuOpen(true)}
+            aria-controls="mobile-menu"
           >
             <span className="sr-only">Abrir menú principal</span>
             <Menu className="h-6 w-6" aria-hidden="true" />
@@ -58,7 +59,7 @@ const Header = () => {
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors focus:outline-none">
+              <button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 transition-colors focus:outline-none">
                 Servicios <ChevronDown className="h-4 w-4" />
               </button>
             </DropdownMenuTrigger>
@@ -79,7 +80,7 @@ const Header = () => {
           <NavItem to="/sobre-cendovet">Sobre CENDOVET</NavItem>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-4">
-          <Button asChild variant="outline" className="border-cyan-600 text-cyan-600 hover:bg-cyan-50 hover:text-cyan-700 dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-cyan-900 dark:hover:text-cyan-300">
+          <Button asChild variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 dark:border-teal-400 dark:text-teal-400 dark:hover:bg-teal-900 dark:hover:text-teal-300">
             <Link to="/contacto">Contacto</Link>
           </Button>
           <Button asChild>
@@ -104,7 +105,8 @@ const Header = () => {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              transition={{ type: "tween", duration: 0.25, ease: "easeOut" }}
+              id="mobile-menu"
               className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-slate-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/10"
             >
               <div className="flex items-center justify-between">

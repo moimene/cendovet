@@ -22,7 +22,7 @@ const featuredCases: FeaturedCase[] = [
     petName: "Kiara",
     emoji: "🪝",
     specialty: "Endoscopia",
-    specialtyColor: "from-rose-500 to-pink-600",
+    specialtyColor: "bg-rose-600",
     serviceLink: "/servicios/endoscopia",
     instagramUrl: "https://www.instagram.com/p/DSMgZi3CKN6/",
   },
@@ -32,7 +32,7 @@ const featuredCases: FeaturedCase[] = [
     petName: "Pocholo",
     emoji: "💎",
     specialty: "Litotricia Láser",
-    specialtyColor: "from-amber-500 to-orange-600",
+    specialtyColor: "bg-amber-600",
     serviceLink: "/servicios/litotricia-laser",
     instagramUrl: "https://www.instagram.com/p/DWqV038iHQx/",
   },
@@ -41,7 +41,7 @@ const featuredCases: FeaturedCase[] = [
     description: "El colapso traqueal impedía respirar con normalidad. Guiados por fluoroscopia en tiempo real, colocamos un stent con precisión milimétrica para devolver la calidad de vida al paciente.",
     emoji: "🌬️",
     specialty: "Fluoroscopia",
-    specialtyColor: "from-lime-500 to-green-600",
+    specialtyColor: "bg-emerald-600",
     serviceLink: "/servicios/fluoroscopia",
     instagramUrl: "https://www.instagram.com/p/DWor0MHCF7p/",
   },
@@ -50,7 +50,7 @@ const featuredCases: FeaturedCase[] = [
     description: "Mediante intervencionismo guiado por fluoroscopia y ecografía, extrajimos gusanos del corazón de forma mínimamente invasiva. Un procedimiento pionero en el Campo de Gibraltar.",
     emoji: "🫀",
     specialty: "Cardiología",
-    specialtyColor: "from-red-500 to-rose-600",
+    specialtyColor: "bg-red-600",
     serviceLink: "/servicios/cardiologia",
     instagramUrl: "https://www.instagram.com/p/DVWQ-d8CIy7/",
   },
@@ -60,7 +60,7 @@ const featuredCases: FeaturedCase[] = [
     petName: "Sofía",
     emoji: "🐕",
     specialty: "Laparoscopia",
-    specialtyColor: "from-cyan-500 to-blue-600",
+    specialtyColor: "bg-teal-600",
     serviceLink: "/servicios/laparoscopia",
     instagramUrl: "https://www.instagram.com/p/DWor0MHCF7p/",
   },
@@ -70,7 +70,7 @@ const featuredCases: FeaturedCase[] = [
     petName: "Trufa",
     emoji: "🖥️",
     specialty: "Innovación",
-    specialtyColor: "from-violet-500 to-purple-600",
+    specialtyColor: "bg-indigo-600",
     serviceLink: "/servicios/laparoscopia",
     instagramUrl: "https://www.instagram.com/p/DUr-f_4CJNl/",
   },
@@ -97,13 +97,13 @@ const HomepageCases: React.FC = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 px-5 py-2 text-sm font-bold text-cyan-600 dark:text-cyan-400 ring-1 ring-inset ring-cyan-500/20 mb-5">
+          <div className="inline-flex items-center gap-2 rounded-full bg-teal-50 dark:bg-teal-900/30 px-5 py-2 text-sm font-bold text-teal-600 dark:text-teal-400 ring-1 ring-inset ring-teal-500/20 mb-5">
             <PlayCircle className="h-4 w-4" />
             Casos Documentados
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-cyan-900 dark:text-white">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-800 dark:text-white">
             Procedimientos que{' '}
-            <span className="bg-gradient-to-r from-cyan-500 to-blue-600 bg-clip-text text-transparent">
+            <span className="text-teal-600 dark:text-teal-400">
               marcan la diferencia
             </span>
           </h2>
@@ -122,15 +122,15 @@ const HomepageCases: React.FC = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              className="group relative flex flex-col rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 shadow-sm hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+              className="group relative flex flex-col rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/80 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
             >
-              {/* Specialty gradient bar */}
-              <div className={`h-1.5 w-full bg-gradient-to-r ${caseItem.specialtyColor}`} />
+              {/* Specialty color bar */}
+              <div className={`h-1 w-full ${caseItem.specialtyColor}`} />
 
               <div className="p-6 flex flex-col flex-1">
                 {/* Top row: specialty badge + emoji */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className={`inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r ${caseItem.specialtyColor} px-3 py-1 text-xs font-bold text-white shadow-sm`}>
+                  <span className={`inline-flex items-center gap-1.5 rounded-full ${caseItem.specialtyColor} px-3 py-1 text-xs font-bold text-white`}>
                     {caseItem.specialty}
                   </span>
                   <span className="text-2xl">{caseItem.emoji}</span>
@@ -138,13 +138,13 @@ const HomepageCases: React.FC = () => {
 
                 {/* Pet name */}
                 {caseItem.petName && (
-                  <span className="text-xs font-bold uppercase tracking-wider text-cyan-600 dark:text-cyan-400 mb-1.5">
+                  <span className="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-1.5">
                     🐾 {caseItem.petName}
                   </span>
                 )}
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-cyan-900 dark:text-white leading-snug mb-3 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
+                <h3 className="text-lg font-bold text-slate-800 dark:text-white leading-snug mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                   {caseItem.title}
                 </h3>
 
@@ -159,6 +159,7 @@ const HomepageCases: React.FC = () => {
                     href={caseItem.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Ver vídeo en Instagram (nueva ventana)"
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-pink-600 dark:text-pink-400 hover:text-pink-500 transition-colors"
                   >
                     <Instagram className="h-4 w-4" />
@@ -167,7 +168,7 @@ const HomepageCases: React.FC = () => {
                   </a>
                   <Link
                     to={caseItem.serviceLink}
-                    className="inline-flex items-center gap-1 text-sm font-semibold text-cyan-600 dark:text-cyan-400 hover:text-cyan-500 transition-colors"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-teal-600 dark:text-teal-400 hover:text-teal-500 transition-colors"
                   >
                     Saber más
                     <ArrowRight className="h-3.5 w-3.5" />
@@ -190,12 +191,12 @@ const HomepageCases: React.FC = () => {
             href="https://www.instagram.com/cvcampogibraltar/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 px-7 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-full bg-rose-600 px-7 py-3.5 text-sm font-bold text-white shadow-lg hover:shadow-xl hover:bg-rose-700 transition-all duration-300"
           >
             <Instagram className="h-5 w-5" />
             Más casos en @cvcampogibraltar
           </a>
-          <Button asChild variant="outline" className="rounded-full border-cyan-300 text-cyan-700 hover:bg-cyan-50 dark:border-cyan-600 dark:text-cyan-400 dark:hover:bg-cyan-900/30 px-7 py-3.5">
+          <Button asChild variant="outline" className="rounded-full border-teal-300 text-teal-700 hover:bg-teal-50 dark:border-teal-600 dark:text-teal-400 dark:hover:bg-teal-900/30 px-7 py-3.5">
             <Link to="/contacto">
               Consulta tu caso
               <ArrowRight className="h-4 w-4 ml-2" />

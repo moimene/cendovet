@@ -29,7 +29,7 @@ const GoogleReviews = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="inline-flex items-center gap-2 bg-white dark:bg-slate-700 border border-gray-200 dark:border-slate-600 rounded-full px-4 py-2 shadow-sm mb-6">
-            <svg viewBox="0 0 24 24" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 24 24" className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Google">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
               <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
               <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
@@ -40,7 +40,7 @@ const GoogleReviews = () => {
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-cyan-900 dark:text-cyan-400 mb-2">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-teal-400 mb-2">
             Lo que dicen nuestros clientes
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ const GoogleReviews = () => {
             >
               <div className="flex items-center justify-between mb-3">
               <div>
-                  <p className="font-bold text-cyan-900 dark:text-white text-sm">{review.name}</p>
+                  <p className="font-bold text-slate-800 dark:text-white text-sm">{review.name}</p>
                 </div>
                 <StarRating rating={review.rating} />
               </div>
@@ -71,12 +71,12 @@ const GoogleReviews = () => {
               </p>
 
               {review.clinicResponse && (
-                <div className="bg-cyan-50 dark:bg-cyan-900/20 rounded-lg p-3 border-l-2 border-cyan-500">
+                <div className="bg-teal-50 dark:bg-teal-900/20 rounded-lg p-3">
                   <div className="flex items-center gap-1.5 mb-1">
-                    <MessageCircle size={12} className="text-cyan-600 dark:text-cyan-400" />
-                    <span className="text-xs font-semibold text-cyan-700 dark:text-cyan-400">Respuesta de la clínica</span>
+                    <MessageCircle size={12} className="text-teal-600 dark:text-teal-400" />
+                    <span className="text-xs font-semibold text-teal-700 dark:text-teal-400">Respuesta de la clínica</span>
                   </div>
-                  <p className="text-xs text-cyan-800 dark:text-cyan-200 leading-relaxed">
+                  <p className="text-xs text-teal-700 dark:text-teal-200 leading-relaxed">
                     {review.clinicResponse}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ const GoogleReviews = () => {
           <Button
             asChild
             size="lg"
-            className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold gap-2"
+            className="bg-teal-600 hover:bg-teal-700 text-white font-bold gap-2"
           >
             <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer">
               Ver todas las reseñas en Google <ExternalLink size={16} />
