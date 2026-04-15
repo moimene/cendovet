@@ -6,25 +6,12 @@ import SEOHead from '@/components/SEOHead';
 import { seoData } from '@/data/seoData';
 import { organizationSchema, websiteSchema, breadcrumbSchema } from '@/data/schemaData';
 import { Button } from '@/components/ui/button';
-import { Stethoscope, Heart, Microscope, Atom, MapPin, Award, Bone } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import GoogleReviews from '@/components/GoogleReviews';
 import HomepageCases from '@/components/HomepageCases';
 
 const HomePage = () => {
-  const misServices = [
-    { icon: <Stethoscope size={40} className="text-teal-600" />, title: "Laparoscopia", description: "Cirugía abdominal con incisiones mínimas para una recuperación más rápida.", link: "/servicios/laparoscopia" },
-    { icon: <Heart size={40} className="text-teal-600" />, title: "Endoscopia", description: "Diagnóstico y tratamiento de problemas internos sin cirugía abierta.", link: "/servicios/endoscopia" },
-    { icon: <Atom size={40} className="text-teal-600" />, title: "Litotricia Láser", description: "Eliminación de cálculos urinarios sin cirugía, único en Andalucía.", link: "/servicios/litotricia-laser" },
-    { icon: <Bone size={40} className="text-teal-600" />, title: "Fluoroscopia", description: "Radiografía en tiempo real para procedimientos guiados con máxima precisión.", link: "/servicios/fluoroscopia" },
-  ];
-
-  const whyChooseUs = [
-    { icon: <Award size={32} className="text-teal-600" />, title: "Tecnología Pionera", description: "Equipamiento de última generación para diagnósticos y tratamientos precisos." },
-    { icon: <Microscope size={32} className="text-teal-600" />, title: "Alta Especialización", description: "Dirigido por la Dra. Eva G. Gato, referente nacional en Cirugía MIS." },
-    { icon: <Heart size={32} className="text-teal-600" />, title: "Máximo Cuidado", description: "Priorizamos el bienestar de tu mascota con un enfoque compasivo." },
-  ];
-
   return (
     <>
       <SEOHead
@@ -38,128 +25,114 @@ const HomePage = () => {
         ]}
       />
 
-      {/* Hero Section */}
-      <section className="relative text-white py-32 md:py-48 text-center">
-        <div className="absolute inset-0 bg-slate-900/60 z-0"></div>
-        <div className="absolute inset-0 z-[-1]">
+      {/* Hero */}
+      <section className="relative text-white overflow-hidden">
+        <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
             alt="Quirófano veterinario moderno y tecnológico de CENDOVET"
             src={quirofanoHero}
             loading="eager"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/30" />
         </div>
-        <div className="relative z-10 container mx-auto px-4">
-          <div>
-            <span className="inline-block bg-white/90 text-teal-700 text-sm font-semibold px-4 py-1 rounded-full mb-4">
-              Centro de Referencia Nacional
-            </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Centro pionero en cirugía veterinaria <br className="hidden md:block" />mínimamente invasiva
-            </h1>
-            <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-100">
-              Menos dolor, recuperación más rápida y máxima precisión quirúrgica para tu mascota, con tecnología de última generación.
+        <div className="relative z-10 container mx-auto px-4 py-28 md:py-40">
+          <div className="max-w-2xl">
+            <p className="text-teal-300 text-sm font-semibold tracking-widest uppercase mb-4">
+              Centro de Referencia · Algeciras
             </p>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg px-8 py-6 w-full sm:w-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6">
+              Cirugía veterinaria mínimamente invasiva
+            </h1>
+            <p className="text-lg text-slate-200 leading-relaxed mb-8 max-w-xl">
+              Menos dolor, recuperación más rápida y máxima precisión quirúrgica para tu mascota. Tecnología de última generación al servicio de su bienestar.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 text-white font-semibold text-base px-8">
                 <Link to="/contacto">Solicitar Valoración</Link>
               </Button>
-              <Link to="/para-clinicas/referir-caso" className="text-white font-semibold hover:text-gray-200 transition-colors">
-                Referir un Caso →
-              </Link>
+              <Button asChild variant="outline" size="lg" className="border-white/30 bg-transparent text-white hover:bg-white/10 font-semibold text-base px-8">
+                <Link to="/para-clinicas/referir-caso">Referir un Caso</Link>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Servicios MIS */}
-      <section className="py-24 bg-white">
+      {/* Servicios */}
+      <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
-          <div className="mb-12">
-            <h2 className="text-left text-3xl md:text-4xl font-bold text-slate-800 mb-2">Nuestros Servicios MIS</h2>
-            <p className="text-left text-slate-600 max-w-2xl text-sm">Excelencia y precisión en cada procedimiento para una recuperación más rápida y segura.</p>
+          <div className="max-w-xl mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-3">Servicios especializados</h2>
+            <p className="text-slate-600">Procedimientos mínimamente invasivos con equipamiento de última generación para el diagnóstico y tratamiento de tu mascota.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Large Feature Card - Laparoscopia */}
-            <div className="md:col-span-1 border border-slate-200 rounded-lg p-8 bg-white">
-              <div className="mb-4">{misServices[0].icon}</div>
-              <h3 className="text-xl font-bold text-slate-800 mb-2 text-left">{misServices[0].title}</h3>
-              <p className="text-slate-600 mb-4 text-left text-sm">{misServices[0].description}</p>
-              <Button asChild variant="link" className="text-teal-600 font-bold pl-0">
-                <Link to={misServices[0].link}>Saber más →</Link>
-              </Button>
-            </div>
-
-            {/* Right Column - 3 Smaller Services */}
-            <div className="md:col-span-2 space-y-6">
-              {misServices.slice(1).map((service, index) => (
-                <div key={index} className="border border-slate-200 rounded-lg p-6 bg-white">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">{service.icon}</div>
-                    <div className="flex-grow text-left">
-                      <h3 className="text-lg font-bold text-slate-800 mb-1">{service.title}</h3>
-                      <p className="text-slate-600 mb-3 text-sm">{service.description}</p>
-                      <Button asChild variant="link" className="text-teal-600 font-bold pl-0">
-                        <Link to={service.link}>Saber más →</Link>
-                      </Button>
-                    </div>
-                  </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200 rounded-lg overflow-hidden">
+            {[
+              { title: "Laparoscopia", desc: "Cirugía abdominal con incisiones mínimas. Castración, biopsias, gastropexia.", link: "/servicios/laparoscopia" },
+              { title: "Endoscopia", desc: "Exploración y tratamiento del tracto digestivo y respiratorio sin cirugía abierta.", link: "/servicios/endoscopia" },
+              { title: "Litotricia Láser", desc: "Eliminación de cálculos urinarios sin bisturí. Único centro en Andalucía.", link: "/servicios/litotricia-laser" },
+              { title: "Fluoroscopia", desc: "Imagen en tiempo real para colocación de stents y procedimientos guiados.", link: "/servicios/fluoroscopia" },
+            ].map((service) => (
+              <Link
+                key={service.title}
+                to={service.link}
+                className="bg-white p-8 flex flex-col justify-between group"
+              >
+                <div>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">{service.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{service.desc}</p>
                 </div>
-              ))}
-            </div>
+                <span className="mt-6 text-sm font-semibold text-teal-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Saber más <ArrowRight className="h-3.5 w-3.5" />
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-6 grid sm:grid-cols-3 gap-px bg-slate-200 border border-slate-200 rounded-lg overflow-hidden">
+            {[
+              { title: "Cardiología", desc: "Diagnóstico cardiológico avanzado con ecocardiografía y electrocardiografía.", link: "/servicios/cardiologia" },
+              { title: "Ecografía", desc: "Ecografía abdominal y musculoesquelética de alta resolución.", link: "/servicios/ecografia" },
+              { title: "Medicina Felina", desc: "Atención especializada para gatos en un entorno adaptado a sus necesidades.", link: "/servicios/medicina-felina" },
+            ].map((service) => (
+              <Link
+                key={service.title}
+                to={service.link}
+                className="bg-white p-8 flex flex-col justify-between group"
+              >
+                <div>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-teal-600 transition-colors">{service.title}</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{service.desc}</p>
+                </div>
+                <span className="mt-6 text-sm font-semibold text-teal-600 flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Saber más <ArrowRight className="h-3.5 w-3.5" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Por qué CENDOVET */}
-      <section className="py-24 bg-white border-t border-slate-100">
+      <section className="py-20 md:py-28 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Philosophy */}
-            <div className="text-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">¿Por qué CENDOVET?</h2>
-              <p className="text-slate-600 text-sm mb-8 max-w-[70ch]">
-                Nos dedicamos a ofrecer soluciones quirúrgicas innovadoras que priorizan el bienestar de tu mascota. Con tecnología de vanguardia, experiencia comprobada y un enfoque centrado en la compasión, CENDOVET es tu socio de confianza en cirugía mínimamente invasiva.
-              </p>
-            </div>
-
-            {/* Right Column - Benefits List */}
-            <div className="space-y-6 text-left">
-              {whyChooseUs.map((item, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0 pt-1">{item.icon}</div>
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-800 mb-1">{item.title}</h3>
-                    <p className="text-slate-600 text-sm">{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Casos Clínicos Destacados */}
-      <HomepageCases />
-
-      {/* Reseñas de Google */}
-      <GoogleReviews />
-
-      {/* Cobertura Geográfica */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="text-left">
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Cobertura Geográfica</h2>
-              <p className="text-slate-600 text-sm mb-8 max-w-[70ch]">
-                Ofrecemos nuestros servicios especializados a clínicas y propietarios en una amplia zona, y aceptamos referencias de toda España.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {['Campo de Gibraltar', 'Marbella', 'Sotogrande', 'Gibraltar', 'Ceuta', 'Cádiz'].map(loc => (
-                  <span key={loc} className="bg-teal-50 text-teal-700 text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-2 border border-teal-200">
-                    <MapPin size={14} /> {loc}
-                  </span>
-                ))}
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">¿Por qué CENDOVET?</h2>
+              <div className="space-y-6 text-slate-600">
+                <p>
+                  Somos el único centro en Andalucía que reúne <strong className="text-slate-800">laparoscopia, endoscopia, litotricia láser y fluoroscopia</strong> bajo un mismo techo. Esto significa menos desplazamientos y un abordaje integral para tu mascota.
+                </p>
+                <p>
+                  Dirigido por la <strong className="text-slate-800">Dra. Eva G. Gato</strong>, referente nacional en cirugía MIS veterinaria y cofundadora de MINIMAL, con más de 15 años de experiencia formando a cirujanos en toda España.
+                </p>
+                <p>
+                  Nuestra tecnología — plataforma Karl Storz RUBINA 4K, láser holmium, fluoroscopia digital — está al nivel de los hospitales de medicina humana. Porque tu mascota merece la misma precisión.
+                </p>
+              </div>
+              <div className="mt-8">
+                <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white font-semibold">
+                  <Link to="/sobre-cendovet">Conocer al equipo</Link>
+                </Button>
               </div>
             </div>
             <div className="rounded-lg overflow-hidden">
@@ -174,27 +147,49 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Perfil Cirujana */}
-      <section className="py-24 bg-slate-50">
+      {/* Casos Clínicos */}
+      <HomepageCases />
+
+      {/* Reseñas */}
+      <GoogleReviews />
+
+      {/* Cobertura + Dra. Eva */}
+      <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-12 items-center">
-            <div className="md:col-span-1 flex justify-center">
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            {/* Cobertura */}
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Cobertura geográfica</h2>
+              <p className="text-slate-600 mb-6">
+                Atendemos a clínicas y propietarios de toda la zona sur de España y aceptamos referencias a nivel nacional.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {['Campo de Gibraltar', 'Marbella', 'Sotogrande', 'Gibraltar', 'Ceuta', 'Cádiz'].map(loc => (
+                  <span key={loc} className="bg-slate-100 text-slate-700 text-sm font-medium px-4 py-2 rounded-full flex items-center gap-2">
+                    <MapPin size={14} className="text-teal-600" /> {loc}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Dra. Eva */}
+            <div className="flex gap-6 items-start">
               <img
                 alt="Dra. Eva G. Gato, directora médica de CENDOVET"
-                className="rounded-lg w-72 h-auto object-cover border-4 border-teal-200"
+                className="w-28 h-28 rounded-lg object-cover flex-shrink-0"
                 src={draEvaPhoto}
                 loading="lazy"
               />
-            </div>
-            <div className="md:col-span-2 text-left">
-              <h3 className="text-3xl font-bold text-teal-700 mb-2">Dra. Eva G. Gato</h3>
-              <p className="font-semibold text-slate-500 mb-4">Pionera en Cirugía MIS Veterinaria</p>
-              <p className="text-slate-600 text-sm mb-6 max-w-[70ch]">
-                Con más de 15 años de experiencia y cofundadora de MINIMAL, la Dra. Gato es una de las voces más respetadas en endoscopia y cirugía de mínima invasión en España, dedicada a mejorar la calidad de vida de las mascotas.
-              </p>
-              <Button asChild className="bg-teal-600 text-white hover:bg-teal-700">
-                <Link to="/sobre-cendovet">Conocer más</Link>
-              </Button>
+              <div>
+                <h3 className="text-xl font-bold text-slate-800 mb-1">Dra. Eva G. Gato</h3>
+                <p className="text-sm text-teal-600 font-semibold mb-3">Directora Médica · Cirugía MIS</p>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  Cofundadora de MINIMAL y referente en endoscopia y cirugía de mínima invasión veterinaria en España, con más de 15 años de experiencia clínica y docente.
+                </p>
+                <Link to="/sobre-cendovet" className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-teal-600 hover:text-teal-500 transition-colors">
+                  Conocer más <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
