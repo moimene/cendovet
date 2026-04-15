@@ -2,51 +2,9 @@ import React from 'react';
 import SEOHead from '@/components/SEOHead';
 import { seoData } from '@/data/seoData';
 import { organizationSchema, breadcrumbSchema } from '@/data/schemaData';
-import { motion } from 'framer-motion';
-import { Award, Users, HeartHandshake, Microscope, Target, CheckCircle, Star, BrainCircuit, Microscope as Telescope, Group } from 'lucide-react';
 import draEvaSobre from '@/assets/dra_eva_sobre.png';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-
-const Section = ({ children, className = '' }) => (
-  <motion.section
-    className={`py-16 sm:py-20 ${className}`}
-    initial={{ opacity: 1, y: 0 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.8 }}
-  >
-    <div className="container mx-auto px-4">{children}</div>
-  </motion.section>
-);
-
-const StatCard = ({ icon: Icon, value, label, delay }) => (
-    <motion.div
-        className="bg-white p-6 rounded-xl shadow-lg text-center"
-        initial={{ opacity: 1, y: 0 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay }}
-    >
-        <Icon className="h-12 w-12 text-teal-500 mx-auto mb-4" />
-        <p className="text-4xl font-bold text-slate-800">{value}</p>
-        <p className="text-slate-600 mt-1">{label}</p>
-    </motion.div>
-);
-
-const PhilosophyCard = ({ icon: Icon, title, text }) => (
-    <div className="flex items-start space-x-4">
-        <div className="flex-shrink-0">
-            <div className="flex items-center justify-center h-12 w-12 rounded-full bg-teal-500 text-white">
-                <Icon className="h-6 w-6" />
-            </div>
-        </div>
-        <div>
-            <p className="text-lg font-semibold text-slate-800">{title}</p>
-            <p className="mt-1 text-slate-600">{text}</p>
-        </div>
-    </div>
-);
 
 const SobreCendovetPage = () => {
   return (
@@ -62,114 +20,133 @@ const SobreCendovetPage = () => {
         ]}
       />
 
-      <div className="bg-white">
-        {/* Hero Section */}
-        <Section className="bg-slate-50">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <p className="text-base font-semibold text-teal-600">Cirugía MIS con rostro propio</p>
-              <h1 className="mt-2 text-4xl font-bold tracking-tight text-slate-800 sm:text-5xl">Dra. Eva García Gato</h1>
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                Directora médica de CENDOVET y pionera de la cirugía veterinaria de mínima invasión en España. Con más de 15 años de experiencia, ha posicionado a CENDOVET como un centro de referencia nacional, combinando excelencia técnica con un trato cercano a cada paciente.
-              </p>
-              <p className="mt-4 text-xl font-semibold text-teal-600">Tu mascota está en manos expertas.</p>
+      <div className="bg-background">
+        {/* Hero — asymmetric, photo-forward */}
+        <section className="bg-muted py-16 sm:py-24">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+              <div className="lg:col-span-3">
+                <p className="text-sm font-semibold tracking-widest uppercase text-primary">Cirugía MIS con rostro propio</p>
+                <h1 className="mt-3 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">Dra. Eva García Gato</h1>
+                <p className="mt-6 text-lg leading-8 text-muted-foreground">
+                  Directora médica de CENDOVET y pionera de la cirugía veterinaria de mínima invasión en España. Con más de 15 años de experiencia, ha posicionado a CENDOVET como un centro de referencia nacional, combinando excelencia técnica con un trato cercano a cada paciente.
+                </p>
+                <p className="mt-4 text-lg font-semibold text-primary">Tu mascota está en manos expertas.</p>
+              </div>
+              <div className="lg:col-span-2">
+                <img
+                  alt="Dra. Eva García Gato, directora médica de CENDOVET"
+                  className="w-full max-w-sm mx-auto h-auto rounded-2xl shadow-xl aspect-square object-cover"
+                  src={draEvaSobre}
+                />
+              </div>
             </div>
-            <motion.div 
-              className="relative"
-              initial={{ scale: 1, opacity: 1 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1 }}
-            >
-              <img alt="Dra. Eva García Gato, directora médica de CENDOVET" className="w-full max-w-md mx-auto h-auto rounded-full shadow-2xl aspect-square object-cover" src={draEvaSobre} />
-            </motion.div>
           </div>
-        </Section>
+        </section>
 
-        {/* Biografía Profesional */}
-        <Section>
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-center text-slate-800">Biografía profesional – Dra. Eva G. Gato</h2>
-                <p className="mt-4 text-lg text-center text-slate-600">La Dra. Eva García Gato encarna la experiencia, la innovación y el compromiso en cada paciente.</p>
-                
-                <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div>
-                        <h3 className="text-xl font-semibold text-slate-800 mb-4">Formación académica</h3>
-                        <ul className="space-y-3 text-slate-700">
-                            <li className="flex items-start"><Award className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span><strong>Licenciada en Veterinaria</strong> por la Universidad de Córdoba (Premio Extraordinario Fin de Carrera)</span></li>
-                            <li className="flex items-start"><Award className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span><strong>Diploma en Cirugía y Anestesia</strong> de Pequeños Animales (UAB Barcelona)</span></li>
-                            <li className="flex items-start"><Award className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span><strong>Especialista en Endoscopia y Cirugía de Mínima Invasión</strong> (Universidad de Extremadura)</span></li>
-                            <li className="flex items-start"><Award className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span>Licenciatura en Dirección y Administración de Empresas (UAN)</span></li>
-                            <li className="flex items-start"><Award className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span>Directora de Instalaciones de Radiodiagnóstico</span></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-semibold text-slate-800 mb-4">Afiliaciones profesionales</h3>
-                        <ul className="space-y-3 text-slate-700">
-                            <li className="flex items-start"><Users className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span>Cofundadora de <strong>MINIMAL</strong> (Asociación Ibérica de Cirugía Veterinaria de Mínima Invasión)</span></li>
-                            <li className="flex items-start"><Users className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span>Ponente y profesora en congresos y cursos de cirugía MIS</span></li>
-                            <li className="flex items-start"><Users className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span>Miembro activo de <strong>AVEPA</strong> y <strong>ISFM</strong></span></li>
-                            <li className="flex items-start"><Users className="h-5 w-5 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span>Vinculada a <strong>ESVC</strong> (European Society of Veterinary Cardiology)</span></li>
-                        </ul>
-                    </div>
+        {/* Biografía */}
+        <section className="py-16 sm:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-3xl font-bold text-foreground">Biografía profesional</h2>
+            <p className="mt-3 text-muted-foreground">La Dra. Eva García Gato encarna la experiencia, la innovación y el compromiso en cada paciente.</p>
+
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-4">Formación académica</h3>
+                <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                  <li><strong className="text-foreground">Licenciada en Veterinaria</strong> por la Universidad de Córdoba (Premio Extraordinario Fin de Carrera)</li>
+                  <li><strong className="text-foreground">Diploma en Cirugía y Anestesia</strong> de Pequeños Animales (UAB Barcelona)</li>
+                  <li><strong className="text-foreground">Especialista en Endoscopia y Cirugía de Mínima Invasión</strong> (Universidad de Extremadura)</li>
+                  <li>Licenciatura en Dirección y Administración de Empresas (UAN)</li>
+                  <li>Directora de Instalaciones de Radiodiagnóstico</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-4">Afiliaciones profesionales</h3>
+                <ul className="space-y-3 text-sm text-muted-foreground leading-relaxed">
+                  <li>Cofundadora de <strong className="text-foreground">MINIMAL</strong> (Asociación Ibérica de Cirugía Veterinaria de Mínima Invasión)</li>
+                  <li>Ponente y profesora en congresos y cursos de cirugía MIS</li>
+                  <li>Miembro activo de <strong className="text-foreground">AVEPA</strong> y <strong className="text-foreground">ISFM</strong></li>
+                  <li>Vinculada a <strong className="text-foreground">ESVC</strong> (European Society of Veterinary Cardiology)</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="mt-10 text-sm bg-muted p-4 rounded-lg text-muted-foreground border border-border">
+              Fue de las primeras en introducir la laparoscopia en la práctica veterinaria nacional a principios de la década de 2010, siendo referente temprana de esta técnica.
+            </p>
+          </div>
+        </section>
+
+        {/* Filosofía — text-only, no icons */}
+        <section className="bg-muted py-16 sm:py-24 border-y border-border">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-3xl font-bold text-foreground">Filosofía del centro</h2>
+            <p className="mt-3 text-muted-foreground">Excelencia clínica combinada con empatía. Cinco pilares nos guían.</p>
+
+            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
+              {[
+                { title: "Compasión", text: "Tratamos a cada mascota con el mismo cariño que si fuese nuestra." },
+                { title: "Cuidado", text: "Atención meticulosa en cada fase del tratamiento." },
+                { title: "Comprensión", text: "Escuchamos y acompañamos a cada familia en todo momento." },
+                { title: "Compromiso", text: "Dedicación inquebrantable con el bienestar del paciente." },
+                { title: "Calidad", text: "La más alta excelencia médica en cada diagnóstico y cirugía." },
+              ].map((item) => (
+                <div key={item.title}>
+                  <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
+                  <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{item.text}</p>
                 </div>
-                 <p className="mt-8 text-center text-lg bg-teal-50 p-4 rounded-lg text-teal-600">
-                    Fue de las primeras en introducir la laparoscopia en la práctica veterinaria nacional a principios de la década de 2010, siendo referente temprana de esta técnica.
-                </p>
+              ))}
             </div>
-        </Section>
+          </div>
+        </section>
 
-        {/* Filosofía */}
-        <Section className="bg-slate-50">
-            <div className="text-center">
-                <h2 className="text-3xl font-bold text-slate-800">Filosofía del centro: Excelencia con empatía</h2>
-                <p className="mt-4 text-lg max-w-3xl mx-auto text-slate-600">En CENDOVET nos guía una filosofía de excelencia clínica combinada con empatía premium. La Compasión, el Cuidado, la Comprensión, el Compromiso y la Calidad son los cinco pilares fundamentales.</p>
+        {/* Innovación — clean list, stats as text */}
+        <section className="py-16 sm:py-24">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+              <div>
+                <h2 className="text-3xl font-bold text-foreground">Innovación y liderazgo en cirugía MIS</h2>
+                <p className="mt-4 text-muted-foreground">En CENDOVET, la tecnología de vanguardia es parte fundamental de nuestra identidad.</p>
+                <ul className="mt-8 space-y-4 text-sm text-muted-foreground">
+                  <li><strong className="text-foreground">Láser Holmium</strong> — Primer centro privado en Andalucía con esta tecnología para litotricia.</li>
+                  <li><strong className="text-foreground">Torres de Laparoscopia Karl Storz</strong> — Equipamiento de última generación para máxima precisión.</li>
+                  <li><strong className="text-foreground">Endoscopios Olympus</strong> — Tecnología de alta definición para diagnóstico y tratamiento.</li>
+                  <li><strong className="text-foreground">Fluoroscopia Digital</strong> — Sistema moderno para procedimientos guiados por imagen en tiempo real.</li>
+                </ul>
+              </div>
+              <div className="grid grid-cols-2 gap-6">
+                {[
+                  { value: "2010", label: "Pioneros en MIS" },
+                  { value: "Nº 1", label: "Tecnología exclusiva" },
+                  { value: "+15", label: "Años de experiencia" },
+                  { value: "100s", label: "Casos de éxito" },
+                ].map((stat) => (
+                  <div key={stat.label} className="bg-muted p-6 rounded-lg border border-border">
+                    <p className="text-3xl font-bold text-foreground">{stat.value}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 max-w-5xl mx-auto">
-                <PhilosophyCard icon={HeartHandshake} title="Compasión" text="Tratamos a cada mascota con el mismo cariño que si fuese nuestra." />
-                <PhilosophyCard icon={Microscope} title="Cuidado" text="Atención meticulosa en cada fase del tratamiento." />
-                <PhilosophyCard icon={Users} title="Comprensión" text="Escuchamos y acompañamos a cada familia en todo momento." />
-                <PhilosophyCard icon={Target} title="Compromiso" text="Dedicación inquebrantable con el bienestar del paciente." />
-                <PhilosophyCard icon={Award} title="Calidad" text="La más alta excelencia médica en cada diagnóstico y cirugía." />
-            </div>
-        </Section>
+          </div>
+        </section>
 
-        {/* Innovación y Logros */}
-        <Section>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 className="text-3xl font-bold text-slate-800">Innovación y liderazgo en cirugía MIS</h2>
-                    <p className="mt-4 text-lg text-slate-600">En CENDOVET, la tecnología de vanguardia es parte fundamental de nuestra identidad.</p>
-                    <ul className="mt-8 space-y-4">
-                        <li className="flex items-start"><CheckCircle className="h-6 w-6 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span><strong>Láser Holmium:</strong> Primer centro privado en Andalucía con esta tecnología para litotricia.</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-6 w-6 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span><strong>Torres de Laparoscopia Karl Storz:</strong> Equipamiento de última generación para máxima precisión.</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-6 w-6 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span><strong>Endoscopios Olympus:</strong> Tecnología de alta definición para diagnóstico y tratamiento.</span></li>
-                        <li className="flex items-start"><CheckCircle className="h-6 w-6 mr-3 mt-1 text-teal-500 flex-shrink-0" /><span><strong>Fluoroscopia Digital:</strong> Sistema moderno para procedimientos guiados por imagen en tiempo real.</span></li>
-                    </ul>
-                </div>
-                <div className="grid grid-cols-2 gap-6">
-                    <StatCard icon={Star} value="2010" label="Pioneros en MIS" delay={0} />
-                    <StatCard icon={Telescope} value="Nº 1" label="Tecnología Exclusiva" delay={0.1} />
-                    <StatCard icon={BrainCircuit} value="+15" label="Años de Experiencia" delay={0.2} />
-                    <StatCard icon={Group} value="100s" label="Casos de Éxito" delay={0.3} />
-                </div>
-            </div>
-        </Section>
-
-        {/* Equipo y Visión */}
-        <Section className="bg-slate-50">
-            <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl font-bold text-slate-800">Nuestro equipo y visión de futuro</h2>
-                <p className="mt-4 text-lg text-slate-600">
-                    Aunque la Dra. Gato es el rostro y liderazgo médico, CENDOVET cuenta con un equipo multidisciplinar que comparte su pasión por la excelencia. Colaboramos con especialistas externos de primer nivel cuando el caso lo requiere.
-                </p>
-                <p className="mt-6 text-xl font-semibold text-teal-600">
-                    "Nuestra misión final es mejorar la vida de las mascotas y sus familias mediante una atención veterinaria especializada, humana y de confianza."
-                </p>
-                <Button asChild size="lg" className="mt-8">
-                    <Link to="/contacto">Contacta con nuestro equipo</Link>
-                </Button>
-            </div>
-        </Section>
+        {/* Equipo CTA */}
+        <section className="bg-primary py-16">
+          <div className="container mx-auto px-4 max-w-2xl text-center">
+            <h2 className="text-3xl font-bold text-primary-foreground">Nuestro equipo y visión de futuro</h2>
+            <p className="mt-4 text-primary-foreground/80 leading-relaxed">
+              Aunque la Dra. Gato es el rostro y liderazgo médico, CENDOVET cuenta con un equipo multidisciplinar que comparte su pasión por la excelencia.
+            </p>
+            <p className="mt-4 text-lg font-semibold text-primary-foreground/90 italic">
+              "Nuestra misión es mejorar la vida de las mascotas y sus familias mediante una atención veterinaria especializada, humana y de confianza."
+            </p>
+            <Button asChild size="lg" className="mt-8 bg-white text-primary hover:bg-white/90 font-semibold">
+              <Link to="/contacto">Contacta con nuestro equipo</Link>
+            </Button>
+          </div>
+        </section>
       </div>
     </>
   );
