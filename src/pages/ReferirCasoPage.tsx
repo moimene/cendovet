@@ -47,8 +47,8 @@ const fullSchema = step1Schema.merge(step2Schema).merge(step3Schema);
 
 // Step Components
 const Step1Form = ({ register, errors }) => (
-    <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-        <h2 className="text-2xl font-bold text-slate-800 dark:text-white mb-6">Datos del Veterinario/Clínica</h2>
+    <div exit={{ opacity: 0 }}>
+        <h2 className="text-2xl font-bold text-slate-800 mb-6">Datos del Veterinario/Clínica</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="space-y-1"><Label htmlFor="vetName">Nombre del veterinario remitente *</Label><Input id="vetName" placeholder="Dr./Dra. Nombre Apellidos" {...register("vetName")} /><p className="text-red-500 text-xs">{errors.vetName?.message}</p></div>
             <div className="space-y-1"><Label htmlFor="clinicName">Clínica de origen *</Label><Input id="clinicName" placeholder="Nombre de la clínica veterinaria" {...register("clinicName")} /><p className="text-red-500 text-xs">{errors.clinicName?.message}</p></div>
@@ -56,12 +56,12 @@ const Step1Form = ({ register, errors }) => (
             <div className="space-y-1"><Label htmlFor="phone">Teléfono de contacto *</Label><Input id="phone" type="tel" placeholder="XXX XXX XXX" {...register("phone")} /><p className="text-red-500 text-xs">{errors.phone?.message}</p></div>
             <div className="sm:col-span-2 space-y-1"><Label htmlFor="email">Email de contacto *</Label><Input id="email" type="email" placeholder="contacto@clinica.com" {...register("email")} /><p className="text-red-500 text-xs">{errors.email?.message}</p></div>
         </div>
-    </motion.div>
+    </div>
 );
 
 const Step2Form = ({ register, errors }) => (
-    <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-        <h2 className="text-2xl font-bold text-slate-800 dark:text-white mb-6">Datos del Propietario y Mascota</h2>
+    <div exit={{ opacity: 0 }}>
+        <h2 className="text-2xl font-bold text-slate-800 mb-6">Datos del Propietario y Mascota</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="sm:col-span-2 space-y-1"><Label htmlFor="ownerName">Nombre del propietario *</Label><Input id="ownerName" placeholder="Nombre completo del propietario" {...register("ownerName")} /><p className="text-red-500 text-xs">{errors.ownerName?.message}</p></div>
             <div className="sm:col-span-2 space-y-1"><Label htmlFor="ownerContact">Teléfono/Email del propietario (Opcional)</Label><Input id="ownerContact" placeholder="Contacto del propietario" {...register("ownerContact")} /><p className="text-red-500 text-xs">{errors.ownerContact?.message}</p></div>
@@ -72,7 +72,7 @@ const Step2Form = ({ register, errors }) => (
               <div className="space-y-1"><Label htmlFor="weight">Peso (kg)</Label><Input id="weight" type="number" step="0.1" placeholder="Kg" {...register("weight")} /><p className="text-red-500 text-xs">{errors.weight?.message}</p></div>
             </div>
         </div>
-    </motion.div>
+    </div>
 );
 
 const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
@@ -110,8 +110,8 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
     };
 
     return (
-        <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <h2 className="text-2xl font-bold text-slate-800 dark:text-white mb-6">Detalles Clínicos del Caso</h2>
+        <div exit={{ opacity: 0 }}>
+            <h2 className="text-2xl font-bold text-slate-800 mb-6">Detalles Clínicos del Caso</h2>
             <div className="space-y-6">
                 <div className="space-y-1">
                     <Label htmlFor="clinicalSummary">Resumen clínico del caso *</Label>
@@ -129,27 +129,27 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
                     <div
                         onDrop={handleDrop}
                         onDragOver={(e) => e.preventDefault()}
-                        className="mt-2 flex justify-center rounded-lg border border-dashed border-slate-900/25 dark:border-slate-50/25 px-6 py-10"
+                        className="mt-2 flex justify-center rounded-lg border border-dashed border-slate-900/25 px-6 py-10"
                     >
                         <div className="text-center">
                             <Upload className="mx-auto h-12 w-12 text-gray-400" />
-                            <div className="mt-4 flex text-sm leading-6 text-gray-600 dark:text-gray-300">
-                                <label htmlFor="file-upload" className="relative cursor-pointer rounded-md bg-white dark:bg-slate-800 font-semibold text-teal-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-teal-600 focus-within:ring-offset-2 dark:focus-within:ring-offset-slate-800 hover:text-teal-500">
+                            <div className="mt-4 flex text-sm leading-6 text-gray-600">
+                                <label htmlFor="file-upload" className="relative cursor-pointer rounded-md bg-white font-semibold text-teal-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-teal-600 focus-within:ring-offset-2 hover:text-teal-500">
                                     <span>Seleccionar archivos</span>
                                     <input id="file-upload" name="file-upload" type="file" className="sr-only" multiple onChange={handleFileChange} />
                                 </label>
                                 <p className="pl-1">o arrástralos aquí</p>
                             </div>
-                            <p className="text-xs leading-5 text-gray-600 dark:text-gray-400">PDF, JPG, PNG, MP4 hasta 50MB</p>
+                            <p className="text-xs leading-5 text-gray-600">PDF, JPG, PNG, MP4 hasta 50MB</p>
                         </div>
                     </div>
                     {uploadedFiles.length > 0 && (
                         <div className="mt-4 space-y-2">
                             {uploadedFiles.map((file, index) => (
-                                <div key={index} className="flex items-center justify-between bg-slate-100 dark:bg-slate-700 p-2 rounded-md">
+                                <div key={index} className="flex items-center justify-between bg-slate-100 p-2 rounded-md">
                                     <div className="flex items-center gap-2">
                                         <FileIcon className="h-5 w-5 text-slate-500" />
-                                        <span className="text-sm font-medium text-slate-800 dark:text-slate-200">{file.name}</span>
+                                        <span className="text-sm font-medium text-slate-800">{file.name}</span>
                                         <span className="text-xs text-slate-500">{(file.size / 1024 / 1024).toFixed(2)} MB</span>
                                     </div>
                                     <Button variant="ghost" size="icon" onClick={() => removeFile(index)}><X className="h-4 w-4" /></Button>
@@ -159,7 +159,7 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
                     )}
                 </div>
                 <div>
-                  <h3 className="text-md font-semibold text-slate-800 dark:text-white mb-2">Preferencias de comunicación</h3>
+                  <h3 className="text-md font-semibold text-slate-800 mb-2">Preferencias de comunicación</h3>
                   <div className="flex items-center space-x-2">
                       <Checkbox id="keepInformed" {...register("keepInformed")} />
                       <Label htmlFor="keepInformed">Mantenerme informado del progreso del caso</Label>
@@ -170,27 +170,27 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
                   </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 
 const Step4Review = ({ getValues, uploadedFiles }) => {
     const formData = getValues();
     return (
-        <motion.div initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <h2 className="text-2xl font-bold text-slate-800 dark:text-white mb-2">Revise su información antes de enviar</h2>
-            <p className="text-slate-600 dark:text-slate-300 mb-6">Puede volver atrás para modificar cualquier información.</p>
+        <div exit={{ opacity: 0 }}>
+            <h2 className="text-2xl font-bold text-slate-800 mb-2">Revise su información antes de enviar</h2>
+            <p className="text-slate-600 mb-6">Puede volver atrás para modificar cualquier información.</p>
             <div className="space-y-4">
-                <div className="bg-slate-50 dark:bg-slate-700/50 p-4 rounded-lg">
-                    <h3 className="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2">Información del Veterinario</h3>
+                <div className="bg-teal-50 rounded-lg p-4">
+                    <h3 className="font-bold text-lg text-slate-800 mb-2">Información del Veterinario</h3>
                     <p><strong>Veterinario:</strong> {formData.vetName}</p>
                     <p><strong>Clínica:</strong> {formData.clinicName}</p>
                     <p><strong>Localidad:</strong> {formData.location}</p>
                     <p><strong>Teléfono:</strong> {formData.phone}</p>
                     <p><strong>Email:</strong> {formData.email}</p>
                 </div>
-                 <div className="bg-slate-50 dark:bg-slate-700/50 p-4 rounded-lg">
-                    <h3 className="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2">Información del Paciente</h3>
+                 <div className="bg-teal-50 rounded-lg p-4">
+                    <h3 className="font-bold text-lg text-slate-800 mb-2">Información del Paciente</h3>
                     <p><strong>Propietario:</strong> {formData.ownerName}</p>
                     {formData.ownerContact && <p><strong>Contacto Prop.:</strong> {formData.ownerContact}</p>}
                     <p><strong>Mascota:</strong> {formData.petName}</p>
@@ -198,28 +198,28 @@ const Step4Review = ({ getValues, uploadedFiles }) => {
                     <p><strong>Edad:</strong> {formData.age} años</p>
                     {formData.weight && <p><strong>Peso:</strong> {formData.weight} kg</p>}
                 </div>
-                 <div className="bg-slate-50 dark:bg-slate-700/50 p-4 rounded-lg">
-                    <h3 className="font-bold text-lg text-slate-800 dark:text-slate-100 mb-2">Información Clínica</h3>
+                 <div className="bg-teal-50 rounded-lg p-4">
+                    <h3 className="font-bold text-lg text-slate-800 mb-2">Información Clínica</h3>
                     <p className="whitespace-pre-wrap"><strong>Resumen:</strong> {formData.clinicalSummary}</p>
                     {formData.servicesRequested && <p><strong>Servicios:</strong> {formData.servicesRequested}</p>}
                     <p><strong>Archivos Adjuntos:</strong> {uploadedFiles.length} archivo(s)</p>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 
 const SuccessScreen = ({ onReset }) => (
-    <motion.div initial={{ opacity: 1, scale: 1 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-10">
+    <div className="text-center py-10">
         <CheckCircle2 className="mx-auto h-20 w-20 text-green-500" />
-        <h2 className="mt-4 text-3xl font-bold text-slate-800 dark:text-white">¡Gracias! Hemos recibido la información del caso</h2>
-        <p className="mt-2 text-slate-600 dark:text-slate-300">Nos pondremos en contacto en menos de 24h para confirmar los detalles.</p>
-        <div className="mt-6 bg-teal-50 dark:bg-teal-900/20 p-4 text-left rounded-lg">
-            <p className="font-bold text-teal-800 dark:text-teal-200">Respuesta garantizada en menos de 24 horas</p>
-            <p className="text-sm text-teal-700 dark:text-teal-300">Si necesita atención inmediata, llámenos al <a href="tel:+34956097060" className="font-bold underline">956 097 060</a></p>
+        <h2 className="mt-4 text-3xl font-bold text-slate-800">¡Gracias! Hemos recibido la información del caso</h2>
+        <p className="mt-2 text-slate-600">Nos pondremos en contacto en menos de 24h para confirmar los detalles.</p>
+        <div className="mt-6 bg-teal-50 p-4 text-left rounded-lg">
+            <p className="font-bold text-teal-800">Respuesta garantizada en menos de 24 horas</p>
+            <p className="text-sm text-teal-700">Si necesita atención inmediata, llámenos al <a href="tel:+34956097060" className="font-bold underline">956 097 060</a></p>
         </div>
         <Button onClick={onReset} className="mt-8">Referir otro caso</Button>
-    </motion.div>
+    </div>
 );
 
 const stepsConfig = [
@@ -296,29 +296,29 @@ const ReferirCasoPage = () => {
     return (
         <>
             <Helmet><title>Referir un Caso - CENDOVET</title><meta name="description" content="Formulario para que clínicas veterinarias refieran un caso a CENDOVET." /></Helmet>
-            <div className="bg-slate-50 dark:bg-slate-900 py-16 sm:py-24">
+            <div className="bg-slate-50 py-16 sm:py-24">
                 <div className="container mx-auto px-4">
                     <AnimatePresence mode="wait">
                     {submitted ? (
                         <SuccessScreen key="success" onReset={resetForm} />
                     ) : (
                         <motion.div key="form">
-                            <div className="text-center mb-12"><h1 className="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-white">Referir un Caso a CENDOVET</h1><p className="mt-4 text-lg text-slate-600 dark:text-slate-300">Respuesta garantizada en menos de 24 horas.</p></div>
+                            <div className="text-center mb-12"><h1 className="text-4xl md:text-5xl font-extrabold text-slate-800">Referir un Caso a CENDOVET</h1><p className="mt-4 text-lg text-slate-600">Respuesta garantizada en menos de 24 horas.</p></div>
                             <div className="max-w-4xl mx-auto">
                                 <div className="mb-8 flex justify-between items-center">
                                     {stepsConfig.map((step, index) => (
                                         <React.Fragment key={step.id}>
                                             <div className="flex flex-col items-center">
-                                                <div className={cn("flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-12 shrink-0 transition-colors", currentStep > step.id ? 'bg-green-500 text-white' : currentStep === step.id ? 'bg-teal-600 text-white' : 'bg-teal-100 dark:bg-slate-700 text-teal-600 dark:text-teal-300')}>
+                                                <div className={cn("flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-12 shrink-0 transition-colors", currentStep > step.id ? 'bg-green-500 text-white' : currentStep === step.id ? 'bg-teal-600 text-white' : 'bg-teal-100 text-teal-600')}>
                                                     {currentStep > step.id ? <CheckCircle2 className="h-5 w-5"/> : step.icon}
                                                 </div>
                                                 <p className="text-xs mt-2 font-semibold">{step.name}</p>
                                             </div>
-                                            {index < stepsConfig.length - 1 && <div className={cn("flex-auto border-t-2 transition-colors", currentStep > index + 1 ? "border-green-500" : "border-teal-200 dark:border-slate-700")}></div>}
+                                            {index < stepsConfig.length - 1 && <div className={cn("flex-auto border-t-2 transition-colors", currentStep > index + 1 ? "border-green-500" : "border-teal-200")}></div>}
                                         </React.Fragment>
                                     ))}
                                 </div>
-                                <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg">
+                                <div className="bg-white p-8 rounded-2xl shadow-lg">
                                     <AnimatePresence mode="wait">
                                         {currentStep === 1 && <Step1Form register={register} errors={errors} />}
                                         {currentStep === 2 && <Step2Form register={register} errors={errors} />}
@@ -326,14 +326,14 @@ const ReferirCasoPage = () => {
                                         {currentStep === 4 && <Step4Review getValues={getValues} uploadedFiles={uploadedFiles} />}
                                     </AnimatePresence>
                                     {currentStep === 4 && (
-                                        <div className="mt-6 p-4 rounded-lg bg-slate-50 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600">
+                                        <div className="mt-6 p-4 rounded-lg bg-teal-50 border border-teal-200">
                                             <div className="flex items-start space-x-3">
                                                 <Checkbox id="consent" checked={consent} onCheckedChange={(checked) => setConsent(checked === true)} />
                                                 <Label htmlFor="consent" className="text-sm">He leído y acepto la <Link to="/politica-privacidad" target="_blank" className="text-teal-600 hover:underline">política de privacidad</Link>. Confirmo que tengo el consentimiento del propietario para compartir estos datos con CENDOVET.</Label>
                                             </div>
                                         </div>
                                     )}
-                                    <div className="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700 flex justify-between">
+                                    <div className="mt-8 pt-6 border-t border-slate-200 flex justify-between">
                                         <Button variant="outline" onClick={handlePrev} disabled={currentStep === 1 || isSubmitting}><ArrowLeft className="h-4 w-4 mr-2"/>Anterior</Button>
                                         {currentStep < 4 ? (
                                             <Button onClick={handleNext} disabled={isSubmitting}>Siguiente<ArrowRight className="h-4 w-4 ml-2"/></Button>

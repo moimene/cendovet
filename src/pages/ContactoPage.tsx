@@ -49,32 +49,23 @@ const ContactoPage = () => {
         <title>Contacto - CENDOVET</title>
         <meta name="description" content="Contacta con CENDOVET para solicitar una cita, resolver dudas o visitarnos. Encuentra nuestro teléfono, email y dirección." />
       </Helmet>
-      <div className="bg-white dark:bg-slate-900">
+      <div className="bg-white">
         {/* Hero */}
-        <div className="relative isolate overflow-hidden bg-gradient-to-b from-cyan-800 to-cyan-900 pt-14 pb-24 sm:pb-32">
-          <div className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white/5 dark:bg-cyan-950/30 shadow-xl shadow-cyan-600/10 ring-1 ring-cyan-50" />
+        <div className="relative isolate overflow-hidden bg-teal-800 pt-14 pb-24 sm:pb-32">
+          <div className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white/5 shadow-xl shadow-teal-600/10 ring-1 ring-teal-50" />
           <div className="mx-auto container px-4 text-center">
-            <motion.div
-              initial={{ opacity: 1, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <div>
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Contacto</h1>
-              <p className="mt-6 text-lg leading-8 text-cyan-200 max-w-2xl mx-auto">¿Tienes alguna duda o quieres pedir una cita? Estamos aquí para ayudarte.</p>
-            </motion.div>
+              <p className="mt-6 text-lg leading-8 text-teal-100 max-w-2xl mx-auto">¿Tienes alguna duda o quieres pedir una cita? Estamos aquí para ayudarte.</p>
+            </div>
           </div>
         </div>
 
         <div className="container mx-auto px-4 -mt-16">
-          <motion.div
-            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
-            initial={{ opacity: 1, y: 0 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Formulario */}
-            <div className="lg:col-span-2 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-2xl">
-              <h2 className="text-3xl font-bold text-cyan-900 dark:text-white mb-6">Envíanos un mensaje</h2>
+            <div className="lg:col-span-2 bg-white p-8 rounded-2xl shadow-2xl">
+              <h2 className="text-3xl font-bold text-slate-800 mb-6">Envíanos un mensaje</h2>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -113,20 +104,20 @@ const ContactoPage = () => {
 
             {/* Info y WhatsApp */}
             <div className="space-y-8">
-              <div className="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-2xl">
-                <h3 className="text-2xl font-bold text-cyan-900 dark:text-white mb-4">Información de Contacto</h3>
-                <ul className="space-y-4 text-slate-600 dark:text-slate-300">
+              <div className="bg-white p-8 rounded-2xl shadow-2xl">
+                <h3 className="text-2xl font-bold text-slate-800 mb-4">Información de Contacto</h3>
+                <ul className="space-y-4 text-slate-600">
                   <li className="flex items-start">
-                    <MapPin className="h-6 w-6 mr-3 mt-1 text-cyan-500 flex-shrink-0" />
+                    <MapPin className="h-6 w-6 mr-3 mt-1 text-teal-500 flex-shrink-0" />
                     <span>Av. Virgen de la Palma, 3, 11203 Algeciras, Cádiz</span>
                   </li>
                   <li className="flex items-center">
-                    <Phone className="h-5 w-5 mr-3 text-cyan-500" />
-                    <a href="tel:+34956 097 060" className="hover:text-cyan-500">956 097 060</a>
+                    <Phone className="h-5 w-5 mr-3 text-teal-500" />
+                    <a href="tel:+34956 097 060" className="hover:text-teal-500">956 097 060</a>
                   </li>
                   <li className="flex items-center">
-                    <Mail className="h-5 w-5 mr-3 text-cyan-500" />
-                    <a href="mailto:info@cvcampogibraltar.es" className="hover:text-cyan-500">info@cvcampogibraltar.es</a>
+                    <Mail className="h-5 w-5 mr-3 text-teal-500" />
+                    <a href="mailto:info@cvcampogibraltar.es" className="hover:text-teal-500">info@cvcampogibraltar.es</a>
                   </li>
                 </ul>
               </div>
@@ -143,13 +134,13 @@ const ContactoPage = () => {
                 </Button>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Mapa */}
         <div className="py-16 sm:py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-cyan-900 dark:text-white mb-8">Encuéntranos</h2>
+            <h2 className="text-3xl font-bold text-center text-slate-800 mb-8">Encuéntranos</h2>
             <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl">
               <iframe
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-5.4530,36.1335,-5.4430,36.1385&layer=mapnik&marker=36.1360,-5.4480"

@@ -11,11 +11,11 @@ const NotFoundPage = () => {
         <title>404 - Página no encontrada - CENDOVET</title>
         <meta name="description" content="La página que buscas no existe o ha sido movida." />
       </Helmet>
-      <div className="flex flex-col items-center justify-center text-center py-20 md:py-32 px-4 bg-gray-50 dark:bg-slate-900">
+      <div className="flex flex-col items-center justify-center text-center py-20 md:py-32 px-4 bg-gray-50">
         <AlertTriangle className="text-amber-500 w-16 h-16 mb-4" />
-        <h1 className="text-6xl md:text-8xl font-bold text-cyan-900 dark:text-cyan-400 mb-2">404</h1>
-        <h2 className="text-2xl md:text-3xl font-semibold text-cyan-800 dark:text-cyan-300 mb-4">Página no encontrada</h2>
-        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-md mb-8">
+        <h1 className="text-6xl md:text-8xl font-bold text-slate-800 mb-2">404</h1>
+        <h2 className="text-2xl md:text-3xl font-semibold text-teal-600 mb-4">Página no encontrada</h2>
+        <p className="text-lg text-gray-600 max-w-md mb-8">
             Lo sentimos, la página que estás buscando no existe o ha sido movida.
         </p>
         <Button asChild>

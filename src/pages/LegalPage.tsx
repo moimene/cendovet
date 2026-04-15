@@ -4,7 +4,7 @@ import { CheckCircle, AlertTriangle } from 'lucide-react';
 
 const PrivacyPolicyContent = () => (
     <>
-        <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Última actualización: Noviembre 2025</p>
+        <p className="text-sm text-slate-500 mb-6">Última actualización: Noviembre 2025</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">1. Responsable del Tratamiento</h2>
         <p className="mb-2"><strong>Identidad:</strong> CENDOVET - Centro de Especialidades Veterinarias</p>
@@ -89,12 +89,12 @@ const PrivacyPolicyContent = () => (
         <h2 className="text-2xl font-bold mt-6 mb-3">8. Derechos del Interesado</h2>
         <p className="mb-4">Conforme al RGPD, puede ejercitar los siguientes derechos:</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-            <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg"><strong>Derecho de Acceso:</strong> Conocer qué datos tratamos sobre usted.</div>
-            <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg"><strong>Derecho de Rectificación:</strong> Modificar datos inexactos o incompletos.</div>
-            <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg"><strong>Derecho de Supresión:</strong> Solicitar la eliminación de sus datos.</div>
-            <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg"><strong>Derecho de Oposición:</strong> Oponerse a determinados tratamientos.</div>
-            <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg"><strong>Derecho de Limitación:</strong> Solicitar la limitación del tratamiento.</div>
-            <div className="bg-slate-100 dark:bg-slate-700 p-4 rounded-lg"><strong>Derecho de Portabilidad:</strong> Recibir sus datos en formato estructurado.</div>
+            <div className="bg-slate-100 p-4 rounded-lg"><strong>Derecho de Acceso:</strong> Conocer qué datos tratamos sobre usted.</div>
+            <div className="bg-slate-100 p-4 rounded-lg"><strong>Derecho de Rectificación:</strong> Modificar datos inexactos o incompletos.</div>
+            <div className="bg-slate-100 p-4 rounded-lg"><strong>Derecho de Supresión:</strong> Solicitar la eliminación de sus datos.</div>
+            <div className="bg-slate-100 p-4 rounded-lg"><strong>Derecho de Oposición:</strong> Oponerse a determinados tratamientos.</div>
+            <div className="bg-slate-100 p-4 rounded-lg"><strong>Derecho de Limitación:</strong> Solicitar la limitación del tratamiento.</div>
+            <div className="bg-slate-100 p-4 rounded-lg"><strong>Derecho de Portabilidad:</strong> Recibir sus datos en formato estructurado.</div>
         </div>
         <h3 className="text-xl font-semibold mt-4 mb-2">¿Cómo ejercitar sus derechos?</h3>
         <p>Puede ejercitar sus derechos mediante:</p>
@@ -134,7 +134,7 @@ const PrivacyPolicyContent = () => (
 
 const LegalNoticeContent = () => (
     <>
-        <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Última actualización: Noviembre 2025</p>
+        <p className="text-sm text-slate-500 mb-6">Última actualización: Noviembre 2025</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">1. Datos Identificativos</h2>
         <p><strong>Denominación social:</strong> CENDOVET - Centro de Especialidades Veterinarias</p>
@@ -171,7 +171,7 @@ const LegalNoticeContent = () => (
 
         <h2 className="text-2xl font-bold mt-6 mb-3">6. Exclusión de Garantías y Responsabilidad</h2>
         <h3 className="text-xl font-semibold mt-4 mb-2">6.3. De la Información Médico-Veterinaria</h3>
-        <div className="bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 p-4 my-4 rounded-lg" role="alert">
+        <div className="bg-yellow-50 text-yellow-700 p-4 my-4 rounded-lg" role="alert">
             <p className="font-bold flex items-center"><AlertTriangle className="mr-2"/> Advertencia Importante</p>
             <p>La información médico-veterinaria proporcionada en este Sitio Web tiene carácter informativo y educativo. No sustituye en ningún caso el diagnóstico, consejo o tratamiento médico profesional. Ante cualquier duda sobre la salud de su mascota, consulte siempre con su veterinario. En caso de urgencia, acuda inmediatamente a un centro veterinario.</p>
         </div>
@@ -196,7 +196,7 @@ const LegalNoticeContent = () => (
 
 const CookiesPolicyContent = () => (
     <>
-        <p className="text-sm text-slate-500 dark:text-slate-400 mb-6">Última actualización: Noviembre 2025</p>
+        <p className="text-sm text-slate-500 mb-6">Última actualización: Noviembre 2025</p>
 
         <h2 className="text-2xl font-bold mt-6 mb-3">1. ¿Qué son las Cookies?</h2>
         <p className="mb-4">Las cookies son pequeños archivos de texto que los sitios web almacenan en el dispositivo del usuario cuando se navega por Internet. Su función principal es reconocer al usuario y recordar sus preferencias para facilitar la navegación y usabilidad de nuestra web.</p>
@@ -220,11 +220,11 @@ const CookiesPolicyContent = () => (
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="bg-slate-50 dark:bg-slate-700"><td colSpan={4} className="p-2 font-bold">Cookies Propias</td></tr>
+                    <tr className="bg-slate-100"><td colSpan={4} className="p-2 font-bold">Cookies Propias</td></tr>
                     <tr><td className="border-b p-2">cookieConsent</td><td className="border-b p-2">Técnica</td><td className="border-b p-2">1 año</td><td className="border-b p-2">Almacena las preferencias de cookies.</td></tr>
                     <tr><td className="border-b p-2">language</td><td className="border-b p-2">Preferencia</td><td className="border-b p-2">1 año</td><td className="border-b p-2">Recuerda el idioma seleccionado.</td></tr>
                     <tr><td className="border-b p-2">sessionID</td><td className="border-b p-2">Técnica</td><td className="border-b p-2">Sesión</td><td className="border-b p-2">Mantiene la sesión del usuario.</td></tr>
-                    <tr className="bg-slate-50 dark:bg-slate-700"><td colSpan={4} className="p-2 font-bold">Cookies de Terceros</td></tr>
+                    <tr className="bg-slate-100"><td colSpan={4} className="p-2 font-bold">Cookies de Terceros</td></tr>
                     <tr><td className="border-b p-2">Google Analytics</td><td className="border-b p-2">Analítica</td><td className="border-b p-2">2 años</td><td className="border-b p-2">Análisis estadístico del tráfico.</td></tr>
                     <tr><td className="border-b p-2">Google Maps</td><td className="border-b p-2">Técnica</td><td className="border-b p-2">6 meses</td><td className="border-b p-2">Mostrar mapas interactivos.</td></tr>
                 </tbody>
@@ -243,7 +243,7 @@ const CookiesPolicyContent = () => (
             <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Safari</a></li>
             <li><a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">Microsoft Edge</a></li>
         </ul>
-        <div className="bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 p-4 my-4 rounded-lg" role="alert">
+        <div className="bg-yellow-50 text-yellow-700 p-4 my-4 rounded-lg" role="alert">
             <p className="font-bold flex items-center"><AlertTriangle className="mr-2"/> Advertencia</p>
             <p>Bloquear o eliminar cookies puede afectar negativamente la experiencia de usuario.</p>
         </div>
@@ -278,11 +278,11 @@ const LegalPage = ({ pageTitle }) => {
                 <title>{pageTitle} - CENDOVET</title>
                 <meta name="description" content={`Documento legal de CENDOVET: ${pageTitle}.`} />
             </Helmet>
-            <div className="bg-slate-50 dark:bg-slate-900 py-16 sm:py-24">
+            <div className="bg-slate-50 py-16 sm:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-3xl mx-auto bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg">
-                        <h1 className="text-4xl font-extrabold text-slate-800 dark:text-white mb-6">{pageTitle}</h1>
-                        <div className="prose prose-slate dark:prose-invert max-w-none">
+                    <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+                        <h1 className="text-4xl font-extrabold text-slate-800 mb-6">{pageTitle}</h1>
+                        <div className="prose prose-slate  max-w-none">
                            {getContent()}
                         </div>
                     </div>
