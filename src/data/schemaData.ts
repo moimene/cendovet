@@ -291,7 +291,6 @@ export function articleSchema(params: {
     datePublished: params.datePublished,
     dateModified: params.dateModified,
     author: {
-      "@context": "https://schema.org",
       "@type": "Person",
       name: CLINIC_INFO.leader.name,
       jobTitle: CLINIC_INFO.leader.title,

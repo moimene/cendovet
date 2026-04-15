@@ -49,7 +49,7 @@ const fullSchema = step1Schema.merge(step2Schema).merge(step3Schema);
 
 // Step Components
 const Step1Form = ({ register, errors }) => (
-    <div exit={{ opacity: 0 }}>
+    <div>
         <h2 className="text-2xl font-bold text-slate-800 mb-6">Datos del Veterinario/Clínica</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="space-y-1"><Label htmlFor="vetName">Nombre del veterinario remitente *</Label><Input id="vetName" placeholder="Dr./Dra. Nombre Apellidos" {...register("vetName")} /><p className="text-red-500 text-xs">{errors.vetName?.message}</p></div>
@@ -62,7 +62,7 @@ const Step1Form = ({ register, errors }) => (
 );
 
 const Step2Form = ({ register, errors }) => (
-    <div exit={{ opacity: 0 }}>
+    <div>
         <h2 className="text-2xl font-bold text-slate-800 mb-6">Datos del Propietario y Mascota</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="sm:col-span-2 space-y-1"><Label htmlFor="ownerName">Nombre del propietario *</Label><Input id="ownerName" placeholder="Nombre completo del propietario" {...register("ownerName")} /><p className="text-red-500 text-xs">{errors.ownerName?.message}</p></div>
@@ -112,7 +112,7 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
     };
 
     return (
-        <div exit={{ opacity: 0 }}>
+        <div>
             <h2 className="text-2xl font-bold text-slate-800 mb-6">Detalles Clínicos del Caso</h2>
             <div className="space-y-6">
                 <div className="space-y-1">
@@ -179,7 +179,7 @@ const Step3Form = ({ register, errors, uploadedFiles, setUploadedFiles }) => {
 const Step4Review = ({ getValues, uploadedFiles }) => {
     const formData = getValues();
     return (
-        <div exit={{ opacity: 0 }}>
+        <div>
             <h2 className="text-2xl font-bold text-slate-800 mb-2">Revise su información antes de enviar</h2>
             <p className="text-slate-600 mb-6">Puede volver atrás para modificar cualquier información.</p>
             <div className="space-y-4">
