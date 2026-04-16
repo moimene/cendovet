@@ -96,11 +96,23 @@ const BlogPage = () => {
               className="bg-white rounded-xl overflow-hidden shadow-lg flex flex-col group"
             >
               <Link to={`/blog/${post.slug}`} className="block">
-                <div className="relative">
-                  <img
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                    alt={`Imagen para el artículo ${post.title}`}
-                   src={post.image.startsWith('http') ? `${post.image}?w=800&auto=format&fit=crop` : post.image} />
+                <div className="relative overflow-hidden">
+                  {post.video ? (
+                    <video
+                      className="w-full h-48 object-cover"
+                      src={post.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    />
+                  ) : (
+                    <img
+                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      alt={`Imagen para el artículo ${post.title}`}
+                      src={post.image.startsWith('http') ? `${post.image}?w=800&auto=format&fit=crop` : post.image}
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-4">
                      <div className="flex flex-wrap gap-2">
