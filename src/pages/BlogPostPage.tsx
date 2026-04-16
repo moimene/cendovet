@@ -86,10 +86,23 @@ const BlogPostPage = () => {
 
             {/* Post Image */}
             <div className="my-8 rounded-lg overflow-hidden shadow-lg">
-              <img
-                className="w-full h-auto object-cover"
-                alt={`Imagen principal del artículo ${post.title}`}
-               src={post.image.startsWith('http') ? `${post.image}?w=1200&auto=format&fit=crop` : post.image} />
+              {post.video ? (
+                <video
+                  className="w-full h-auto"
+                  src={post.video}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls
+                />
+              ) : (
+                <img
+                  className="w-full h-auto object-cover"
+                  alt={`Imagen principal del artículo ${post.title}`}
+                  src={post.image.startsWith('http') ? `${post.image}?w=1200&auto=format&fit=crop` : post.image}
+                />
+              )}
             </div>
 
             {/* Post Content */}
