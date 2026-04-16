@@ -25,6 +25,7 @@ import fluoroscopiaImg from '@/assets/fluoroscopia_cendovet.jpg';
 import fluoroscopiaRxImg from '@/assets/fluoroscopia_rx.png';
 import ecografiaIndicacionesImg from '@/assets/ecografia_indicaciones.png';
 import litotriciaVideo from '@/assets/litotricia_video.mp4';
+import litotriciaProcesoImg from '@/assets/litotricia_proceso.png';
 
 const ServicioMISPage = () => {
   const { serviceKey } = useParams();
