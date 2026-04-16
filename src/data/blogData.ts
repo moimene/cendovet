@@ -7,6 +7,7 @@ import blogFilariasVideo from '@/assets/blog_filarias_endovascular.mp4';
 import blogCromoendoscopiaVideo from '@/assets/blog_cromoendoscopia.mp4';
 import blogCuerpoExtranoVideo from '@/assets/blog_cuerpo_extrano_gastrico.mp4';
 import blogCuerpoExtrano2Video from '@/assets/blog_cuerpo_extrano_gastrico_2.mp4';
+import blogPelusoRadiografia from '@/assets/blog_peluso_radiografia.png';
 
 export const blogPosts = [
   {
@@ -290,7 +291,7 @@ export const blogPosts = [
     readingTime: 4,
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico', 'Esófago'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13',
+    image: blogPelusoRadiografia,
     content: `
       <p><strong>Paciente:</strong> Peluso, un perro referido desde CV Taraguilla (San Roque).</p>
       <p><strong>Historia:</strong> Peluso se tragó un anzuelo mientras paseaba por la playa. El anzuelo quedó clavado en una zona muy compleja: justo al inicio del esófago, donde coincide con la laringe. Es una zona crítica por las estructuras tan delicadas que hay y el escaso espacio para trabajar.</p>
