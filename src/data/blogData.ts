@@ -4,6 +4,7 @@ import blogParacetamol from '@/assets/blog_paracetamol.png';
 import blogCriptorquidia from '@/assets/blog_criptorquidia.png';
 import blogExtraccionVideo from '@/assets/blog_extraccion_endoscopica.mp4';
 import blogFilariasVideo from '@/assets/blog_filarias_endovascular.mp4';
+import blogCromoendoscopiaVideo from '@/assets/blog_cromoendoscopia.mp4';
 
 export const blogPosts = [
   {
@@ -194,7 +195,8 @@ export const blogPosts = [
     readingTime: 5,
     tags: ['Endoscopia', 'Oncología', 'Tecnología', 'Cromoendoscopia', 'Diagnóstico'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1581594693702-fbdc51b2763b',
+    image: blogCromoendoscopiaVideo,
+    video: blogCromoendoscopiaVideo,
     content: `
       <p>En CENDOVET damos un nuevo paso hacia la excelencia en endoscopia y cirugía de mínima invasión con la incorporación del <strong>procesador endoscópico Fujifilm EP-8000</strong>, una plataforma de cromoendoscopia digital avanzada utilizada en hospitales humanos de referencia para la detección precoz del cáncer gastrointestinal.</p>
 
