@@ -24,6 +24,7 @@ import cirugiaMisVsImg from '@/assets/cirugia_mis_vs.png';
 import fluoroscopiaImg from '@/assets/fluoroscopia_cendovet.jpg';
 import fluoroscopiaRxImg from '@/assets/fluoroscopia_rx.png';
 import ecografiaIndicacionesImg from '@/assets/ecografia_indicaciones.png';
+import litotriciaVideo from '@/assets/litotricia_video.mp4';
 
 const ServicioMISPage = () => {
   const { serviceKey } = useParams();
@@ -91,7 +92,7 @@ const ServicioMISPage = () => {
       case 'endoscopia':
         return { src: endoscopiaImg, alt: "Equipo veterinario de CENDOVET realizando una endoscopia" };
       case 'litotricia-laser':
-        return { src: "https://images.unsplash.com/photo-1581093450021-4a7360e9a1c8", alt: "Equipo láser avanzado en un laboratorio médico" };
+        return { src: litotriciaVideo, alt: "Procedimiento de litotricia láser veterinaria en CENDOVET", isVideo: true };
       case 'fluoroscopia':
         return { src: fluoroscopiaImg, alt: "Equipo de fluoroscopia digital en un quirofano veterinario" };
       case 'cardiologia':
@@ -154,7 +155,11 @@ const ServicioMISPage = () => {
                 ))}
               </div>
               <div>
-                <img alt={serviceImage.alt} className="w-full h-auto rounded-xl" src={serviceImage.src} />
+                {serviceImage.isVideo ? (
+                  <video className="w-full h-auto rounded-xl" src={serviceImage.src} autoPlay loop muted playsInline controls />
+                ) : (
+                  <img alt={serviceImage.alt} className="w-full h-auto rounded-xl" src={serviceImage.src} />
+                )}
               </div>
             </div>
           </div>
