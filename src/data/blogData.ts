@@ -135,8 +135,7 @@ export const blogPosts = [
     readingTime: 9,
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico'],
     author: 'Dra. Eva G. Gato',
-    image: blogCuerpoExtranoVideo,
-    video: blogCuerpoExtranoVideo,
+    image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e',
     content: `
       <p><strong>Paciente:</strong> Luna, una Labrador Retriever hembra de 3 años.</p>
       <p><strong>Clínica Remitente:</strong> Clínica Veterinaria Los Barrios.</p>
@@ -258,7 +257,8 @@ export const blogPosts = [
     readingTime: 5,
     tags: ['Litotricia', 'Endoscopia', 'Caso Clínico', 'Urología', 'Mínima Invasión'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba',
+    image: blogCuerpoExtranoVideo,
+    video: blogCuerpoExtranoVideo,
     content: `
       <p><strong>Paciente:</strong> Bonnie, una perra de 12 años.</p>
       <p><strong>Historia:</strong> Bonnie acudió referenciada a CENDOVET para eliminar varios cálculos (piedras) en su vejiga que le estaban ocasionando problemas urinarios.</p>
