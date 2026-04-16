@@ -2,6 +2,7 @@ import blogDirofilaria from '@/assets/blog_dirofilaria.png';
 import blogProcesionaria from '@/assets/blog_procesionaria.png';
 import blogParacetamol from '@/assets/blog_paracetamol.png';
 import blogCriptorquidia from '@/assets/blog_criptorquidia.png';
+import blogExtraccionVideo from '@/assets/blog_extraccion_endoscopica.mp4';
 
 export const blogPosts = [
   {
@@ -132,6 +133,7 @@ export const blogPosts = [
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico'],
     author: 'Dra. Eva G. Gato',
     image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97',
+    video: blogExtraccionVideo,
     content: `
       <p><strong>Paciente:</strong> Luna, una Labrador Retriever hembra de 3 años.</p>
       <p><strong>Clínica Remitente:</strong> Clínica Veterinaria Los Barrios.</p>
