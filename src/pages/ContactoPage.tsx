@@ -151,7 +151,7 @@ const ContactoPage = () => {
             <h2 className="text-3xl font-bold text-center text-slate-800 mb-8">Encuéntranos</h2>
             <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d812.5!2d-5.4536!3d36.1313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c9a5e0b2a5c37%3A0x4e3f5c1a8b7e2d9f!2sAv.%20Virgen%20de%20la%20Palma%2C%203%2C%2011203%20Algeciras%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av.+Virgen+de+la+Palma+3,+11203+Algeciras,+Cádiz,+Spain&zoom=17"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
