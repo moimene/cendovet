@@ -151,14 +151,14 @@ const ContactoPage = () => {
             <h2 className="text-3xl font-bold text-center text-slate-800 mb-8">Encuéntranos</h2>
             <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-2xl">
               <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-5.4530,36.1335,-5.4430,36.1385&layer=mapnik&marker=36.1360,-5.4480"
+                src="https://maps.google.com/maps?q=Av.+Virgen+de+la+Palma+3,+11203+Algeciras,+Cadiz,+Spain&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mapa de ubicación de CENDOVET"
+                title="Mapa de ubicación de CENDOVET - Av. Virgen de la Palma, 3, 11203 Algeciras, Cádiz"
               ></iframe>
             </div>
           </div>
