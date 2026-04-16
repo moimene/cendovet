@@ -163,6 +163,7 @@ export const blogPosts = [
     author: 'Dra. Eva G. Gato',
     image: blogFilariasVideo,
     video: blogFilariasVideo,
+    instagramReel: 'https://www.instagram.com/reel/DVWQ-d8CIy7/',
     content: `
       <p><strong>Paciente:</strong> Laika, una perrita mestiza de 7 kg, adoptada recientemente.</p>
       <p><strong>Historia:</strong> Laika acudió referenciada a CENDOVET para una ecografía cardíaca porque tenía diagnosticada la enfermedad del gusano del corazón (<em>Dirofilaria immitis</em>). En la ecocardiografía observamos una gran cantidad de parásitos en la arteria pulmonar, lo que suponía un alto riesgo de tromboembolismo si se realizaba el tratamiento adulticida convencional.</p>
