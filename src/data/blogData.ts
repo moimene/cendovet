@@ -3,6 +3,7 @@ import blogProcesionaria from '@/assets/blog_procesionaria.png';
 import blogParacetamol from '@/assets/blog_paracetamol.png';
 import blogCriptorquidia from '@/assets/blog_criptorquidia.png';
 import blogExtraccionVideo from '@/assets/blog_extraccion_endoscopica.mp4';
+import blogFilariasVideo from '@/assets/blog_filarias_endovascular.mp4';
 
 export const blogPosts = [
   {
