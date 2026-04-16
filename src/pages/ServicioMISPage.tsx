@@ -110,7 +110,7 @@ const ServicioMISPage = () => {
   };
 
   const serviceImage = getImageForService(serviceKey);
-  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : serviceKey === 'fluoroscopia' ? fluoroscopiaRxImg : serviceKey === 'ecografia' ? ecografiaIndicacionesImg : cardiologyBookImg;
+  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : serviceKey === 'fluoroscopia' ? fluoroscopiaRxImg : serviceKey === 'ecografia' ? ecografiaIndicacionesImg : serviceKey === 'litotricia-laser' ? litotriciaProcesoImg : cardiologyBookImg;
 
   return (
     <>
