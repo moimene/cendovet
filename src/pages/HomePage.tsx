@@ -8,7 +8,6 @@ import { organizationSchema, websiteSchema, breadcrumbSchema } from '@/data/sche
 import { Button } from '@/components/ui/button';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import GoogleReviews from '@/components/GoogleReviews';
 import HomepageCases from '@/components/HomepageCases';
 
 const HomePage = () => {
@@ -149,9 +148,6 @@ const HomePage = () => {
 
       {/* Casos Clínicos */}
       <HomepageCases />
-
-      {/* Reseñas */}
-      <GoogleReviews />
 
       {/* Cobertura + Dra. Eva */}
       <section className="py-20 md:py-28 bg-white">
