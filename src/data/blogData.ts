@@ -161,7 +161,8 @@ export const blogPosts = [
     readingTime: 7,
     tags: ['Fluoroscopia', 'Cardiología', 'Dirofilaria', 'Caso Clínico', 'Terapia Endovascular'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2',
+    image: blogFilariasVideo,
+    video: blogFilariasVideo,
     content: `
       <p><strong>Paciente:</strong> Laika, una perrita mestiza de 7 kg, adoptada recientemente.</p>
       <p><strong>Historia:</strong> Laika acudió referenciada a CENDOVET para una ecografía cardíaca porque tenía diagnosticada la enfermedad del gusano del corazón (<em>Dirofilaria immitis</em>). En la ecocardiografía observamos una gran cantidad de parásitos en la arteria pulmonar, lo que suponía un alto riesgo de tromboembolismo si se realizaba el tratamiento adulticida convencional.</p>
