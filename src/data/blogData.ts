@@ -135,7 +135,6 @@ export const blogPosts = [
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico'],
     author: 'Dra. Eva G. Gato',
     image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97',
-    video: blogExtraccionVideo,
     content: `
       <p><strong>Paciente:</strong> Luna, una Labrador Retriever hembra de 3 años.</p>
       <p><strong>Clínica Remitente:</strong> Clínica Veterinaria Los Barrios.</p>
@@ -225,7 +224,8 @@ export const blogPosts = [
     readingTime: 6,
     tags: ['Endoscopia', 'Urgencias', 'Cuerpo Extraño', 'Caso Clínico', 'Esófago'],
     author: 'Dra. Eva G. Gato',
-    image: 'https://images.unsplash.com/photo-1587764379873-97837921fd44',
+    image: blogExtraccionVideo,
+    video: blogExtraccionVideo,
     content: `
       <p><strong>Paciente:</strong> Rox, un perro mestizo de 3,7 kg.</p>
       <p><strong>Clínica Remitente:</strong> CV Mediterranea, Sabinillas (Málaga).</p>
