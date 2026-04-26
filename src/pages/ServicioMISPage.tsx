@@ -71,6 +71,8 @@ const ServicioMISPage = () => {
     'medicina-felina': 'medicina_felina',
     'traumatologia': 'traumatologia',
     'neurologia': 'neurologia',
+    'electroquimioterapia': 'electroquimioterapia',
+    'cirugia-laser-diodo': 'cirugia_laser_diodo',
   };
   const seoKey = seoKeyMap[serviceKey || ''] || 'home';
   const pageSeo = seoData[seoKey];
@@ -83,6 +85,8 @@ const ServicioMISPage = () => {
     'cardiologia': 'Cardiología',
     'ecografia': 'Ecografía',
     'medicina-felina': 'Medicina Felina',
+    'electroquimioterapia': 'Electroquimioterapia',
+    'cirugia-laser-diodo': 'Cirugía Láser Diodo',
   };
   const relatedCasesTag = serviceTagMapping[serviceKey] || '';
 
@@ -104,6 +108,10 @@ const ServicioMISPage = () => {
         return { src: "https://images.unsplash.com/photo-1574158622682-e40e6984100d", alt: "Gato de aspecto saludable siendo examinado" };
       case 'cirugia-mis':
         return { src: cirugiaMisImg, alt: "Cirugía mínimamente invasiva veterinaria en CENDOVET" };
+      case 'electroquimioterapia':
+        return { src: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7", alt: "Tratamiento oncológico veterinario con electroquimioterapia" };
+      case 'cirugia-laser-diodo':
+        return { src: "https://images.unsplash.com/photo-1581595219315-a187dd40c322", alt: "Cirugía con láser de diodo veterinario en CENDOVET" };
       default:
         return { src: "https://images.unsplash.com/photo-1517478292-6643e6a62cfe", alt: "Equipo médico veterinario de alta tecnología" };
     }
