@@ -36,7 +36,8 @@ export const servicesData = {
           "Instrumental laparoscópico veterinario específico",
           "Sistema de insuflación y monitorización de presión",
           "Anestesia inhalatoria con monitorización multiparamétrica",
-          "Equipo láser de diodo 980nm para hemostasia precisa"
+          "Equipo láser de diodo 980nm para hemostasia precisa",
+          "Plataforma Karl Storz RUBINA 4K/3D fluorescencia ICG/NIR"
         ]
       },
       faqs: {
@@ -249,7 +250,7 @@ export const servicesData = {
     es: {
       badge: "Tecnología Láser Avanzada",
       title: "Litotricia láser intracorpórea con Holmium",
-      subtitle: "Fragmentación de cálculos urinarios sin cirugía abierta.",
+      subtitle: "Eliminación de cálculos urinarios mediante láser. Único centro en Andalucía",
       description: {
         title: "¿Qué es la Litotricia Láser Veterinaria?",
         paragraphs: [

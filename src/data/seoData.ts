@@ -15,8 +15,8 @@ const BASE_URL = 'https://cendovet.lovable.app';
 
 export const seoData: SEODataCollection = {
   home: {
-    title: 'CENDOVET - Cirugía Veterinaria Mínimamente Invasiva en España',
-    description: 'Centro de referencia en cirugía veterinaria mínimamente invasiva. Laparoscopia, endoscopia, litotricia láser y fluoroscopia en Campo de Gibraltar.',
+    title: 'CENDOVET - Endoscopia y Cirugía de Mínima Invasión en España',
+    description: 'Centro veterinario de referencia en endoscopia y cirugía de mínima invasión. Laparoscopia, toracoscopia, cirugía 3D, fluorescencia ICG/NIR, endoscopia oncológica, litotricia láser, láser de diodo, electroquimioterapia y fluoroscopia en Campo de Gibraltar.',
     keywords: 'cirugía mínimamente invasiva veterinaria, laparoscopia veterinaria, endoscopia veterinaria, litotricia láser, fluoroscopia veterinaria, cirugía veterinaria Campo de Gibraltar, Dra. Eva Gato',
     canonicalUrl: `${BASE_URL}/`,
     ogType: 'website',

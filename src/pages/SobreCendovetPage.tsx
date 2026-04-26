@@ -109,7 +109,7 @@ const SobreCendovetPage = () => {
                 <h2 className="text-3xl font-bold text-foreground">Innovación y liderazgo en cirugía MIS</h2>
                 <p className="mt-4 text-muted-foreground">En CENDOVET, la tecnología de vanguardia es parte fundamental de nuestra identidad.</p>
                 <ul className="mt-8 space-y-4 text-sm text-muted-foreground">
-                  <li><strong className="text-foreground">Láser Holmium</strong> — Primer centro privado en Andalucía con esta tecnología para litotricia.</li>
+                  <li><strong className="text-foreground">Láser Holmium</strong> — Primer centro privado en Andalucía con esta tecnología para litotricia láser.</li>
                   <li><strong className="text-foreground">Torres de Laparoscopia Karl Storz</strong> — Equipamiento de última generación para máxima precisión.</li>
                   <li><strong className="text-foreground">Endoscopios Olympus</strong> — Tecnología de alta definición para diagnóstico y tratamiento.</li>
                   <li><strong className="text-foreground">Fluoroscopia Digital</strong> — Sistema moderno para procedimientos guiados por imagen en tiempo real.</li>

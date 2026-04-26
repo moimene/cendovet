@@ -123,13 +123,13 @@ interface WebsiteSchema extends SchemaContext {
 
 // CENDOVET Clinic Information
 const CLINIC_INFO = {
-  name: "CENDOVET - Centro de Endoscopia y Cirugía Mínimamente Invasiva Veterinaria",
+  name: "CENDOVET - Centro de Endoscopia y Cirugía de Mínima Invasión Veterinaria",
   shortName: "CENDOVET",
   url: "https://cendovet.lovable.app",
   phone: "+34 856 560 168",
   email: "info@cendovet.es",
   description:
-    "Centro especializado en endoscopia y cirugía mínimamente invasiva veterinaria. Único centro en Andalucía que ofrece litotricia láser para mascotas.",
+    "Centro veterinario especializado en endoscopia y cirugía de mínima invasión veterinaria. Único centro en Andalucía que ofrece litotricia láser para mascotas.",
   address: {
     street: "Campo de Gibraltar",
     locality: "Algeciras",
@@ -146,7 +146,7 @@ const CLINIC_INFO = {
   leader: {
     name: "Dra. Eva G. Gato",
     title: "Directora y Cirujana Veterinaria MIS",
-    description: "Especialista en Cirugía Mínimamente Invasiva Veterinaria",
+    description: "Especialista en Endoscopia y Cirugía de Mínima Invasión Veterinaria",
   },
   services: [
     "Laparoscopia",

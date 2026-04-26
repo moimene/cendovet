@@ -25,7 +25,7 @@ const featuredCases: FeaturedCase[] = [
   },
   {
     title: "Litotricia láser: piedras pulverizadas sin bisturí",
-    description: "Pocholo sufría una obstrucción urinaria grave por cálculos. La litotricia láser nos permitió pulverizarlos dentro de la vejiga sin abrir.",
+    description: "Pocholo sufría una obstrucción urinaria grave por cálculos. La litotricia láser nos permitió pulverizarlos dentro de la vejiga mediante láser.",
     petName: "Pocholo",
     specialty: "Litotricia Láser",
     specialtyColor: "bg-amber-600",
@@ -52,7 +52,7 @@ const featuredCases: FeaturedCase[] = [
     title: "Castración laparoscópica: 2 incisiones de 5mm",
     description: "Sofía, una chihuahua, fue esterilizada por laparoscopia. Incisiones milimétricas, mínimo dolor, recuperación casi inmediata.",
     petName: "Sofía",
-    specialty: "Laparoscopia",
+    specialty: "Laparoscopia y Toracoscopia",
     specialtyColor: "bg-teal-600",
     serviceLink: "/servicios/laparoscopia",
     instagramUrl: "https://www.instagram.com/p/DWor0MHCF7p/",
