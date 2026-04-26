@@ -87,11 +87,13 @@ const HomePage = () => {
               </Link>
             ))}
           </div>
-          <div className="mt-6 grid sm:grid-cols-3 gap-px bg-slate-200 border border-slate-200 rounded-lg overflow-hidden">
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-slate-200 border border-slate-200 rounded-lg overflow-hidden">
             {[
               { title: "Cardiología", desc: "Diagnóstico cardiológico avanzado con ecocardiografía.", link: "/servicios/cardiologia" },
               { title: "Ecografía Especializada", desc: "Ecografía abdominal y torácica de alta resolución.", link: "/servicios/ecografia" },
               { title: "Medicina Felina", desc: "Atención especializada para gatos en un entorno adaptado a sus necesidades.", link: "/servicios/medicina-felina" },
+              { title: "Electroquimioterapia", desc: "Oncología MIS: tratamiento local de tumores con mínima toxicidad sistémica.", link: "/servicios/electroquimioterapia" },
+              { title: "Cirugía Láser Diodo", desc: "Cortes precisos con menor sangrado, menos dolor y recuperación más rápida.", link: "/servicios/cirugia-laser-diodo" },
             ].map((service) => (
               <Link
                 key={service.title}
