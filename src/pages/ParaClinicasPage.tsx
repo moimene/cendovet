@@ -8,12 +8,12 @@ import { ArrowRight } from 'lucide-react';
 
 const ParaClinicasPage = () => {
   const specialties = [
-    { title: "Cirugía Laparoscópica", description: "Esterilizaciones, biopsias, gastropexias preventivas, exploración abdominal.", link: "/servicios/laparoscopia" },
+    { title: "Laparoscopia y Toracoscopia", description: "Cirugía de Mínima Invasión...Menos dolor, recuperación más rápida", link: "/servicios/laparoscopia" },
     { title: "Endoscopia Flexible y Rígida", description: "Rinoscopia, broncoscopia, gastroscopia, colonoscopia, otoscopia.", link: "/servicios/endoscopia" },
-    { title: "Litotricia Láser Intracorpórea", description: "Fragmentación de cálculos urinarios sin cirugía abierta.", link: "/servicios/litotricia-laser" },
-    { title: "Fluoroscopia Digital", description: "Procedimientos guiados por imagen en tiempo real para máxima precisión.", link: "/servicios/fluoroscopia" },
+    { title: "Litotricia Láser Intracorpórea", description: "Eliminación de cálculos urinarios mediante láser. Único centro en Andalucía", link: "/servicios/litotricia-laser" },
+    { title: "Fluoroscopia Digital", description: "Imagen radiológica en tiempo real ....intervencionismo, diagnóstico, tratamiento...", link: "/servicios/fluoroscopia" },
     { title: "Cardiología Especializada", description: "Ecocardiografía Doppler, ECG y evaluación cardiovascular completa.", link: "/servicios/cardiologia" },
-    { title: "Ecografía Abdominal Avanzada", description: "Diagnóstico por imagen especializado y toma de muestras ecoguiadas.", link: "/servicios/ecografia" },
+    { title: "Ecografía Especializada", description: "Ecografía abdominal y torácica de alta resolución.", link: "/servicios/ecografia" },
   ];
 
   const steps = [
