@@ -1226,12 +1226,12 @@ export const servicesData = {
     es: {
       badge: "Oncología MIS",
       title: "Electroquimioterapia veterinaria",
-      subtitle: "Tratamiento oncológico de precisión que combina pulsos eléctricos y quimioterapia local para destruir tumores con mínima toxicidad sistémica.",
+      subtitle: "Tratamiento oncológico de precisión que combina pulsos eléctricos y quimioterapia para destruir tumores con precisión y mínima toxicidad sistémica.",
       description: {
         title: "¿Qué es la Electroquimioterapia (ECT)?",
         paragraphs: [
-          "La electroquimioterapia es una técnica oncológica avanzada que combina la administración de un fármaco quimioterápico (habitualmente bleomicina o cisplatino) con la aplicación de pulsos eléctricos breves de alta intensidad sobre el tumor. Estos pulsos abren temporalmente los poros de las células tumorales (electroporación), multiplicando hasta varios cientos de veces la entrada del fármaco dentro de la célula y potenciando enormemente su efecto citotóxico local.",
-          "Es una alternativa eficaz y poco invasiva para tumores cutáneos, subcutáneos y de mucosas en perros y gatos, especialmente en aquellos casos en los que la cirugía es incompleta, no es posible o cuando se busca preservar tejido y función. Permite tratar tumores difíciles de extirpar con un excelente perfil de seguridad."
+          "La electroquimioterapia es una técnica oncológica avanzada que combina la administración de un fármaco quimioterápico (habitualmente bleomicina o cisplatino) con la aplicación de pulsos eléctricos breves de alta intensidad sobre el tumor. Estos pulsos abren temporalmente los poros de las células tumorales (electroporación),permitiendo la entrada del fármaco dentro de la célula y potenciando enormemente su efecto citotóxico local.",
+          "Es una alternativa eficaz y poco invasiva para tumores cutáneos, subcutáneos y de mucosas en perros y gatos, especialmente en aquellos casos en los que la cirugía es incompleta, no es posible o cuando se busca preservar tejido y función. Permite tratar tumores difíciles de extirpar con un excelente perfil de seguridad.\n\nEn nuestro Centro también podemos aplicar la electroquimioterapia hígado, vejiga, interior de cavidad nasal...\nConsúltanos tu caso."
         ]
       },
       benefits: {
@@ -1239,7 +1239,7 @@ export const servicesData = {
         items: [
           { icon: "Zap", text: "Alta eficacia local sobre el tumor con dosis muy bajas de quimioterápico." },
           { icon: "Shield", text: "Mínima toxicidad sistémica: el fármaco actúa concentrado en el tumor." },
-          { icon: "Minimize2", text: "Procedimiento ambulatorio o de corta hospitalización." },
+          { icon: "Minimize2", text: "Procedimiento rápido." },
           { icon: "HeartPulse", text: "Conserva tejido sano y mantiene la función del órgano afectado." },
           { icon: "Clock", text: "Recuperación rápida y excelente calidad de vida postratamiento." },
           { icon: "Award", text: "Opción válida cuando la cirugía no es posible o es incompleta." }
@@ -1249,15 +1249,15 @@ export const servicesData = {
         title: "Cómo lo hacemos en CENDOVET",
         paragraphs: [
           "El paciente se evalúa previamente con estudio histopatológico, estadiaje y pruebas de imagen para confirmar la indicación. La sesión se realiza bajo anestesia general con monitorización avanzada y una duración habitual de 30 a 60 minutos.",
-          "Tras administrar el quimioterápico (intravenoso o intratumoral), aplicamos los pulsos eléctricos directamente sobre la lesión mediante electrodos específicos. La mayoría de los pacientes reciben entre una y tres sesiones espaciadas según la respuesta clínica.",
-          "Coordinamos el seguimiento con el veterinario remitente y elaboramos un plan oncológico integral, combinando si es necesario con cirugía MIS, láser de diodo o radioterapia."
+          "Tras administrar el quimioterápico (intravenoso o intratumoral), aplicamos los pulsos eléctricos directamente sobre la lesión mediante electrodos específicos. La mayoría de los pacientes reciben entre una y dos sesiones espaciadas según la respuesta clínica.",
+          "Coordinamos el seguimiento con el veterinario remitente y elaboramos un plan integral, combinando si es necesario con cirugía MIS o láser de diodo ."
         ],
         equipment: [
-          "Generador de pulsos eléctricos certificado para electroquimioterapia (protocolo ESOPE)",
-          "Electrodos de placa y de aguja para tumores superficiales y profundos",
+          "Generador de pulsos eléctricos certificado para electroquimioterapia veterinaria.",
+          "Electrodos para cualquier tipo de tumor.",
           "Anestesia inhalatoria con monitorización multiparamétrica",
           "Sala oncológica con manejo seguro de citostáticos",
-          "Coordinación con servicio de anatomía patológica e imagen avanzada"
+          "Coordinación con servicio de endoscopia e imagen avanzada"
         ]
       },
       faqs: {
