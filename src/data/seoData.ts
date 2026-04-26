@@ -92,6 +92,20 @@ export const seoData: SEODataCollection = {
     canonicalUrl: `${BASE_URL}/servicios/neurologia`,
   },
 
+  electroquimioterapia: {
+    title: 'Electroquimioterapia Veterinaria | Oncología MIS | CENDOVET',
+    description: 'Electroquimioterapia veterinaria para perros y gatos. Tratamiento oncológico de precisión con mínima toxicidad sistémica. Centro de referencia en Andalucía.',
+    keywords: 'electroquimioterapia veterinaria, oncología veterinaria, tumores perros, tumores gatos, tratamiento oncológico mínimamente invasivo, ECT veterinaria',
+    canonicalUrl: `${BASE_URL}/servicios/electroquimioterapia`,
+  },
+
+  cirugia_laser_diodo: {
+    title: 'Cirugía Láser de Diodo Veterinaria | CENDOVET',
+    description: 'Cirugía con láser de diodo 980 nm en perros y gatos. Cortes precisos, mínimo sangrado, menos dolor y recuperación más rápida. Cirugía oncológica y de partes blandas.',
+    keywords: 'láser de diodo veterinario, cirugía láser perros, cirugía láser gatos, láser quirúrgico veterinario, cirugía mínimamente invasiva',
+    canonicalUrl: `${BASE_URL}/servicios/cirugia-laser-diodo`,
+  },
+
   para_clinicas: {
     title: 'Para Clínicas Veterinarias | Derivación de Referencia | CENDOVET',
     description: 'Somos tu centro de referencia en cirugía MIS. Derivación de casos, protocolos conjuntos y apoyo especializado para clínicas veterinarias.',

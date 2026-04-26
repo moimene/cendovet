@@ -1222,4 +1222,260 @@ export const servicesData = {
       }
     }
   },
+  'electroquimioterapia': {
+    es: {
+      badge: "Oncología MIS",
+      title: "Electroquimioterapia veterinaria",
+      subtitle: "Tratamiento oncológico de precisión que combina pulsos eléctricos y quimioterapia local para destruir tumores con mínima toxicidad sistémica.",
+      description: {
+        title: "¿Qué es la Electroquimioterapia (ECT)?",
+        paragraphs: [
+          "La electroquimioterapia es una técnica oncológica avanzada que combina la administración de un fármaco quimioterápico (habitualmente bleomicina o cisplatino) con la aplicación de pulsos eléctricos breves de alta intensidad sobre el tumor. Estos pulsos abren temporalmente los poros de las células tumorales (electroporación), multiplicando hasta varios cientos de veces la entrada del fármaco dentro de la célula y potenciando enormemente su efecto citotóxico local.",
+          "Es una alternativa eficaz y poco invasiva para tumores cutáneos, subcutáneos y de mucosas en perros y gatos, especialmente en aquellos casos en los que la cirugía es incompleta, no es posible o cuando se busca preservar tejido y función. Permite tratar tumores difíciles de extirpar con un excelente perfil de seguridad."
+        ]
+      },
+      benefits: {
+        title: "Beneficios de la Electroquimioterapia",
+        items: [
+          { icon: "Zap", text: "Alta eficacia local sobre el tumor con dosis muy bajas de quimioterápico." },
+          { icon: "Shield", text: "Mínima toxicidad sistémica: el fármaco actúa concentrado en el tumor." },
+          { icon: "Minimize2", text: "Procedimiento ambulatorio o de corta hospitalización." },
+          { icon: "HeartPulse", text: "Conserva tejido sano y mantiene la función del órgano afectado." },
+          { icon: "Clock", text: "Recuperación rápida y excelente calidad de vida postratamiento." },
+          { icon: "Award", text: "Opción válida cuando la cirugía no es posible o es incompleta." }
+        ]
+      },
+      process: {
+        title: "Cómo lo hacemos en CENDOVET",
+        paragraphs: [
+          "El paciente se evalúa previamente con estudio histopatológico, estadiaje y pruebas de imagen para confirmar la indicación. La sesión se realiza bajo anestesia general con monitorización avanzada y una duración habitual de 30 a 60 minutos.",
+          "Tras administrar el quimioterápico (intravenoso o intratumoral), aplicamos los pulsos eléctricos directamente sobre la lesión mediante electrodos específicos. La mayoría de los pacientes reciben entre una y tres sesiones espaciadas según la respuesta clínica.",
+          "Coordinamos el seguimiento con el veterinario remitente y elaboramos un plan oncológico integral, combinando si es necesario con cirugía MIS, láser de diodo o radioterapia."
+        ],
+        equipment: [
+          "Generador de pulsos eléctricos certificado para electroquimioterapia (protocolo ESOPE)",
+          "Electrodos de placa y de aguja para tumores superficiales y profundos",
+          "Anestesia inhalatoria con monitorización multiparamétrica",
+          "Sala oncológica con manejo seguro de citostáticos",
+          "Coordinación con servicio de anatomía patológica e imagen avanzada"
+        ]
+      },
+      faqs: {
+        title: "Preguntas Frecuentes (FAQs)",
+        items: [
+          {
+            question: "¿Qué tipos de tumor se tratan con electroquimioterapia?",
+            answer: "Es especialmente útil en mastocitomas, carcinomas de células escamosas, sarcomas cutáneos, tumores perianales, melanomas orales y tumores recurrentes o de localización compleja en perros y gatos."
+          },
+          {
+            question: "¿Es dolorosa para mi mascota?",
+            answer: "El procedimiento se realiza siempre bajo anestesia general, por lo que el paciente no siente nada durante la sesión. El postoperatorio suele ser muy bien tolerado, con molestias leves controladas con analgesia."
+          },
+          {
+            question: "¿Sustituye a la cirugía o a la quimioterapia clásica?",
+            answer: "Es una herramienta complementaria. En muchos casos evita o reduce la cirugía; en otros se combina con cirugía MIS, láser o quimioterapia sistémica dentro de un plan oncológico individualizado."
+          },
+          {
+            question: "¿Cuántas sesiones se necesitan?",
+            answer: "La mayoría de los pacientes responden con 1 a 3 sesiones, espaciadas entre 2 y 4 semanas. La respuesta se evalúa clínicamente y con pruebas de imagen."
+          }
+        ]
+      },
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir Caso"
+      }
+    },
+    en: {
+      badge: "MIS Oncology",
+      title: "Veterinary Electrochemotherapy",
+      subtitle: "Precision oncology treatment combining electrical pulses with local chemotherapy to destroy tumors with minimal systemic toxicity.",
+      description: {
+        title: "What is Electrochemotherapy (ECT)?",
+        paragraphs: [
+          "Electrochemotherapy is an advanced oncological technique that combines the administration of a chemotherapy drug (usually bleomycin or cisplatin) with the application of short, high-intensity electrical pulses to the tumor. These pulses temporarily open the pores of tumor cells (electroporation), increasing drug uptake hundreds of times and dramatically enhancing local cytotoxic effect.",
+          "It is an effective, minimally invasive alternative for cutaneous, subcutaneous, and mucosal tumors in dogs and cats, especially when surgery is incomplete, not feasible, or when tissue preservation is essential."
+        ]
+      },
+      benefits: {
+        title: "Benefits of Electrochemotherapy",
+        items: [
+          { icon: "Zap", text: "High local efficacy with very low chemotherapy doses." },
+          { icon: "Shield", text: "Minimal systemic toxicity — the drug acts locally." },
+          { icon: "Minimize2", text: "Outpatient or short-stay procedure." },
+          { icon: "HeartPulse", text: "Preserves healthy tissue and organ function." },
+          { icon: "Clock", text: "Fast recovery and excellent post-treatment quality of life." },
+          { icon: "Award", text: "Valid option when surgery is not feasible or incomplete." }
+        ]
+      },
+      process: {
+        title: "How We Do It at CENDOVET",
+        paragraphs: [
+          "The patient is evaluated with histopathology, staging, and imaging to confirm the indication. The session is performed under general anesthesia with advanced monitoring and lasts 30 to 60 minutes.",
+          "After administering chemotherapy (intravenous or intratumoral), we apply electrical pulses directly onto the lesion using specific electrodes. Most patients require between one and three sessions.",
+          "We coordinate follow-up with the referring vet and design a comprehensive oncological plan."
+        ],
+        equipment: [
+          "Certified electrochemotherapy pulse generator (ESOPE protocol)",
+          "Plate and needle electrodes for superficial and deep tumors",
+          "Inhalant anesthesia with multiparametric monitoring",
+          "Oncology suite with safe cytostatic handling",
+          "Coordination with pathology and advanced imaging services"
+        ]
+      },
+      faqs: {
+        title: "Frequently Asked Questions (FAQs)",
+        items: [
+          {
+            question: "Which tumors are treated with electrochemotherapy?",
+            answer: "Especially mast cell tumors, squamous cell carcinomas, cutaneous sarcomas, perianal tumors, oral melanomas, and recurrent or complex tumors in dogs and cats."
+          },
+          {
+            question: "Is it painful for my pet?",
+            answer: "The procedure is always performed under general anesthesia. Postoperative discomfort is mild and well controlled with analgesia."
+          },
+          {
+            question: "Does it replace surgery or systemic chemotherapy?",
+            answer: "It is a complementary tool, often combined with MIS surgery, laser, or systemic chemotherapy within an individualized oncology plan."
+          },
+          {
+            question: "How many sessions are needed?",
+            answer: "Most patients respond with 1 to 3 sessions, 2 to 4 weeks apart."
+          }
+        ]
+      },
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Vets: Refer a Case"
+      }
+    }
+  },
+  'cirugia-laser-diodo': {
+    es: {
+      badge: "Tecnología Láser Avanzada",
+      title: "Cirugía con láser de diodo veterinario",
+      subtitle: "Cirugía precisa, con menor sangrado, menos dolor y recuperación más rápida gracias a la energía láser de diodo.",
+      description: {
+        title: "¿Qué es la cirugía con láser de diodo?",
+        paragraphs: [
+          "La cirugía láser de diodo emplea un haz de luz de alta energía (longitud de onda 980 nm) que corta, vaporiza y coagula los tejidos al mismo tiempo. Esto permite realizar incisiones extremadamente precisas con un sangrado mínimo, sellando los pequeños vasos y terminales nerviosas a medida que avanza la cirugía.",
+          "El resultado es una intervención más limpia, con menor inflamación postoperatoria, menos dolor para el paciente y una recuperación notablemente más rápida que con bisturí frío o electrobisturí. En CENDOVET integramos el láser de diodo tanto en cirugía abierta como en procedimientos endoscópicos y mínimamente invasivos."
+        ]
+      },
+      benefits: {
+        title: "Beneficios de la cirugía láser de diodo",
+        items: [
+          { icon: "Scissors", text: "Cortes precisos con sellado simultáneo de vasos y nervios." },
+          { icon: "HeartPulse", text: "Menor dolor postoperatorio y menos inflamación." },
+          { icon: "Shield", text: "Sangrado mínimo y mejor visualización del campo quirúrgico." },
+          { icon: "Clock", text: "Recuperación más rápida y alta hospitalaria precoz." },
+          { icon: "Zap", text: "Compatible con cirugía endoscópica y mínimamente invasiva." },
+          { icon: "Award", text: "Excelente para tumores cutáneos, partes blandas y cirugía oral." }
+        ]
+      },
+      process: {
+        title: "Cómo lo hacemos en CENDOVET",
+        paragraphs: [
+          "Empleamos el láser de diodo en una amplia variedad de procedimientos: extirpación de tumores cutáneos y orales, cirugía perianal, paladar blando elongado, resección de masas en cavidad oral, hemostasia en cirugía endoscópica y procedimientos urogenitales.",
+          "Cada cirugía se planifica de forma individualizada, seleccionando la potencia y la fibra óptica adecuadas al tejido y a la lesión. Trabajamos siempre bajo protocolos estrictos de seguridad láser para el paciente y el equipo.",
+          "El paciente se beneficia de un postoperatorio más cómodo y normalmente recibe el alta el mismo día, con un plan analgésico individualizado y seguimiento coordinado con el veterinario remitente."
+        ],
+        equipment: [
+          "Equipo láser de diodo 980 nm de uso quirúrgico veterinario",
+          "Fibras ópticas de distintos calibres para cirugía abierta y endoscópica",
+          "Sistema de protección ocular y seguridad láser certificado",
+          "Anestesia inhalatoria con monitorización multiparamétrica",
+          "Integración con torre endoscópica Karl Storz para procedimientos mínimamente invasivos"
+        ]
+      },
+      faqs: {
+        title: "Preguntas Frecuentes (FAQs)",
+        items: [
+          {
+            question: "¿En qué intervenciones se usa el láser de diodo?",
+            answer: "Cirugía de tumores cutáneos y subcutáneos, masas orales, paladar blando elongado, cirugía perianal, biopsias, hemostasia en cirugía endoscópica y diversos procedimientos urogenitales."
+          },
+          {
+            question: "¿Es seguro para mi mascota?",
+            answer: "Sí. El láser de diodo es una tecnología muy segura cuando se usa con protocolos adecuados. Trabajamos siempre con protección ocular específica y bajo un control estricto de potencia y tiempo de exposición."
+          },
+          {
+            question: "¿Tiene ventajas frente al bisturí tradicional?",
+            answer: "Sí: menos sangrado, menos dolor, menor inflamación, mejor visualización del campo quirúrgico y, en muchos casos, recuperación más rápida y mejor cicatrización."
+          },
+          {
+            question: "¿Se puede combinar con otras técnicas?",
+            answer: "Por supuesto. Lo combinamos habitualmente con cirugía MIS (laparoscopia, endoscopia) y con electroquimioterapia en planes oncológicos integrales."
+          }
+        ]
+      },
+      cta: {
+        owner: "Solicitar Valoración",
+        vet: "Veterinarios: Referir Caso"
+      }
+    },
+    en: {
+      badge: "Advanced Laser Technology",
+      title: "Veterinary Diode Laser Surgery",
+      subtitle: "Precise surgery with less bleeding, less pain, and faster recovery thanks to diode laser energy.",
+      description: {
+        title: "What is diode laser surgery?",
+        paragraphs: [
+          "Diode laser surgery uses a high-energy light beam (980 nm wavelength) that simultaneously cuts, vaporizes, and coagulates tissue. This allows extremely precise incisions with minimal bleeding, sealing small vessels and nerve endings as the surgery progresses.",
+          "The result is a cleaner procedure, with less postoperative inflammation, less pain, and noticeably faster recovery than with cold scalpel or electrocautery. At CENDOVET we integrate the diode laser in both open and minimally invasive surgery."
+        ]
+      },
+      benefits: {
+        title: "Benefits of Diode Laser Surgery",
+        items: [
+          { icon: "Scissors", text: "Precise cuts with simultaneous vessel and nerve sealing." },
+          { icon: "HeartPulse", text: "Less postoperative pain and inflammation." },
+          { icon: "Shield", text: "Minimal bleeding and better surgical field visualization." },
+          { icon: "Clock", text: "Faster recovery and early hospital discharge." },
+          { icon: "Zap", text: "Compatible with endoscopic and minimally invasive surgery." },
+          { icon: "Award", text: "Excellent for skin tumors, soft tissue, and oral surgery." }
+        ]
+      },
+      process: {
+        title: "How We Do It at CENDOVET",
+        paragraphs: [
+          "We use the diode laser in a wide range of procedures: skin and oral tumor removal, perianal surgery, elongated soft palate, oral mass resection, hemostasis in endoscopic surgery, and urogenital procedures.",
+          "Each surgery is planned individually, selecting the appropriate power and fiber optic for the tissue. We always work under strict laser safety protocols.",
+          "The patient benefits from a more comfortable postoperative period and is usually discharged the same day."
+        ],
+        equipment: [
+          "980 nm diode laser equipment for veterinary surgical use",
+          "Optical fibers of different calibers for open and endoscopic surgery",
+          "Certified eye protection and laser safety system",
+          "Inhalant anesthesia with multiparametric monitoring",
+          "Integration with Karl Storz endoscopy tower"
+        ]
+      },
+      faqs: {
+        title: "Frequently Asked Questions (FAQs)",
+        items: [
+          {
+            question: "What procedures use the diode laser?",
+            answer: "Skin and subcutaneous tumor surgery, oral masses, elongated soft palate, perianal surgery, biopsies, hemostasis in endoscopic surgery, and urogenital procedures."
+          },
+          {
+            question: "Is it safe for my pet?",
+            answer: "Yes. Diode laser is very safe when used with proper protocols, eye protection, and strict control of power and exposure time."
+          },
+          {
+            question: "Does it have advantages over traditional scalpel?",
+            answer: "Yes: less bleeding, less pain, less inflammation, better visualization, and often faster recovery and better healing."
+          },
+          {
+            question: "Can it be combined with other techniques?",
+            answer: "Of course. We routinely combine it with MIS surgery and electrochemotherapy in comprehensive oncology plans."
+          }
+        ]
+      },
+      cta: {
+        owner: "Request an Appointment",
+        vet: "Vets: Refer a Case"
+      }
+    }
+  },
 };
