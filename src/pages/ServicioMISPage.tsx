@@ -26,6 +26,7 @@ import fluoroscopiaRxImg from '@/assets/fluoroscopia_rx.png';
 import ecografiaIndicacionesImg from '@/assets/ecografia_indicaciones.png';
 import litotriciaVideo from '@/assets/litotricia_video.mp4';
 import litotriciaProcesoImg from '@/assets/litotricia_proceso.png';
+import electroquimioterapiaGatitoImg from '@/assets/electroquimioterapia_gatito.jpg';
 
 const ServicioMISPage = () => {
   const { serviceKey } = useParams();
@@ -109,7 +110,7 @@ const ServicioMISPage = () => {
       case 'cirugia-mis':
         return { src: cirugiaMisImg, alt: "Cirugía mínimamente invasiva veterinaria en CENDOVET" };
       case 'electroquimioterapia':
-        return { src: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7", alt: "Tratamiento oncológico veterinario con electroquimioterapia" };
+        return { src: electroquimioterapiaGatitoImg, alt: "Gatito con lesión en la nariz siendo acariciado durante consulta de electroquimioterapia" };
       case 'cirugia-laser-diodo':
         return { src: "https://images.unsplash.com/photo-1581595219315-a187dd40c322", alt: "Cirugía con láser de diodo veterinario en CENDOVET" };
       default:
