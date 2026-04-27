@@ -1276,7 +1276,7 @@ export const servicesData = {
           },
           {
             question: "¿Cuántas sesiones se necesitan?",
-            answer: "La mayoría de los pacientes responden con 1 a 3 sesiones, espaciadas entre 2 y 4 semanas. La respuesta se evalúa clínicamente y con pruebas de imagen."
+            answer: "La mayoría de los pacientes responden con 1 a 2 sesiones, espaciadas entre 4 y 8 semanas. La respuesta se evalúa clínicamente para cada paciente."
           }
         ]
       },
