@@ -1267,8 +1267,8 @@ export const servicesData = {
             answer: "Es especialmente útil en mastocitomas, carcinomas de células escamosas, sarcomas cutáneos, tumores perianales, melanomas orales y tumores recurrentes o de localización compleja en perros y gatos."
           },
           {
-            question: "¿Es dolorosa para mi mascota?",
-            answer: "El procedimiento se realiza siempre bajo anestesia general, por lo que el paciente no siente nada durante la sesión. El postoperatorio suele ser muy bien tolerado, con molestias leves controladas con analgesia."
+            question: "¿Es dolorosa?",
+            answer: "El procedimiento se realiza siempre bajo anestesia general, por lo que el paciente no siente nada durante la sesión. El postoperatorio suele ser muy bien tolerado, con molestias leves controladas con analgesia y antiinflamatorios."
           },
           {
             question: "¿Sustituye a la cirugía o a la quimioterapia clásica?",
