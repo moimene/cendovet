@@ -1226,7 +1226,7 @@ export const servicesData = {
     es: {
       badge: "Oncología MIS",
       title: "Electroquimioterapia veterinaria",
-      subtitle: "Tratamiento oncológico de precisión que combina pulsos eléctricos y quimioterapia para destruir tumores con precisión y mínima toxicidad sistémica.",
+      subtitle: "Terapia oncológica de precisión que combina pulsos eléctricos y quimioterapia para el tratamiento de tumores.",
       description: {
         title: "¿Qué es la Electroquimioterapia (ECT)?",
         paragraphs: [
@@ -1248,7 +1248,7 @@ export const servicesData = {
       process: {
         title: "Cómo lo hacemos en CENDOVET",
         paragraphs: [
-          "El paciente se evalúa previamente con estudio histopatológico, estadiaje y pruebas de imagen para confirmar la indicación. La sesión se realiza bajo anestesia general con monitorización avanzada y una duración habitual de 30 a 60 minutos.",
+          "El paciente se evalúa previamente en cita inicial para confirmar la indicación del tratamiento. La sesión de electroquimioterapia se  realiza bajo anestesia general con monitorización avanzada y una duración habitual de 30 a 60 minutos.",
           "Tras administrar el quimioterápico (intravenoso o intratumoral), aplicamos los pulsos eléctricos directamente sobre la lesión mediante electrodos específicos. La mayoría de los pacientes reciben entre una y dos sesiones espaciadas según la respuesta clínica.",
           "Coordinamos el seguimiento con el veterinario remitente y elaboramos un plan integral, combinando si es necesario con cirugía MIS o láser de diodo ."
         ],
