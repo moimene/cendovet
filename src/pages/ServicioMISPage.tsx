@@ -27,6 +27,7 @@ import ecografiaIndicacionesImg from '@/assets/ecografia_indicaciones.png';
 import litotriciaVideo from '@/assets/litotricia_video.mp4';
 import litotriciaProcesoImg from '@/assets/litotricia_proceso.png';
 import electroquimioterapiaGatitoImg from '@/assets/electroquimioterapia_gatito.jpg';
+import goldenRetrieverCremaImg from '@/assets/golden_retriever_crema.jpg';
 
 const ServicioMISPage = () => {
   const { serviceKey } = useParams();
@@ -119,7 +120,7 @@ const ServicioMISPage = () => {
   };
 
   const serviceImage = getImageForService(serviceKey);
-  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : serviceKey === 'fluoroscopia' ? fluoroscopiaRxImg : serviceKey === 'ecografia' ? ecografiaIndicacionesImg : serviceKey === 'litotricia-laser' ? litotriciaProcesoImg : cardiologyBookImg;
+  const processImage = serviceKey === 'cirugia-mis' ? cirugiaMisVsImg : serviceKey === 'fluoroscopia' ? fluoroscopiaRxImg : serviceKey === 'ecografia' ? ecografiaIndicacionesImg : serviceKey === 'litotricia-laser' ? litotriciaProcesoImg : serviceKey === 'electroquimioterapia' ? goldenRetrieverCremaImg : cardiologyBookImg;
 
   return (
     <>
