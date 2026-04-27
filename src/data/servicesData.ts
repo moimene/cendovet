@@ -1256,7 +1256,6 @@ export const servicesData = {
           "Generador de pulsos eléctricos certificado para electroquimioterapia veterinaria.",
           "Electrodos para cualquier tipo de tumor.",
           "Anestesia inhalatoria con monitorización multiparamétrica",
-          "Sala oncológica con manejo seguro de citostáticos",
           "Coordinación con servicio de endoscopia e imagen avanzada"
         ]
       },
